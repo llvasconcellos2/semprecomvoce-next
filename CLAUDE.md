@@ -32,6 +32,10 @@ pnpm lint       # ESLint
 
 `@/*` resolves to the project root (e.g., `@/app/...`, `@/lib/...`).
 
+## Design
+
+Brand guidelines (colors, typography, tone) are in `docs/brand.md`. All color and font tokens are defined in `app/globals.css` and available as Tailwind utilities (e.g., `bg-brand-pink`, `text-brand-navy`, `font-display`).
+
 ## Key conventions
 
 - All routes live under `app/` using the App Router file conventions (`layout.tsx`, `page.tsx`, `loading.tsx`, etc.)
