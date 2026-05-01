@@ -223,23 +223,32 @@ function Hero() {
         {/* ── Right: Visual ── */}
         <div className="relative flex items-center justify-center order-1 lg:order-2 min-h-[440px]">
           {/* Spinning ring */}
-          <div
-            className="absolute w-[430px] h-[430px] rounded-full border border-dashed border-brand-pink/20 animate-spin-slow"
-          />
+          <div className="absolute w-[430px] h-[430px] rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
           {/* Gradient fill */}
           <div className="absolute w-[350px] h-[350px] rounded-full bg-gradient-to-br from-brand-pink-light to-brand-blue-light opacity-75" />
 
           {/* Logo drawing — floating */}
-          <Image
-            src="/logo-drawing.svg"
-            alt=""
-            width={300}
-            height={300}
-            className="relative z-10 drop-shadow-2xl animate-float"
-            aria-hidden="true"
-            priority
-          />
+          <div className="flex flex-col">
+            <Image
+              src="/logo-drawing.svg"
+              alt=""
+              width={300}
+              height={300}
+              className="relative z-10 drop-shadow-2xl animate-float"
+              aria-hidden="true"
+              priority
+            />
 
+            <Image
+              src="/logo-text.svg"
+              alt=""
+              width={300}
+              height={300}
+              className="relative z-10 drop-shadow-2xl animate-float"
+              aria-hidden="true"
+              priority
+            />
+          </div>
           {/* Floating card — top right */}
           <div className="absolute top-6 -right-2 xl:right-4 bg-white rounded-2xl shadow-xl shadow-brand-navy/10 px-4 py-3 flex items-center gap-3 z-20">
             <div className="w-10 h-10 rounded-xl bg-brand-pink-light flex items-center justify-center text-xl shrink-0">
@@ -370,7 +379,13 @@ function Mission() {
             className="inline-flex items-center gap-2 text-brand-pink font-semibold font-display text-sm hover:gap-3 transition-all duration-200 w-fit mt-2"
           >
             Conheça nossos programas
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
               <path
                 d="M3 8h10M9 4l4 4-4 4"
                 stroke="currentColor"
@@ -390,7 +405,10 @@ function Mission() {
 
 function Programs() {
   return (
-    <section id="programas" className="py-28 lg:py-36 bg-brand-pink-light relative grain overflow-hidden">
+    <section
+      id="programas"
+      className="py-28 lg:py-36 bg-brand-pink-light relative grain overflow-hidden"
+    >
       {/* Decorative blob */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue/[0.06] blur-[120px] pointer-events-none" />
 
@@ -418,9 +436,11 @@ function Programs() {
               key={program.title}
               className={`bg-white rounded-3xl p-8 flex flex-col gap-5
                          hover:-translate-y-1.5 transition-all duration-300
-                         ${program.accent === "pink"
-                           ? "hover:shadow-2xl hover:shadow-brand-pink/[0.14]"
-                           : "hover:shadow-2xl hover:shadow-brand-blue/[0.14]"}`}
+                         ${
+                           program.accent === "pink"
+                             ? "hover:shadow-2xl hover:shadow-brand-pink/[0.14]"
+                             : "hover:shadow-2xl hover:shadow-brand-blue/[0.14]"
+                         }`}
             >
               <div
                 className={`w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shrink-0
@@ -443,7 +463,13 @@ function Programs() {
                            hover:gap-2.5 transition-all duration-200 mt-auto`}
               >
                 Saiba mais
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
                   <path
                     d="M3 8h10M9 4l4 4-4 4"
                     stroke="currentColor"
@@ -483,9 +509,9 @@ function Testimonials() {
             <div
               key={t.name}
               className={`rounded-3xl p-8 flex flex-col gap-6 transition-all duration-300 hover:-translate-y-1
-                         ${t.featured
-                           ? "bg-brand-navy"
-                           : "bg-brand-pink-light"}`}
+                         ${
+                           t.featured ? "bg-brand-navy" : "bg-brand-pink-light"
+                         }`}
             >
               {/* Quote icon */}
               <svg
@@ -545,7 +571,10 @@ function Testimonials() {
 
 function DonateCTA() {
   return (
-    <section id="doe" className="py-28 lg:py-36 bg-brand-navy relative overflow-hidden grain">
+    <section
+      id="doe"
+      className="py-28 lg:py-36 bg-brand-navy relative overflow-hidden grain"
+    >
       {/* Blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-brand-pink/[0.12] blur-[130px]" />
@@ -587,9 +616,11 @@ function DonateCTA() {
                 href="#"
                 className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
                            hover:-translate-y-0.5 active:translate-y-0
-                           ${item.primary
-                             ? "bg-brand-pink text-white hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30"
-                             : "border border-white/20 text-white hover:bg-white/10"}`}
+                           ${
+                             item.primary
+                               ? "bg-brand-pink text-white hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30"
+                               : "border border-white/20 text-white hover:bg-white/10"
+                           }`}
               >
                 {item.cta}
               </a>
@@ -610,7 +641,10 @@ function DonateCTA() {
 
 function Footer() {
   return (
-    <footer id="contato" className="bg-brand-navy border-t border-white/[0.06] py-16">
+    <footer
+      id="contato"
+      className="bg-brand-navy border-t border-white/[0.06] py-16"
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 mb-14">
           {/* Brand */}
@@ -653,18 +687,22 @@ function Footer() {
               Instituto
             </h4>
             <ul className="flex flex-col gap-3.5">
-              {["Quem Somos", "Nossos Programas", "Como Ajudar", "Transparência", "Blog"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-white/40 text-sm hover:text-white/80 transition-colors duration-200"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "Quem Somos",
+                "Nossos Programas",
+                "Como Ajudar",
+                "Transparência",
+                "Blog",
+              ].map((link) => (
+                <li key={link}>
+                  <a
+                    href="#"
+                    className="text-white/40 text-sm hover:text-white/80 transition-colors duration-200"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -690,7 +728,13 @@ function Footer() {
                          hover:gap-3 transition-all duration-200"
             >
               Fale Conosco
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
@@ -708,10 +752,16 @@ function Footer() {
             © 2025 Instituto Sempre Com Você. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/25 text-xs hover:text-white/50 transition-colors">
+            <a
+              href="#"
+              className="text-white/25 text-xs hover:text-white/50 transition-colors"
+            >
               Política de Privacidade
             </a>
-            <a href="#" className="text-white/25 text-xs hover:text-white/50 transition-colors">
+            <a
+              href="#"
+              className="text-white/25 text-xs hover:text-white/50 transition-colors"
+            >
               Termos de Uso
             </a>
           </div>
