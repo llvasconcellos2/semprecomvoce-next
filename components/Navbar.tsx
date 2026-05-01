@@ -4,13 +4,21 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-navy/6">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
-        <a href="/" className="shrink-0">
+        <a href="/" className="shrink-0 flex gap-6 items-center">
           <Image
-            src="/logo-semprecomvc.png"
+            src="/logo-drawing.svg"
             alt="Instituto Sempre Com Você"
             width={220}
             height={56}
             className="h-12 w-auto"
+            priority
+          />
+          <Image
+            src="/logo-text.svg"
+            alt="Instituto Sempre Com Você"
+            width={230}
+            height={32}
+            className="h-4.5 sm:h-8 w-auto"
             priority
           />
         </a>
