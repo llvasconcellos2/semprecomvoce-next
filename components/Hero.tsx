@@ -5,16 +5,16 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white grain">
       {/* Atmospheric gradient blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[750px] h-[750px] rounded-full bg-brand-pink/[0.07] blur-[130px]" />
-        <div className="absolute top-1/2 -left-56 w-[550px] h-[550px] rounded-full bg-brand-blue/[0.07] blur-[110px]" />
-        <div className="absolute -bottom-24 right-1/3 w-[450px] h-[450px] rounded-full bg-brand-pink/[0.05] blur-[100px]" />
+        <div className="absolute -top-40 -right-40 w-187.5 h-187.5 rounded-full bg-brand-pink/[0.07] blur-[130px]" />
+        <div className="absolute top-1/2 -left-56 w-137.5 h-137.5 rounded-full bg-brand-blue/[0.07] blur-[110px]" />
+        <div className="absolute -bottom-24 right-1/3 w-112.5 h-112.5 rounded-full bg-brand-pink/5 blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         {/* ── Left: Content ── */}
         <div className="flex flex-col gap-8 order-2 lg:order-1">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-brand-pink/[0.09] text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
+          <div className="inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse-dot" />
             ONG sem fins lucrativos · Desde 2009
           </div>
@@ -90,11 +90,11 @@ export function Hero() {
         </div>
 
         {/* ── Right: Visual ── */}
-        <div className="relative flex items-center justify-center order-1 lg:order-2 min-h-[440px]">
+        <div className="relative flex items-center justify-center order-1 lg:order-2 min-h-110">
           {/* Spinning ring */}
-          <div className="absolute w-[430px] h-[430px] rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
+          <div className="absolute w-107.5 h-107.5 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
           {/* Gradient fill */}
-          <div className="absolute w-[350px] h-[350px] rounded-full bg-gradient-to-br from-brand-pink-light to-brand-blue-light opacity-75" />
+          <div className="absolute w-87.5 h-87.5 rounded-full bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-75" />
 
           {/* Logo drawing — floating */}
           <div className="flex flex-col">
@@ -155,7 +155,7 @@ export function Hero() {
         <span className="text-[10px] font-semibold font-display tracking-[0.15em] uppercase text-brand-navy/25">
           Role para baixo
         </span>
-        <div className="w-px h-10 bg-gradient-to-b from-brand-navy/20 to-transparent" />
+        <div className="w-px h-10 bg-linear-to-b from-brand-navy/20 to-transparent" />
       </div>
     </section>
   );

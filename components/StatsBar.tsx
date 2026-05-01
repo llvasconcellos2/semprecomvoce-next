@@ -9,7 +9,7 @@ export function StatsBar() {
   return (
     <section className="bg-brand-navy py-14">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 lg:divide-x lg:divide-white/[0.08]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 lg:divide-x lg:divide-white/8">
           {stats.map((stat) => (
             <div
               key={stat.label}

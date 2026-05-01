@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-navy/[0.06]">
+    <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-navy/6">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
         <a href="/" className="shrink-0">
           <Image

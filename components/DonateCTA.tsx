@@ -33,13 +33,13 @@ export function DonateCTA() {
     >
       {/* Blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-brand-pink/[0.12] blur-[130px]" />
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-blue/[0.10] blur-[130px]" />
+        <div className="absolute -top-40 -left-40 w-150 h-150 rounded-full bg-brand-pink/12 blur-[130px]" />
+        <div className="absolute -bottom-40 -right-40 w-150 h-150 rounded-full bg-brand-blue/10 blur-[130px]" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/[0.08] text-white text-[11px] font-bold font-display px-4 py-2 rounded-full mb-8 tracking-[0.12em] uppercase">
+        <div className="inline-flex items-center gap-2 bg-white/8 text-white text-[11px] font-bold font-display px-4 py-2 rounded-full mb-8 tracking-[0.12em] uppercase">
           ❤️ &nbsp;Como Ajudar
         </div>
 
@@ -59,7 +59,7 @@ export function DonateCTA() {
           {helpOptions.map((item) => (
             <div
               key={item.title}
-              className="bg-white/[0.07] backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center gap-4 text-center border border-white/[0.08] hover:bg-white/[0.12] transition-colors duration-300"
+              className="bg-white/[0.07] backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center gap-4 text-center border border-white/8 hover:bg-white/12 transition-colors duration-300"
             >
               <span className="text-4xl">{item.icon}</span>
               <h3 className="font-display font-bold text-xl text-white">

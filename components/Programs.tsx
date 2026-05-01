@@ -36,7 +36,7 @@ export function Programs() {
       className="py-28 lg:py-36 bg-brand-pink-light relative grain overflow-hidden"
     >
       {/* Decorative blob */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue/[0.06] blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-125 h-125 rounded-full bg-brand-blue/6 blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}

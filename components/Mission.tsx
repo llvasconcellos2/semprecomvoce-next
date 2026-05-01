@@ -6,7 +6,7 @@ export function Mission() {
         <div className="relative order-2 lg:order-1">
           <div className="absolute -top-5 -left-5 w-full h-full rounded-3xl bg-brand-pink-light" />
           <div className="absolute -bottom-5 -right-5 w-full h-full rounded-3xl border-2 border-brand-blue/20" />
-          <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl shadow-brand-navy/10">
+          <div className="relative rounded-3xl overflow-hidden aspect-4/3 shadow-2xl shadow-brand-navy/10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://placehold.co/800x600/FEE9F4/E8178A?text=Instituto+Sempre+Com+Você"
@@ -14,7 +14,7 @@ export function Mission() {
               className="w-full h-full object-cover"
             />
             {/* Color treatment overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/30 via-transparent to-transparent mix-blend-multiply" />
+            <div className="absolute inset-0 bg-linear-to-t from-brand-navy/30 via-transparent to-transparent mix-blend-multiply" />
           </div>
         </div>
 
