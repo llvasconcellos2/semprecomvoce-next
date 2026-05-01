@@ -10,7 +10,7 @@ export function Hero() {
         <div className="absolute -bottom-24 right-1/3 w-112.5 h-112.5 rounded-full bg-brand-pink/5 blur-[100px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-0 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         {/* ── Left: Content ── */}
         <div className="flex flex-col gap-8 order-2 lg:order-1">
           {/* Badge */}
