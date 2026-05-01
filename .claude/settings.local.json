@@ -1,6 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(chrome-devtools stop *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "next-devtools"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
