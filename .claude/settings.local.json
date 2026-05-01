@@ -3,7 +3,10 @@
     "allow": [
       "Bash(chrome-devtools stop *)",
       "Skill(update-config)",
-      "Skill(update-config:*)"
+      "Skill(update-config:*)",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__evaluate_script"
     ]
   },
   "enableAllProjectMcpServers": true,
