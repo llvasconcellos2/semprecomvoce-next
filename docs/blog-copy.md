@@ -23,7 +23,7 @@
 
 - Com as informações extraídas do nome da pasta (título do blog) e do arquivo `info.txt` escreva um post de blog.
 - Você pode abrir as fotos dentro de cada pasta e analisá-las para extrair mais informações para o conteúdo do post.
-- Para cada evento (pastaa) escreva um post do blog em Markdown contendo uma introdução (a introdução será exibida no índice do blog junto com uma foto em destaque mas a introdução fará parte do conteúdo do blog) - use comentários para delimitar a introdução do restante do post.
+- Para cada evento (pasta) escreva um post do blog em Markdown contendo uma introdução (a introdução será exibida no índice do blog junto com uma foto em destaque mas a introdução fará parte do conteúdo do post) - use comentários para delimitar a introdução do restante do post.
 - Salve o que escrever em um arquivo `blog-post.md`.
 - O conteúdo não deve ser muito extenso.
 - Se a pasta já conter um arquivo `blog-post.md` o post já foi escrito e passe para a próxima pasta.
