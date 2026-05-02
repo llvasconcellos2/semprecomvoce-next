@@ -1,9 +1,4 @@
-const stats = [
-  { number: "500+", label: "Pacientes Atendidos", icon: "👤" },
-  { number: "1.200+", label: "Famílias Apoiadas", icon: "🏠" },
-  { number: "15 Anos", label: "De Experiência", icon: "⭐" },
-  { number: "120+", label: "Voluntários Ativos", icon: "🤝" },
-];
+import { stats } from "@/app/data";
 
 export function StatsBar() {
   return (

@@ -43,7 +43,7 @@ export function DonateCTA() {
           ❤️ &nbsp;Como Ajudar
         </div>
 
-        <h2 className="font-display font-extrabold text-[2.75rem] xl:text-[4rem] text-white leading-[1.05] tracking-tight mb-5">
+        <h2 className="font-display font-extrabold text-[2.75rem] xl:text-[4rem] text-white! leading-[1.05] tracking-tight mb-5">
           Faça parte dessa
           <br />
           <span className="text-brand-pink">história de amor</span>
@@ -62,7 +62,7 @@ export function DonateCTA() {
               className="bg-white/[0.07] backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center gap-4 text-center border border-white/8 hover:bg-white/12 transition-colors duration-300"
             >
               <span className="text-4xl">{item.icon}</span>
-              <h3 className="font-display font-bold text-xl text-white">
+              <h3 className="font-display font-bold text-xl text-white!">
                 {item.title}
               </h3>
               <p className="text-white/50 text-sm leading-relaxed">

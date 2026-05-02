@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { anoInicio } from "@/app/data";
 
 export function Footer() {
   return (
@@ -15,23 +16,81 @@ export function Footer() {
               alt="Instituto Sempre Com Você"
               width={200}
               height={50}
-              className="h-11 w-auto brightness-0 invert mb-5 opacity-90"
+              className="h-16 w-auto brightness-0 invert mb-5 opacity-90"
             />
             <p className="text-white/45 text-sm leading-relaxed max-w-sm">
               Nossa missão é melhorar a vida de pessoas com câncer e suas
               famílias, oferecendo apoio integral com amor, cuidado e dedicação
-              desde 2009.
+              desde {anoInicio}.
             </p>
             <div className="flex gap-3 mt-6">
               {[
-                { label: "f", title: "Facebook" },
-                { label: "in", title: "LinkedIn" },
-                { label: "ig", title: "Instagram" },
+                {
+                  label: (
+                    <Image
+                      src="/linkedin.svg"
+                      alt=""
+                      width={32}
+                      height={32}
+                      className="relative z-10 animate-float-sm"
+                      aria-hidden="true"
+                      priority
+                    />
+                  ),
+                  title: "LinkedIn",
+                  link: "#",
+                },
+                {
+                  label: (
+                    <Image
+                      src="/facebook.svg"
+                      alt=""
+                      width={32}
+                      height={32}
+                      className="relative z-10 animate-float-sm"
+                      aria-hidden="true"
+                      priority
+                    />
+                  ),
+                  title: "Facebook",
+                  link: "https://www.facebook.com/InstitutoSempreComVocecomAndreiaNunes",
+                },
+                {
+                  label: (
+                    <Image
+                      src="/instagram.svg"
+                      alt=""
+                      width={32}
+                      height={32}
+                      className="relative z-10 animate-float-sm"
+                      aria-hidden="true"
+                      priority
+                    />
+                  ),
+                  title: "Instagram",
+                  link: "https://www.instagram.com/instituto_semprecomvoce",
+                },
+                {
+                  label: (
+                    <Image
+                      src="/youtube.svg"
+                      alt=""
+                      width={32}
+                      height={32}
+                      className="relative z-10 animate-float-sm"
+                      aria-hidden="true"
+                      priority
+                    />
+                  ),
+                  title: "Youtube",
+                  link: "https://www.youtube.com/@programasemprecomvocecoman5847",
+                },
               ].map((s) => (
                 <a
-                  key={s.label}
-                  href="#"
+                  key={s.title}
+                  href={s.link}
                   aria-label={s.title}
+                  target="_blank"
                   className="w-10 h-10 rounded-full bg-white/8 flex items-center justify-center
                              text-white/50 text-xs font-bold font-display uppercase
                              hover:bg-brand-pink hover:text-white transition-all duration-200"
@@ -72,15 +131,90 @@ export function Footer() {
             <h4 className="font-display font-semibold text-white/90 text-sm mb-5 tracking-wide">
               Contato
             </h4>
-            <ul className="flex flex-col gap-3.5 text-sm text-white/40">
-              <li className="flex items-center gap-2.5">
-                <span>📧</span> contato@semprecomvoce.org.br
+            <ul className="flex flex-col gap-3.5 text-sm text-white/70">
+              <li className="flex items-center gap-2.5 bounce">
+                <span>
+                  <Image
+                    src="/gmail.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="relative z-10 animate-float-sm"
+                    aria-hidden="true"
+                    priority
+                  />
+                </span>
+                <a
+                  href="mailto:contato@institutosemprecomvoce.com.br"
+                  className="text-white/70 text-sm hover:text-white/80 transition-colors duration-200"
+                >
+                  contato@institutosemprecomvoce.com.br
+                </a>
               </li>
-              <li className="flex items-center gap-2.5">
-                <span>📞</span> (11) 3000-0000
+              <li className="flex items-center gap-2.5 bounce">
+                <span>
+                  <Image
+                    src="/phone.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="relative z-10 animate-float-sm"
+                    aria-hidden="true"
+                    priority
+                  />
+                </span>{" "}
+                <a
+                  className="hover:text-white/80 transition-colors duration-200"
+                  href="tel:(47) 9971-33353"
+                >
+                  (47) 9971-33353
+                </a>{" "}
+                /{" "}
+                <a
+                  className="hover:text-white/80 transition-colors duration-200"
+                  href="tel:(47) 99971-7565"
+                >
+                  (47) 99971-7565
+                </a>
               </li>
-              <li className="flex items-center gap-2.5">
-                <span>📍</span> São Paulo, SP
+              <li className="flex items-center gap-2.5 bounce">
+                <span>
+                  <Image
+                    src="/whatsapp.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="relative z-10 animate-float-sm"
+                    aria-hidden="true"
+                    priority
+                  />
+                </span>
+                <a
+                  className="hover:text-white/80 transition-colors duration-200"
+                  href="tel:(47) 9971-33353"
+                >
+                  (47) 9971-33353
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5 bounce">
+                <span>
+                  <Image
+                    src="/google-maps.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="relative z-10 animate-float-sm"
+                    aria-hidden="true"
+                    priority
+                  />
+                </span>
+                <a
+                  className="hover:text-white/80 transition-colors duration-200"
+                  href="https://maps.app.goo.gl/SuQtGpZYTFPBLywy8"
+                  target="_blank"
+                >
+                  Rua Karl Kumlehn, 185 - Joinville, SC
+                </a>
               </li>
             </ul>
             <a

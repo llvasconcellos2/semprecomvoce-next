@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { stats, anoInicio } from "@/app/data";
 
 export function Hero() {
   return (
@@ -10,13 +11,13 @@ export function Hero() {
         <div className="absolute -bottom-24 right-1/3 w-112.5 h-112.5 rounded-full bg-brand-pink/5 blur-[100px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-0 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-1 sm:py-24 md:py-0 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         {/* ── Left: Content ── */}
         <div className="flex flex-col gap-8 order-2 lg:order-1">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
+          <div className="hidden sm:inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse-dot" />
-            ONG sem fins lucrativos · Desde 2009
+            Cuidando de você · Desde {anoInicio}
           </div>
 
           {/* Headline */}
@@ -72,11 +73,7 @@ export function Hero() {
 
           {/* Quick stats */}
           <div className="flex gap-8 pt-6 border-t border-brand-navy/[0.07]">
-            {[
-              { number: "500+", label: "Pacientes atendidos" },
-              { number: "15 anos", label: "De serviço" },
-              { number: "120+", label: "Voluntários" },
-            ].map((stat) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-0.5">
                 <span className="font-display font-extrabold text-2xl text-brand-pink leading-none">
                   {stat.number}
@@ -90,7 +87,7 @@ export function Hero() {
         </div>
 
         {/* ── Right: Visual ── */}
-        <div className="relative flex items-center justify-center order-1 lg:order-2 min-h-110">
+        <div className="hidden relative md:flex items-center justify-center order-1 lg:order-2 min-h-110">
           {/* Spinning ring */}
           <div className="absolute w-107.5 h-107.5 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
           {/* Gradient fill */}
@@ -125,10 +122,10 @@ export function Hero() {
             </div>
             <div>
               <div className="font-display font-bold text-brand-navy text-sm leading-tight">
-                1.200+
+                {stats[1].number}
               </div>
               <div className="text-[11px] text-brand-navy/50 mt-0.5">
-                famílias apoiadas
+                {stats[1].label}
               </div>
             </div>
           </div>
@@ -140,10 +137,10 @@ export function Hero() {
             </div>
             <div>
               <div className="font-display font-bold text-brand-navy text-sm leading-tight">
-                40+
+                {stats[3].number}
               </div>
               <div className="text-[11px] text-brand-navy/50 mt-0.5">
-                parcerias ativas
+                {stats[3].label}
               </div>
             </div>
           </div>
@@ -151,7 +148,7 @@ export function Hero() {
       </div>
 
       {/* Scroll cue */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+      <div className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 sm:flex flex-col items-center gap-2 z-10">
         <span className="text-[10px] font-semibold font-display tracking-[0.15em] uppercase text-brand-navy/25">
           Role para baixo
         </span>

@@ -2,25 +2,28 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1D2B4F;
+  --foreground: #1d2b4f;
 }
 
 @theme inline {
   /* Brand palette */
-  --color-brand-pink:       #E8178A;
-  --color-brand-pink-light: #FEE9F4;
-  --color-brand-blue:       #29ABE2;
-  --color-brand-blue-light: #E7F6FC;
-  --color-brand-navy:       #1D2B4F;
+  --color-brand-pink: #e8178a;
+  --color-brand-pink-light: #fee9f4;
+  --color-brand-blue: #29abe2;
+  --color-brand-blue-light: #e7f6fc;
+  --color-brand-navy: #1d2b4f;
+  --color-brand-green: #00a815;
+  --color-brand-orange: #f9781f;
+  --color-brand-purple: #724ea5;
 
   /* Semantic */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
   /* Typography */
-  --font-sans:    var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans);
   --font-display: var(--font-montserrat);
-  --font-mono:    var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono);
 }
 
 html {
@@ -33,7 +36,12 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-montserrat), Arial, sans-serif;
   color: var(--color-brand-navy);
 }
@@ -41,22 +49,52 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Keyframes ─── */
 
 @keyframes spin-slow {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-14px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes float-sm {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.85); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
 }
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ─── Utility classes ─── */
@@ -73,13 +111,16 @@ h1, h2, h3, h4, h5, h6 {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
+li.bounce:hover .animate-float-sm {
+  animation: float-sm 2s ease-in-out infinite;
+}
+
 /* Subtle grain texture layered over section backgrounds */
 .grain::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 180px 180px;
   opacity: 0.025;
