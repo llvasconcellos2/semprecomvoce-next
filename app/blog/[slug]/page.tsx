@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import posts from "@/data/posts.json";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { BlogAuthor } from "@/components/BlogAuthor";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -115,7 +116,9 @@ export default async function PostPage({
           </p>
 
           {/* Body */}
-          <div className="flex flex-col gap-6">{renderContent(post.content)}</div>
+          <div className="flex flex-col gap-6">
+            {renderContent(post.content)}
+          </div>
         </article>
 
         {/* ── Gallery ── */}
@@ -152,6 +155,9 @@ export default async function PostPage({
             </div>
           </section>
         )}
+
+        {/* ── Author ── */}
+        <BlogAuthor authorId={post.author} />
 
         {/* ── Next posts suggestion ── */}
         <section className="bg-brand-pink-light py-16">

@@ -13,7 +13,8 @@
       "Bash(Select-Object FullName)",
       "Bash(Sort-Object FullName)",
       "Bash(python3 scripts/update-blog-galleries.py)",
-      "Bash(node -e \"const d = require\\('./data/posts.json'\\); console.log\\('Posts:', d.length\\); d.forEach\\(\\(p,i\\) => i < 5 && console.log\\(i, p.date, p.slug\\)\\)\")"
+      "Bash(node -e \"const d = require\\('./data/posts.json'\\); console.log\\('Posts:', d.length\\); d.forEach\\(\\(p,i\\) => i < 5 && console.log\\(i, p.date, p.slug\\)\\)\")",
+      "WebFetch(domain:www.institutosemprecomvoce.com.br)"
     ]
   },
   "enableAllProjectMcpServers": true,

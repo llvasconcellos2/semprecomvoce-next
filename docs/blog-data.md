@@ -12,6 +12,7 @@
 # Post id
 
 - id: Para cada post deve ser criado um identificador UUID usando `crypto.randomUUID()`.
+- author: Set author to "Andrea" as a default value.
 
 # Arquivo blog-post.md
 

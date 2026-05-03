@@ -39,6 +39,10 @@
         "description": "The for the post title",
         "type": "string"
       },
+      "author": {
+        "description": "The author of the post",
+        "type": "string"
+      },
       "intro": {
         "description": "The intro for the blog post",
         "type": "string"
@@ -80,6 +84,7 @@
       "date",
       "title",
       "slug",
+      "author",
       "intro",
       "content",
       "photos",
