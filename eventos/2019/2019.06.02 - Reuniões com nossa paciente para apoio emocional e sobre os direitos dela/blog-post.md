@@ -13,3 +13,21 @@ Mas além das informações práticas, o que mais marca esses encontros é o cui
 ![Conversa e acolhimento](./02.jpg)
 
 Cada reunião como essa nos reafirma a razão de existirmos. Obrigada a todos que fazem parte dessa rede de amor e cuidado. ❤️
+
+<!-- gallery -->
+- ![Reunião com a paciente e equipe de apoio em ambiente acolhedor](./01.jpg)
+- ![Grupo reunido em conversa sobre apoio emocional e direitos da paciente](./02.jpg)
+- ![Momento de troca e escuta entre os participantes da reunião](./03.jpg)
+- ![Encontro de apoio emocional com a paciente oncológica](./04.jpg)
+- ![Continuidade da reunião de suporte e orientação à paciente](./05.jpg)
+- ![Encerramento do encontro de apoio emocional e orientação sobre direitos](./06.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- apoio emocional
+- direitos dos pacientes
+- 2019
+- Joinville
+- acompanhamento
+- saúde mental
+<!-- /tags -->

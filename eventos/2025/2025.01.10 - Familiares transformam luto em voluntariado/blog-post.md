@@ -13,3 +13,19 @@ A perda de uma esposa para o câncer deixa uma ferida que não tem prazo para cu
 Ao chegarem ao Instituto como voluntários, eles encontraram não apenas uma missão — encontraram uma família, pessoas que entendem o que é carregar esse tipo de perda, e um espaço onde a dor pode ser ressignificada em algo belo e transformador.
 
 Samuel e Juvelino, obrigada por escolherem o amor mesmo diante de tanta dor. Vocês são um exemplo que nos move. 💙
+
+<!-- gallery -->
+- ![Samuel e Juvelino, viúvos que perderam esposas para o câncer, hoje voluntários do Instituto](./image92.jpg)
+- ![Encontro de Samuel e Juvelino no Instituto Sempre Com Você como voluntários](./image124.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Samuel
+- Juvelino
+- 2025
+- voluntários
+- luto
+- familiares
+- viuvez
+- câncer
+<!-- /tags -->

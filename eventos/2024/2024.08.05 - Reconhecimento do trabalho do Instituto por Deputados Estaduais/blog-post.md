@@ -13,3 +13,19 @@ Ser reconhecido por quem representa o povo catarinense na Assembleia Legislativa
 Somos muito gratas ao Deputado Maurício Peixer e ao Deputado Fernando Krellig pelo reconhecimento e pelo apoio constante ao Instituto. O Estado de Santa Catarina tem em vocês representantes que olham com carinho para quem mais precisa de atenção e cuidado. Muito obrigada!
 
 Com renovada determinação, seguimos em frente! 💙🙏
+
+<!-- gallery -->
+- ![Equipe do Instituto com o Deputado Estadual Maurício Peixer e o Deputado Fernando Krellig](./image132.jpg)
+- ![Reconhecimento do trabalho do Instituto pelos Deputados Estaduais de Santa Catarina](./image159.jpg)
+- ![Momento de gratidão e reconhecimento institucional pelos deputados estaduais](./image160.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Maurício Peixer
+- Fernando Krellig
+- deputados estaduais
+- 2024
+- Santa Catarina
+- reconhecimento
+- ALESC
+<!-- /tags -->

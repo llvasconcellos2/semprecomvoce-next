@@ -11,3 +11,16 @@ O tratamento oncológico gera custos que vão muito além do que muitas família
 Gratidão a todos que contribuíram com essa campanha! Cada gesto de generosidade faz uma diferença real na vida do Antônio e de sua família. Não estamos sozinhos — e ele também não está!
 
 Força, Antônio! 💙
+
+<!-- gallery -->
+- ![Ação de arrecadação de fundos para o tratamento do paciente Antônio Malsckitzky](./image75.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Antônio Malsckitzky
+- 2023
+- arrecadação
+- tratamento
+- solidariedade
+- câncer
+<!-- /tags -->

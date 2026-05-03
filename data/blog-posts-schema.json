@@ -47,8 +47,8 @@
         "description": "The full content for the blog post",
         "type": "string"
       },
-      "photos": {
-        "description": "The post photos",
+      "gallery": {
+        "description": "The post photo gallery",
         "type": "array",
         "items": {
           "title": "Blog Post Photo",

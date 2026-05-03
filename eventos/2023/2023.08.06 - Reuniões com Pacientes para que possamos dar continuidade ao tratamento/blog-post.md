@@ -9,3 +9,16 @@ Essas reuniões são muito mais do que encontros administrativos. São espaços 
 ![Reunião com os pacientes para continuidade do tratamento](./image207.jpg)
 
 Cada conversa nos dá insumo para agir com mais precisão, com mais afeto e com mais eficiência. Porque cuidar bem começa por ouvir bem. Seguimos juntos! 💙
+
+<!-- gallery -->
+- ![Reunião com os pacientes do Instituto para continuidade do tratamento](./image207.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- reunião
+- pacientes
+- 2023
+- tratamento
+- continuidade
+- acompanhamento
+<!-- /tags -->

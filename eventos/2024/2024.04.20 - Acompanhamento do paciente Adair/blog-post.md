@@ -13,3 +13,18 @@ A história do Adair é a de muitos pacientes que chegam ao Instituto Sempre Com
 Ver o Adair bem hoje é a recompensa de um trabalho persistente e amoroso. Ele não desistiu — e nós nunca desistimos dele. É exatamente esse compromisso que define quem somos.
 
 Parabéns pela sua força, Adair! Que você continue se sentindo cada vez melhor. 💙
+
+<!-- gallery -->
+- ![Acompanhamento do paciente Adair, em recuperação após três cirurgias na coluna](./image152.jpg)
+- ![Adair em momento de apoio emocional pelo Instituto Sempre Com Você](./image154.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Adair
+- 2024
+- depressão
+- coluna
+- superação
+- cirurgia
+- acompanhamento
+<!-- /tags -->

@@ -15,3 +15,19 @@ O Rubens é a prova viva de que o amor gera mais amor. Ele passou pelo tratament
 Rubens, que honra ter você ao nosso lado! Você nos lembra todos os dias por que fazemos o que fazemos — e que o trabalho de cuidar gera frutos que duram por muito tempo.
 
 Muito obrigada, Rubens! 💙🌟
+
+<!-- gallery -->
+- ![Rubens, já recuperado, de volta ao Instituto como parceiro e apoiador](./image145.jpg)
+- ![Rubens ajudando o projeto do Instituto após sua superação do câncer](./image147.jpg)
+- ![Registro da parceria do ex-paciente Rubens com o Instituto Sempre Com Você](./image148.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Rubens
+- 2024
+- ex-paciente
+- voluntário
+- superação
+- parceria
+- câncer
+<!-- /tags -->

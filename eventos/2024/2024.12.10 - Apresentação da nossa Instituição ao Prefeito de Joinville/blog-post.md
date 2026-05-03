@@ -13,3 +13,17 @@ A apresentação foi uma oportunidade linda de mostrar ao Prefeito o alcance do 
 Somos muito gratas ao Prefeito Adriano Silva e à Prefeitura de Joinville pelo reconhecimento e pelo apoio ao Instituto ao longo desses anos. Joinville é uma cidade que cuida das suas pessoas — e essa parceria nos enche de esperança para o futuro!
 
 Obrigada, Prefeito! 🙏💙
+
+<!-- gallery -->
+- ![Andrea e o Prefeito de Joinville Adriano Silva no Farol do Saber durante apresentação do Instituto](./image100.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Prefeito
+- Adriano Silva
+- 2024
+- Joinville
+- Farol do Saber
+- Utilidade Pública
+- apresentação institucional
+<!-- /tags -->

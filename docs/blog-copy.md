@@ -29,4 +29,4 @@
 - Os posts podem conter fotos junto ao texto.
 - Abaixo do conteúdo do post crie uma lista de todos as fotos do evento (pasta) com a informação que será inclusa na tag "alt" de cada imagem - use comentários "gallery" para delimitar a galeria do restante do post.
 - No final de cada arquivo `blog-post.md` crie uma lista de tags para o post - use comentários "tags" para delimitar a galeria do restante do post.
-- Se a pasta já conter um arquivo `blog-post.md` o post já foi escrito, então apenas verifique se no final a listagem de todas as fotos da pasta estão dentro da seção "gallery" e passe para a próxima pasta.
+- Se a pasta já conter um arquivo `blog-post.md` o post já foi escrito (não escreva o post novamente), então apenas verifique se abaixo do conteúdo a listagem de todas as fotos da pasta estão dentro da seção "gallery" e se as tags estão no final do arquivo na sessão "tags". Se as sessões "gallery" e "tags" estiverem presentes no arquivo passe para a próxima pasta.

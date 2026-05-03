@@ -13,3 +13,19 @@ A fé do Alceu Roque é contagiante. Em momentos em que o corpo enfraquece e o e
 Alceu, sua gratidão nos enche de ânimo para continuar. Sua fé nos inspira. E seu testemunho tem o poder de iluminar o caminho de tantos outros que ainda estão no meio da batalha.
 
 Que Deus continue abençoando a sua vida com saúde e alegria! Obrigada por tudo, Alceu! 🙏🌟
+
+<!-- gallery -->
+- ![Alceu Roque com Andrea e padre em momento de gratidão pelo tratamento bem-sucedido](./image125.jpg)
+- ![Alceu Roque celebrando sua recuperação com muita fé e alegria](./image126.jpg)
+- ![Registro especial do paciente Alceu Roque agradecendo o tratamento do Instituto](./image189.png)
+<!-- /gallery -->
+
+<!-- tags -->
+- Alceu Roque
+- 2025
+- fé
+- alta médica
+- superação
+- gratidão
+- tratamento bem-sucedido
+<!-- /tags -->

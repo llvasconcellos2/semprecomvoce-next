@@ -15,3 +15,19 @@ E nesse encontro, tivemos uma conquista muito especial para celebrar: o senhor P
 ![Momentos de alegria e celebração juntos](./image122.jpg)
 
 Parabéns, seu Paulo! E a todos os oito que estiveram presentes: obrigada por encheram nossa mesa e nosso coração de alegria! 🍽️💕
+
+<!-- gallery -->
+- ![Mesa posta para os oito pacientes do Instituto reunidos em encontro especial](./image113.jpg)
+- ![Senhor Paulo, de 76 anos, com o aparelho auditivo conquistado com apoio do Instituto](./image121.jpg)
+- ![Momentos de celebração e partilha no encontro com os oito pacientes](./image122.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- mesa posta
+- 2025
+- grupo de pacientes
+- Paulo
+- aparelho auditivo
+- celebração
+- partilha
+<!-- /tags -->

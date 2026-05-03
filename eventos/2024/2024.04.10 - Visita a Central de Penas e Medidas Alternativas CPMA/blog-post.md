@@ -15,3 +15,23 @@ Nessa visita, estivemos com Rodrigo, encarregado da CPMA, e com Gabriela, Psicó
 Além da prestação de contas, também iniciamos o tratamento de dois novos pacientes: Luciana do Prado e Felipe dos Santos. Bem-vindos ao Instituto! Estamos aqui por vocês.
 
 Obrigada à CPMA de Joinville por essa parceria transformadora. Juntos, fazemos mais! 🤝
+
+<!-- gallery -->
+- ![Rodrigo, encarregado da CPMA, e Gabriela, Psicóloga da CPMA de Joinville](./rodrigo e gabriela.jpg)
+- ![Reunião de prestação de contas com a CPMA de Joinville](./image93.jpg)
+- ![Equipe do Instituto com representantes da Central de Penas e Medidas Alternativas](./image105.jpg)
+- ![Registro da visita e reunião com a CPMA de Joinville](./image106.jpg)
+- ![Discussão sobre a parceria de seis anos entre o Instituto e a CPMA](./image108.jpg)
+- ![Encerramento da reunião com a CPMA com saldo positivo e novos pacientes](./image150.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- CPMA
+- Central de Penas e Medidas Alternativas
+- 2024
+- Joinville
+- parceria
+- serviço comunitário
+- Rodrigo
+- Gabriela
+<!-- /tags -->

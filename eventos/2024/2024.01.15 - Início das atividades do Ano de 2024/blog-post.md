@@ -11,3 +11,15 @@ O início de um novo ano é sempre um momento de recomeço e esperança. Para n�
 Com planos para avançar na construção da nossa nova sede, expandir os atendimentos e fortalecer nossas parcerias, 2024 promete ser um ano de grandes realizações. Estamos animadas e gratas por mais um ano de missão.
 
 Que esse novo ano traga muitas vitórias para todos os nossos pacientes. Vamos juntos! 💪💕
+
+<!-- gallery -->
+- ![Equipe do Instituto Sempre Com Você no início das atividades de 2024](./image51.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- início de ano
+- 2024
+- atividades
+- Instituto Sempre Com Você
+- Joinville
+<!-- /tags -->

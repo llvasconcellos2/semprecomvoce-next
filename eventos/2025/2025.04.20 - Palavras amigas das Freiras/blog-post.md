@@ -13,3 +13,18 @@ Para o Alceu — um paciente que sustenta o tratamento com muita fé — esse en
 Somos gratas pela visita e pelas palavras de esperança que ficaram gravadas em nossos corações. Momentos como esse nos lembram que cuidar de alguém é também cuidar da sua espiritualidade e do seu caminho interior.
 
 Obrigada, irmãs! 🙏💙
+
+<!-- gallery -->
+- ![Alceu, Andrea e duas freiras em conversa amiga de fé e esperança](./image36.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- freiras
+- 2025
+- fé
+- esperança
+- Alceu
+- visita
+- espiritualidade
+- acolhimento
+<!-- /tags -->

@@ -11,3 +11,19 @@ Acompanhar mulheres que enfrentam o câncer é uma experiência que nos transfor
 ![Momentos de cuidado e conexão](./image57.jpg)
 
 Vânia, Claudia e Gilda: vocês merecem todo o suporte e toda a força do mundo. Estamos aqui, sempre com vocês! 💕
+
+<!-- gallery -->
+- ![Acompanhamento das pacientes Vânia, Claudia e Gilda pelo Instituto](./image37.jpg)
+- ![Momento de cuidado e apoio com as pacientes Vânia, Claudia e Gilda](./image57.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Vânia
+- Claudia
+- Gilda
+- 2024
+- acompanhamento
+- pacientes
+- mulheres
+- câncer
+<!-- /tags -->

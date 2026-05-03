@@ -11,3 +11,17 @@ Lady e Paulo chegaram ao Instituto Sempre Com Você em momentos de necessidade �
 Cada novo paciente que acolhemos é um novo compromisso que assumimos de coração. Lady e Paulo, vocês não estão sozinhos nessa caminhada. O Instituto Sempre Com Você está aqui — do diagnóstico à recuperação, em cada passo.
 
 Com amor e cuidado, sempre. 💕
+
+<!-- gallery -->
+- ![Pacientes Lady e Paulo em atendimento e acompanhamento pelo Instituto Sempre Com Você](./image102.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Lady
+- Paulo
+- 2024
+- pacientes
+- tratamento
+- acompanhamento
+- câncer
+<!-- /tags -->

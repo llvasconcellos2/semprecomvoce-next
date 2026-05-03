@@ -13,3 +13,18 @@ Encerrar o ano com o olhar voltado para o futuro é essencial para quem tem resp
 Um Instituto bem assessorado juridicamente é um Instituto que pode servir melhor, com mais segurança para seus pacientes, parceiros e voluntários. Gratidão ao nosso time jurídico pela seriedade e pelo comprometimento com a nossa causa!
 
 2025, estamos prontas para você! 🚀💙
+
+<!-- gallery -->
+- ![Reunião de planejamento para 2025 com o time de advogados do Instituto](./image86.jpg)
+- ![Alinhamento jurídico e estratégico dos projetos do Instituto para o ano de 2025](./image88.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- planejamento
+- 2024
+- advogados
+- 2025
+- projetos
+- estratégia
+- jurídico
+<!-- /tags -->

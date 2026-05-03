@@ -11,3 +11,19 @@ Conhecer os canais institucionais, saber quais conselhos podem amparar nosso tra
 ![Discussão sobre direitos e conselhos](./image71.jpg)
 
 Quando o poder público e a sociedade civil se sentam juntos para construir soluções, quem ganha são os pacientes — as pessoas que mais precisam desse cuidado. Obrigada, Prefeitura de Joinville, por abrir as portas e ouvir a nossa causa!
+
+<!-- gallery -->
+- ![Reunião com representantes da Prefeitura de Joinville sobre direitos dos pacientes](./image69.jpg)
+- ![Discussão sobre conselhos e direitos aplicados ao Instituto na Prefeitura de Joinville](./image71.jpg)
+- ![Encontro institucional com a Prefeitura de Joinville para fortalecer a parceria](./image73.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Prefeitura de Joinville
+- 2023
+- direitos
+- conselhos
+- parceria
+- Joinville
+- políticas públicas
+<!-- /tags -->

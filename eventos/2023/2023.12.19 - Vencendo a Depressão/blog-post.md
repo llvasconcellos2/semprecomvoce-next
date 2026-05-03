@@ -11,3 +11,16 @@ O diagnóstico de câncer não traz apenas dor física. Ele abala a identidade, 
 No Instituto Sempre Com Você, acreditamos que cuidar da saúde mental é tão urgente quanto cuidar do corpo. Por isso, oferecemos apoio psicológico, escuta ativa e espaços seguros para que nossos pacientes possam expressar o que sentem sem medo de julgamento.
 
 A batalha contra a depressão pode ser longa, mas ninguém precisa travá-la sozinho. Estamos aqui, sempre. 💙
+
+<!-- gallery -->
+- ![Momento de apoio e reflexão sobre como vencer a depressão durante o tratamento oncológico](./image80.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- depressão
+- saúde mental
+- 2023
+- superação
+- apoio psicológico
+- câncer
+<!-- /tags -->

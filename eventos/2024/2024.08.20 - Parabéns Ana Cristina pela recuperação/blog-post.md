@@ -11,3 +11,17 @@ A recuperação de um paciente oncológico não é apenas uma vitória médica �
 Ana Cristina, você é um exemplo de força e perseverança. Que sua recuperação seja plena e duradoura, e que você continue sendo essa luz que inspira tantas outras pessoas que ainda estão no meio da batalha.
 
 Com muito amor e carinho, parabenizamos você! 🌸💕
+
+<!-- gallery -->
+- ![Celebração da recuperação da paciente Ana Cristina](./image151.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Ana Cristina
+- 2024
+- recuperação
+- alta médica
+- comemoração
+- superação
+- câncer
+<!-- /tags -->

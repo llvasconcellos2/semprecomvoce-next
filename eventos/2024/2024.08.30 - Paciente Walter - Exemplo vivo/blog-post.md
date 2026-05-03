@@ -11,3 +11,17 @@ Quando olhamos para o Walter hoje, vemos um homem que passou por um processo mui
 Walter, obrigada por nos permitir caminhar ao seu lado e por ser essa luz tão poderosa de inspiração. Que sua história continue tocando e encorajando muitas outras pessoas!
 
 Você nos enche de orgulho. 💙
+
+<!-- gallery -->
+- ![O paciente Walter em momento que demonstra sua superação e serve de exemplo aos demais](./image149.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Walter
+- 2024
+- superação
+- exemplo
+- câncer
+- testemunho
+- inspiração
+<!-- /tags -->

@@ -13,3 +13,18 @@ Levar nossa missão ao plenário dos vereadores de Joinville é um passo de gran
 Somos muito gratas aos vereadores de Joinville pela receptividade e pelo interesse em apoiar essa causa tão nobre. Quando os representantes eleitos abrem as portas para quem trabalha pelo bem das pessoas, a cidade inteira se fortalece.
 
 Seguimos avançando, um passo de cada vez, rumo à nossa nova sede! 🏡
+
+<!-- gallery -->
+- ![Apresentação do Instituto Sempre Com Você na Câmara de Vereadores de Joinville](./image156.jpg)
+- ![Equipe do Instituto com vereadores de Joinville discutindo a nova sede](./image157.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Câmara de Vereadores
+- Joinville
+- 2024
+- nova sede
+- legislativo
+- vereadores
+- Bairro Glória
+<!-- /tags -->

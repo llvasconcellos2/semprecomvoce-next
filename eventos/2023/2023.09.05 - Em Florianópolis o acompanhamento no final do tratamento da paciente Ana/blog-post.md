@@ -15,3 +15,20 @@ Estar ao lado de Ana nesse momento tão significativo foi uma honra. O tratament
 Ana, você é um exemplo de força, fé e perseverança. O Instituto Sempre Com Você tem muito orgulho de ter caminhado ao seu lado nessa jornada. Que a vida te presenteie com saúde, alegria e muitas histórias lindas para contar!
 
 Com carinho e amor, sempre. 💕
+
+<!-- gallery -->
+- ![Acompanhamento da paciente Ana nos momentos finais do tratamento em Florianópolis](./image3.jpg)
+- ![Andrea com a paciente Ana em Florianópolis durante o encerramento do tratamento](./image4.jpg)
+- ![Registro do acompanhamento final do tratamento oncológico da paciente Ana](./image7.jpg)
+- ![Momento de celebração e gratidão pelo encerramento bem-sucedido do tratamento de Ana](./image8.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Ana
+- alta médica
+- Florianópolis
+- 2023
+- paciente
+- superação
+- tratamento oncológico
+<!-- /tags -->

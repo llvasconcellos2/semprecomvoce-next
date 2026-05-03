@@ -11,3 +11,16 @@ Foi uma visita repleta de trocas genuínas. O ambiente acolhedor do Universo Dow
 Unirem forças com quem compartilha esse compromisso com a dignidade humana é sempre motivo de esperança. Estamos ansiosas para que essa parceria se fortaleça e alcance ainda mais pessoas que precisam de apoio, acolhimento e amor.
 
 Que venham muitas colaborações juntas!
+
+<!-- gallery -->
+- ![Equipe do Instituto Sempre Com Você junto à equipe do Universo Down em visita institucional](./01.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- parceria
+- Universo Down
+- 2023
+- Joinville
+- inclusão
+- colaboração
+<!-- /tags -->

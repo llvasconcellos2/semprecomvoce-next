@@ -13,3 +13,19 @@ Quando uma esposa acompanha o marido no tratamento — em cada sessão, em cada 
 Milton e Vinícios, que bom tê-los conosco! E às suas esposas: vocês são guerreiras também. O cuidado que oferecem todos os dias é parte fundamental da cura.
 
 Gratidão a essas famílias que caminham juntas! 💕
+
+<!-- gallery -->
+- ![Milton e Vinícios com suas esposas em atendimento no Instituto Sempre Com Você](./image118.jpg)
+- ![As esposas dos pacientes Milton e Vinícios como parte fundamental do processo de cura](./image120.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Milton
+- Vinícios
+- 2025
+- pacientes
+- esposas
+- família
+- acompanhamento
+- apoio
+<!-- /tags -->

@@ -15,3 +15,19 @@ O nosso papel, nesses momentos, é oferecer o que nenhum remédio pode dar: pres
 O Instituto Sempre Com Você acredita que cuidar das famílias que perderam seus entes para o câncer é parte fundamental da nossa missão. A dor do luto merece atenção e acolhimento — e é exatamente isso que nos comprometemos a oferecer.
 
 Jovelino, você não está sozinho. Estamos aqui. 💙
+
+<!-- gallery -->
+- ![Atendimento ao Jovelino, que sofre de depressão pela perda da esposa vítima de câncer](./image104.jpg)
+- ![Conversa de apoio e escuta ativa com familiar enlutado pelo câncer](./image109.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- familiares
+- Jovelino
+- 2024
+- luto
+- depressão
+- apoio psicossocial
+- viuvez
+- câncer
+<!-- /tags -->

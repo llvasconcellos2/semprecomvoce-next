@@ -11,3 +11,17 @@ O caminho de paciente a voluntário é, talvez, a maior expressão de gratidão 
 Essa é a corrente do bem que o Instituto Sempre Com Você ajuda a criar. Cada paciente que se cura e decide olhar para trás para ajudar quem ainda está na luta é uma vitória dupla: a da cura e a do coração.
 
 Alceu e Eloi, obrigada pela parceria e por tudo o que representam para nós! 💙🌟
+
+<!-- gallery -->
+- ![Alceu e Eloi, antes pacientes e hoje voluntários do Instituto Sempre Com Você](./image50.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Alceu
+- Eloi
+- 2025
+- voluntários
+- ex-pacientes
+- superação
+- gratidão
+<!-- /tags -->

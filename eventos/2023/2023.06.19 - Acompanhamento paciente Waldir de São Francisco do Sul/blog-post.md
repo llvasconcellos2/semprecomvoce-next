@@ -11,3 +11,17 @@ Waldir é um daqueles pacientes que nos lembram por que fazemos o que fazemos. D
 O tratamento oncológico é longo e exaustivo, mas ninguém precisa percorrê-lo sozinho. Seja do lado de cá ou de lá da baía, estamos aqui — Sempre Com Você.
 
 Força, Waldir! 💙
+
+<!-- gallery -->
+- ![Andrea com o paciente Waldir e acompanhantes em momento de apoio](./image201.jpg)
+- ![Acompanhamento do paciente Waldir, vindo de São Francisco do Sul](./image228.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- acompanhamento
+- paciente
+- 2023
+- São Francisco do Sul
+- Waldir
+- apoio
+<!-- /tags -->

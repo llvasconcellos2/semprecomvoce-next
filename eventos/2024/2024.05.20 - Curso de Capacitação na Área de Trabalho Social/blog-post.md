@@ -15,3 +15,18 @@ O Instituto Sempre Com Você acredita que a qualidade do cuidado que oferecemos 
 Cada aprendizado adquirido aqui reflete diretamente na qualidade do atendimento que oferecemos. Nossos pacientes merecem o melhor, e é para isso que continuamos nos preparando.
 
 Aprendemos, crescemos e voltamos ainda mais prontas para servir! 📚💙
+
+<!-- gallery -->
+- ![Participantes no curso de capacitação em trabalho social](./image174.jpg)
+- ![Momento de aprendizado no curso de capacitação da área social](./image177.jpg)
+- ![Troca de conhecimentos e experiências no curso de trabalho social](./image179.jpg)
+- ![Encerramento do excelente curso de capacitação na área de trabalho social](./image180.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- capacitação
+- trabalho social
+- 2024
+- formação profissional
+- assistência social
+<!-- /tags -->

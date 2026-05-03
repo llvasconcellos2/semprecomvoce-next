@@ -13,3 +13,18 @@ O Antônio enfrenta a depressão com muita determinação, e o Evandro luta cont
 Esses momentos de celebração são essenciais para o processo de cura. Reconhecer o quanto já foi percorrido, celebrar cada vitória — por menor que pareça — é medicina para a alma.
 
 Parabéns, Antônio e Evandro! Vocês nos enchem de orgulho. 🎉💕
+
+<!-- gallery -->
+- ![Comemoração com Antônio Malsckitzky e Evandro Sandro de Moura](./image77.jpg)
+- ![Momento de celebração da superação dos pacientes Antônio e Evandro](./image79.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Antônio Malsckitzky
+- Evandro Sandro de Moura
+- 2023
+- comemoração
+- depressão
+- câncer
+- superação
+<!-- /tags -->

@@ -11,3 +11,19 @@ Ver uma criança enfrentar uma doença tão séria nunca é fácil. Mas o que no
 ![Momentos de carinho e cuidado](./image205.jpg)
 
 O Instituto Sempre Com Você acredita que cada criança com câncer precisa de um suporte que vai além do hospital. Família apoiada, criança mais forte. Seguimos juntos, Arthur! 💛
+
+<!-- gallery -->
+- ![Acompanhamento do paciente infantil Arthur em momento de cuidado](./image204.jpg)
+- ![Equipe do Instituto com o pequeno Arthur e sua família](./image205.jpg)
+- ![Registro do suporte oferecido ao paciente infantil Arthur](./image206.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- paciente infantil
+- Arthur
+- 2023
+- câncer
+- apoio
+- criança
+- família
+<!-- /tags -->

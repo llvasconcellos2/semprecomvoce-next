@@ -11,3 +11,16 @@ O Nelson enfrenta não apenas os desafios físicos do tratamento, mas também os
 Esse é o tipo de cuidado que faz diferença silenciosa, mas profunda. Não está nos holofotes, mas está no coração de cada paciente que sabe que não está sozinho.
 
 Força, Nelson! Estamos com você em cada passo. 💙
+
+<!-- gallery -->
+- ![Acompanhamento do paciente Nelson Kopsch a exames médicos](./image66.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Nelson Kopsch
+- 2023
+- exames
+- depressão
+- acompanhamento
+- saúde mental
+<!-- /tags -->

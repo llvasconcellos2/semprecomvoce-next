@@ -13,3 +13,17 @@ A placa que Cecília segura orgulhosa diz tudo: "Nós apoiamos o Instituto do C�
 Cecília, seja muito bem-vinda à nossa família de voluntárias! Você faz parte da nossa história — e agora vai ajudar a escrever a história de tantas outras mulheres que precisam de apoio.
 
 Com imensa gratidão e alegria! 💕🌸
+
+<!-- gallery -->
+- ![Cecília, nova voluntária e ex-paciente do Instituto, segurando placa de apoio à causa](./image83.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Cecília
+- 2025
+- voluntária
+- ex-paciente
+- superação
+- gratidão
+- engajamento
+<!-- /tags -->

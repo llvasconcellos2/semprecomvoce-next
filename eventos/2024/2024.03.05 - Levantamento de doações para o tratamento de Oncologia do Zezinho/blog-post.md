@@ -15,3 +15,20 @@ Nossa presidente Andrea foi às ruas com uma fantasia que, convenhamos, não era
 Essa é a essência do Instituto Sempre Com Você: fazer o que precisa ser feito, com alegria, com dedicação e sem reclamar do calor. O Zezinho tem ao seu lado uma equipe que vai até o fim por ele.
 
 Força, Zezinho! 💛
+
+<!-- gallery -->
+- ![Presidente Andrea em campanha de arrecadação para o tratamento oncológico do Zezinho](./image114.jpg)
+- ![Ação de levantamento de doações em prol do paciente Zezinho](./image116.jpg)
+- ![Equipe empenhada na arrecadação de fundos para o Zezinho](./image117.jpg)
+- ![Registro da campanha de doações para o tratamento de oncologia do Zezinho](./image127.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Zezinho
+- 2024
+- arrecadação
+- oncologia
+- doações
+- tratamento
+- solidariedade
+<!-- /tags -->

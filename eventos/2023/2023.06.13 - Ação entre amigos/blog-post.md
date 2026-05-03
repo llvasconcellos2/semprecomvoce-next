@@ -13,3 +13,19 @@ Eventos como este são a prova de que a solidariedade não precisa de grandes pa
 ![A solidariedade em ação](./image226.jpg)
 
 Agradeço do fundo do coração a cada pessoa que esteve presente e que entende que pequenos gestos de carinho têm o poder de mudar o dia — e às vezes, a vida — de quem está em tratamento. Vocês são a razão do Instituto existir!
+
+<!-- gallery -->
+- ![Amigos reunidos em ação solidária com presentes e cestinhas para os pacientes](./image223.jpg)
+- ![Grupo celebrando a ação entre amigos com alegria e afeto](./image225.jpg)
+- ![Momento de partilha e solidariedade durante a ação entre amigos](./image226.jpg)
+- ![Encerramento da ação entre amigos com sorriso e gratidão](./image227.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- ação solidária
+- amigos
+- 2023
+- arrecadação
+- voluntariado
+- Joinville
+<!-- /tags -->

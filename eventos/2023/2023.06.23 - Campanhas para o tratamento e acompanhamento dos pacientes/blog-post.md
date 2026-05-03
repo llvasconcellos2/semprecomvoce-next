@@ -9,3 +9,16 @@ Cada campanha que realizamos carrega o peso de uma história real: a de alguém 
 ![Campanha de tratamento e acompanhamento](./image197.jpg)
 
 Gratidão a todos os parceiros, doadores e voluntários que acreditam nessa causa. Cada contribuição, por menor que seja, chega com força total na vida de quem mais precisa. Juntos, somos mais fortes!
+
+<!-- gallery -->
+- ![Material de campanha para arrecadação de recursos para o tratamento dos pacientes](./image197.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- campanha
+- arrecadação
+- 2023
+- tratamento
+- pacientes
+- Joinville
+<!-- /tags -->

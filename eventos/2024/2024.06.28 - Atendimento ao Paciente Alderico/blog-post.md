@@ -11,3 +11,16 @@ A depressão do Alderico não chegou sozinha — ela é fruto de perdas e trauma
 O Instituto Sempre Com Você está ao lado do Alderico nesse processo de reconstrução interior. Nossa equipe oferece escuta, acolhimento e apoio psicossocial — porque acreditamos que ninguém deveria enfrentar tanto peso sozinho.
 
 Alderico, você não está sozinho. Estamos aqui, e estaremos — sempre. 💙
+
+<!-- gallery -->
+- ![Atendimento ao paciente Alderico em sessão de apoio emocional pelo Instituto](./image171.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Alderico
+- 2024
+- depressão
+- luto
+- apoio psicossocial
+- acompanhamento
+<!-- /tags -->

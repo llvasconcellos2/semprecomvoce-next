@@ -21,3 +21,26 @@ Nossa turma da terceira idade e os familiares dos pacientes foram, mais uma vez,
 Gratidão a cada pessoa que participou, ajudou na organização e contribuiu com a nossa missão. O amor que vocês demonstram aqui vai direto para o cuidado de quem mais precisa!
 
 Obrigada, Joinville, por caminhar sempre com a gente. 💙🎉
+
+<!-- gallery -->
+- ![Preparativos do evento beneficente de junho com produtos organizados para venda](./image10.jpg)
+- ![Evento beneficente de junho em pleno andamento com público presente](./image63.jpg)
+- ![Terceira idade e familiares participando ativamente do evento beneficente](./image65.jpg)
+- ![Comunidade reunida no evento beneficente de junho de 2025](./image68.jpg)
+- ![Momentos de alegria e solidariedade no evento beneficente](./image70.jpg)
+- ![Ambiente festivo e acolhedor do evento beneficente de junho](./image72.jpg)
+- ![Participantes do evento beneficente apoiando a missão do Instituto](./image74.jpg)
+- ![Registros do evento beneficente de junho com ótima participação](./image76.jpg)
+- ![Voluntários e familiares trabalhando juntos no evento beneficente](./image78.jpg)
+- ![Encerramento do evento beneficente de junho com gratidão e sucesso](./image82.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- evento beneficente
+- 2025
+- junho
+- terceira idade
+- familiares
+- arrecadação
+- solidariedade
+<!-- /tags -->

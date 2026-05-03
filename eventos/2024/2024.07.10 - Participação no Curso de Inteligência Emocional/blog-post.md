@@ -13,3 +13,17 @@ Trabalhar com pacientes oncológicos exige muito além de boa vontade. Exige pre
 Omar Ghanem é referência em gestão emocional e liderança — e foi uma honra aprender com ele. Cada ferramenta adquirida aqui vai diretamente para o nosso atendimento cotidiano. Nossos pacientes merecem quem cuida com inteligência e com o coração.
 
 Obrigada, Omar! 🙏
+
+<!-- gallery -->
+- ![Equipe do Instituto participando do Curso de Inteligência Emocional com Omar Ghanem](./image138.jpg)
+- ![Aprendizado sobre inteligência emocional aplicada ao cuidado de pacientes oncológicos](./image141.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- inteligência emocional
+- Omar Ghanem
+- 2024
+- capacitação
+- formação
+- palestra
+<!-- /tags -->

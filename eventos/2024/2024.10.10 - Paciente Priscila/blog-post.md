@@ -15,3 +15,17 @@ A história da Ana inspira, e é lindo ver como as histórias de superação den
 Priscila, seja muito bem-vinda! Estamos aqui para caminhar ao seu lado, ouvir sua história, entender suas necessidades e oferecer todo o suporte que você merece. Você não está sozinha nessa jornada — nunca estará.
 
 Com carinho e acolhimento. 💕
+
+<!-- gallery -->
+- ![A nova paciente Priscila iniciando seu acompanhamento no Instituto Sempre Com Você](./image153.jpg)
+- ![Priscila em seu primeiro atendimento, inspirada no exemplo da paciente Ana](./image155.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Priscila
+- 2024
+- nova paciente
+- câncer
+- início de tratamento
+- esperança
+<!-- /tags -->

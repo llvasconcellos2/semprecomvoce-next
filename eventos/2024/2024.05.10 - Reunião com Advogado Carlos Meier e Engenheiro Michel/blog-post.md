@@ -13,3 +13,18 @@ Construir uma sede própria para o Instituto Sempre Com Você exige muito além 
 A Carlos e Michel: muito obrigada pela dedicação e pelo profissionalismo. Saber que pessoas qualificadas e comprometidas estão ao nosso lado nessa empreitada nos dá segurança e confiança para seguir em frente.
 
 Nossa nova sede está chegando — e ela vai ser linda! 🏗️💕
+
+<!-- gallery -->
+- ![Reunião de planejamento da nova sede com o advogado Carlos Meier e o engenheiro Michel](./image158.jpg)
+- ![Discussão técnica e jurídica sobre o projeto da nova sede do Instituto](./image178.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- nova sede
+- Carlos Meier
+- Michel
+- 2024
+- planejamento
+- engenharia
+- jurídico
+<!-- /tags -->

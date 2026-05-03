@@ -11,3 +11,16 @@ Ter o apoio de um vereador como o Brandel Junior significa ter uma voz a mais no
 Somos gratas ao Vereador Brandel Junior por reconhecer a importância do Instituto Sempre Com Você e por abraçar essa causa tão nobre. Joinville é uma cidade que cuida das suas pessoas — e representantes como ele são a prova disso.
 
 Obrigada, Vereador! Contamos com sua parceria sempre! 🙏
+
+<!-- gallery -->
+- ![Andrea com o Vereador Brandel Junior em encontro de apoio ao Instituto na Câmara de Joinville](./image146.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Brandel Junior
+- vereador
+- 2024
+- Joinville
+- apoio
+- Câmara de Vereadores
+<!-- /tags -->

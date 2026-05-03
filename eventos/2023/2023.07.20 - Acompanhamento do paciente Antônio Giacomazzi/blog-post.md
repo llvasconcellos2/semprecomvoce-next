@@ -11,3 +11,18 @@ O Antônio é um guerreiro. Enfrentar o câncer exige uma força que vai muito a
 ![Momentos de cuidado e apoio](./image202.jpg)
 
 Continuamos firmes nesse compromisso: estar presentes, de verdade, em cada passo dessa caminhada. Força, Antônio! 💙
+
+<!-- gallery -->
+- ![Acompanhamento do paciente Antônio Giacomazzi em sessão de apoio](./image201.jpg)
+- ![Momento de cuidado e presença com Antônio Giacomazzi](./image202.jpg)
+- ![Registro do acompanhamento oncológico e emocional do paciente Antônio](./image203.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- acompanhamento
+- Antônio Giacomazzi
+- 2023
+- câncer
+- apoio emocional
+- paciente
+<!-- /tags -->

@@ -11,3 +11,18 @@ A história do esposo da Katia nos emociona profundamente. Estar presente em cad
 Ao esposo da Katia e a todos os familiares que acompanham seus entes queridos com tanta dedicação: obrigada! Vocês são parte fundamental da cura. O Instituto Sempre Com Você tem muito orgulho de acolher também quem caminha ao lado dos pacientes.
 
 Que esse amor continue sendo a maior medicina. 💕
+
+<!-- gallery -->
+- ![Pacientes Arthur, Francisco e Katia com seu esposo em visita ao Instituto](./image172.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Arthur
+- Francisco
+- Katia
+- 2024
+- família
+- apoio
+- esposo
+- acompanhamento
+<!-- /tags -->

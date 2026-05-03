@@ -15,3 +15,20 @@ Para garantir que a Sônia tivesse acesso aos medicamentos de que precisava, o I
 Ver a Sônia bem, com saúde renovada, é a prova de que cada boneco vendido, cada real arrecadado, cada hora dedicada valeu imensamente a pena. Obrigada a todos que nos ajudaram nessa campanha!
 
 Sônia, você é incrível! 🌸
+
+<!-- gallery -->
+- ![Paciente Sônia em acompanhamento pelo Instituto Sempre Com Você](./image9.jpg)
+- ![Ação de venda de bonecos de pano para arrecadar fundos para os remédios da Sônia](./image12.jpg)
+- ![Registro das atividades de arrecadação em prol da paciente Sônia](./image13.jpg)
+- ![Comemoração do caso de sucesso da paciente Sônia](./image64.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Sônia
+- 2023
+- bonecos de pano
+- arrecadação
+- superação
+- caso de sucesso
+- remédios
+<!-- /tags -->

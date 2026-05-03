@@ -13,3 +13,17 @@ Quando um paciente chega ao Instituto com a necessidade de apoio financeiro para
 Obrigada a cada pessoa que contribuiu, que divulgou, que orou e que acreditou nessa campanha. O Mario Junior tem em vocês uma rede de apoio que faz toda a diferença.
 
 Força, Mario Junior! Estamos com você! 💙
+
+<!-- gallery -->
+- ![Ação de arrecadação de fundos para o tratamento oncológico do paciente Mario Junior](./image54.jpg)
+- ![Comunidade unida na campanha em prol do Mario Junior](./image56.jpg)
+<!-- /gallery -->
+
+<!-- tags -->
+- Mario Junior
+- 2024
+- arrecadação
+- tratamento
+- solidariedade
+- câncer
+<!-- /tags -->
