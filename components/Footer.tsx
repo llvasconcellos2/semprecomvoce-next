@@ -1,5 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { anoInicio } from "@/data/data";
+
+const footerLinks = [
+  { label: "Quem Somos", href: "/#sobre" },
+  { label: "Nossos Programas", href: "/#programas" },
+  { label: "Como Ajudar", href: "/#doe" },
+  { label: "Transparência", href: "/#transparencia" },
+  { label: "Blog", href: "/blog" },
+];
 
 export function Footer() {
   return (
@@ -107,20 +116,14 @@ export function Footer() {
               Instituto
             </h4>
             <ul className="flex flex-col gap-3.5">
-              {[
-                "Quem Somos",
-                "Nossos Programas",
-                "Como Ajudar",
-                "Transparência",
-                "Blog",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+              {footerLinks.map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
                     className="text-white/40 text-sm hover:text-white/80 transition-colors duration-200"
                   >
-                    {link}
-                  </a>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
