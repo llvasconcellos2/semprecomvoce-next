@@ -27,7 +27,7 @@ function PostCard({ post }: { post: Post }) {
       href={`/blog/${post.slug}`}
       className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-brand-navy/8 hover:border-brand-pink/25 shadow-[0_2px_16px_-4px_rgba(29,43,79,0.08)] hover:shadow-[0_12px_40px_-8px_rgba(232,23,138,0.16)] transition-all duration-300"
     >
-      <div className="relative aspect-[16/9] overflow-hidden bg-brand-pink-light">
+      <div className="relative aspect-video overflow-hidden bg-brand-pink-light">
         {cover ? (
           <Image
             src={cover.path}
@@ -41,7 +41,7 @@ function PostCard({ post }: { post: Post }) {
             <span className="text-brand-pink/20 text-5xl select-none">♥</span>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-brand-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
       <div className="flex flex-col flex-1 p-6 gap-3">
@@ -86,7 +86,7 @@ function FeaturedPost({ post }: { post: Post }) {
       href={`/blog/${post.slug}`}
       className="group grid md:grid-cols-2 gap-8 lg:gap-16 items-center"
     >
-      <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-brand-pink-light shadow-[0_24px_64px_-16px_rgba(232,23,138,0.22)]">
+      <div className="relative aspect-4/3 rounded-3xl overflow-hidden bg-brand-pink-light shadow-[0_24px_64px_-16px_rgba(232,23,138,0.22)]">
         {cover && (
           <Image
             src={cover.path}
@@ -97,7 +97,7 @@ function FeaturedPost({ post }: { post: Post }) {
             priority
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-brand-navy/30 to-transparent" />
       </div>
 
       <div className="flex flex-col gap-5">
@@ -113,7 +113,9 @@ function FeaturedPost({ post }: { post: Post }) {
         </h2>
 
         <p className="text-brand-navy/60 leading-relaxed text-base">
-          {post.intro.length > 180 ? post.intro.slice(0, 180) + "…" : post.intro}
+          {post.intro.length > 180
+            ? post.intro.slice(0, 180) + "…"
+            : post.intro}
         </p>
 
         <div className="flex items-center gap-1.5 flex-wrap">
@@ -134,7 +136,9 @@ function FeaturedPost({ post }: { post: Post }) {
               →
             </span>
           </span>
-          <span className="text-brand-navy/35 text-sm">{formatDate(post.date)}</span>
+          <span className="text-brand-navy/35 text-sm">
+            {formatDate(post.date)}
+          </span>
         </div>
       </div>
     </Link>
@@ -167,7 +171,7 @@ export default function BlogPage() {
             <span className="inline-block text-brand-pink text-xs font-display font-semibold tracking-[0.2em] uppercase mb-5">
               Blog
             </span>
-            <h1 className="font-display font-extrabold text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 tracking-tight">
+            <h1 className="font-display font-extrabold text-white! text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 tracking-tight">
               Histórias de
               <br />
               <span className="text-brand-pink">Cuidado</span>
@@ -185,13 +189,13 @@ export default function BlogPage() {
 
         {/* ── Featured post ── */}
         {featured && (
-          <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24 border-b border-brand-navy/6">
+          <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8 border-b border-brand-navy/6">
             <FeaturedPost post={featured} />
           </section>
         )}
 
         {/* ── All posts grid ── */}
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
           <div className="flex items-baseline gap-3 mb-12">
             <h2 className="font-display font-bold text-brand-navy text-2xl">
               Todas as histórias
