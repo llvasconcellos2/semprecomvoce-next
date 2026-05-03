@@ -1,23 +1,63 @@
+import { PolaroidSwiper } from "./PolaroidSwiper";
+
 export function Mission() {
+  const POLAROIDS = [
+    {
+      image:
+        "/blog/palavras-amigas-das-freiras-fe-e-esperanca-que-chegam-de-maos-dadas/img-001.jpg",
+      description:
+        "Alceu, Andrea e duas freiras em conversa amiga de fé e esperança",
+    },
+    {
+      image:
+        "/blog/margarete-uma-historia-de-coragem-que-merece-ser-contada/img-001.jpg",
+      description:
+        "Paciente Margarete em acompanhamento pelo Instituto Sempre Com Você",
+    },
+    {
+      image:
+        "/blog/mesa-posta-para-oito-cuidado-que-tambem-alimenta-a-alma/img-001.jpg",
+      description:
+        "Senhor Paulo, de 76 anos, com o aparelho auditivo conquistado com apoio do Instituto",
+    },
+    {
+      image:
+        "/blog/alceu-roque-com-muita-fe-um-tratamento-bem-sucedido/img-002.jpg",
+      description:
+        "Alceu Roque celebrando sua recuperação com muita fé e alegria",
+    },
+    {
+      image:
+        "/blog/luto-que-vira-amor-samuel-e-juvelino-transformam-a-dor-em-voluntariado/img-001.jpg",
+      description: "Samuel e Juvelino: familiares que se tornaram voluntários",
+    },
+    {
+      image:
+        "/blog/com-o-prefeito-de-joinville-apresentando-nossa-missao-no-farol-do-saber/img-001.jpg",
+      description:
+        "Andrea com o Prefeito de Joinville, Adriano Silva, no Farol do Saber",
+    },
+    {
+      image:
+        "/blog/o-instituto-recebe-o-apoio-do-vereador-brandel-junior/img-001.jpg",
+      description:
+        "Andrea com o Vereador Brandel Junior: apoio ao Instituto na Câmara de Joinville",
+    },
+    {
+      image:
+        "/blog/reconhecidos-pelos-deputados-estaduais-uma-honra-que-nos-fortalece/img-001.jpg",
+      description:
+        "Instituto com o Deputado Estadual Maurício Peixer e o Deputado Fernando Krellig",
+    },
+  ];
+
   return (
     <section id="sobre" className="py-28 lg:py-36 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 xl:gap-28 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 xl:gap-28 items-center justify-center">
         {/* Image block */}
-        <div className="relative order-2 lg:order-1">
-          <div className="absolute -top-5 -left-5 w-full h-full rounded-3xl bg-brand-pink-light" />
-          <div className="absolute -bottom-5 -right-5 w-full h-full rounded-3xl border-2 border-brand-blue/20" />
-          <div className="relative rounded-3xl overflow-hidden aspect-4/3 shadow-2xl shadow-brand-navy/10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://placehold.co/800x600/FEE9F4/E8178A?text=Instituto+Sempre+Com+Você"
-              alt="Nossa equipe em ação"
-              className="w-full h-full object-cover"
-            />
-            {/* Color treatment overlay */}
-            <div className="absolute inset-0 bg-linear-to-t from-brand-navy/30 via-transparent to-transparent mix-blend-multiply" />
-          </div>
+        <div className="relative order-2 lg:order-1 flex items-center justify-center">
+          <PolaroidSwiper polaroids={POLAROIDS} />
         </div>
-
         {/* Text block */}
         <div className="flex flex-col gap-6 order-1 lg:order-2">
           <div className="text-brand-pink text-[11px] font-bold font-display tracking-[0.18em] uppercase">

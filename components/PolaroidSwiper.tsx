@@ -2,24 +2,25 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState, useCallback } from "react";
+import { Swanky_and_Moo_Moo } from "next/font/google";
+
+const swankyAndMooMoo = Swanky_and_Moo_Moo({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 interface Polaroid {
   image: string;
-  title: string;
   description: string;
 }
 
 interface PolaroidSwiperProps {
   polaroids: Polaroid[];
-  cardWidth?: number;
-  cardHeight?: number;
   className?: string;
 }
 
 export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
   polaroids,
-  cardWidth = 256, // 16rem = 256px
-  cardHeight = 352, // 22rem = 352px
   className = "",
 }) => {
   const cardStackRef = useRef<HTMLDivElement>(null);
@@ -27,10 +28,18 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
   const startX = useRef(0);
   const currentX = useRef(0);
   const animationFrameId = useRef<number | null>(null);
+  const isRevealAnimating = useRef(false);
+  const revealTimers = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const [isRevealed, setIsRevealed] = useState(false);
 
   const [cardOrder, setCardOrder] = useState<number[]>(() =>
     Array.from({ length: polaroids.length }, (_, i) => i),
   );
+
+  const clearRevealTimers = useCallback(() => {
+    revealTimers.current.forEach(clearTimeout);
+    revealTimers.current = [];
+  }, []);
 
   const getDurationFromCSS = useCallback(
     (variableName: string, element?: HTMLElement | null): number => {
@@ -85,13 +94,16 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
   const handleStart = useCallback(
     (clientX: number) => {
       if (isSwiping.current) return;
+      clearRevealTimers();
+      setIsRevealed(false);
+      isRevealAnimating.current = false;
       isSwiping.current = true;
       startX.current = clientX;
       currentX.current = clientX;
       const card = getActiveCard();
       if (card) card.style.transition = "none";
     },
-    [getActiveCard],
+    [getActiveCard, clearRevealTimers],
   );
 
   const handleEnd = useCallback(() => {
@@ -190,19 +202,53 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
     updatePositions();
   }, [cardOrder, updatePositions]);
 
+  // Scroll-triggered fan reveal animation
+  useEffect(() => {
+    const element = cardStackRef.current;
+    if (!element) return;
+
+    const triggerReveal = () => {
+      if (isRevealAnimating.current) return;
+      isRevealAnimating.current = true;
+
+      // Fan out after short delay
+      const t1 = setTimeout(() => setIsRevealed(true), 350);
+      // Fan back in after hold
+      const t2 = setTimeout(() => setIsRevealed(false), 2000);
+      // Clear animating flag after return transition completes
+      const t3 = setTimeout(() => {
+        isRevealAnimating.current = false;
+      }, 2750);
+
+      revealTimers.current = [t1, t2, t3];
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) triggerReveal();
+      },
+      { threshold: 0.4 },
+    );
+
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+      clearRevealTimers();
+    };
+  }, [clearRevealTimers]);
+
   return (
     <section
-      className={`relative grid place-content-center select-none ${className}`}
+      className={`relative grid place-content-center select-none ${className} max-w-133 min-w-95 md:min-w-125 max-h-130 min-h-125`}
       ref={cardStackRef}
       style={
         {
-          width: cardWidth + 32,
-          height: cardHeight + 32,
           touchAction: "none",
           transformStyle: "preserve-3d",
           "--card-perspective": "700px",
-          "--card-z-offset": "12px",
-          "--card-y-offset": "7px",
+          "--card-z-offset": "6px",
+          "--card-y-offset": "10px",
           "--card-max-z-index": polaroids.length.toString(),
           "--card-swap-duration": "0.3s",
         } as React.CSSProperties
@@ -210,22 +256,45 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
     >
       {cardOrder.map((originalIndex, displayIndex) => {
         const isFirst = displayIndex === 0;
+        const isSecond = displayIndex === 1;
+        const isThird = displayIndex === 2;
+
+        const fanRotateDeg = isRevealed
+          ? isSecond
+            ? -22
+            : isThird
+              ? 22
+              : 0
+          : 0;
+        const fanTranslatePx = isRevealed
+          ? isSecond
+            ? -55
+            : isThird
+              ? 55
+              : 0
+          : 0;
+
         return (
           <article
             key={`${polaroids[originalIndex].image}-${originalIndex}`}
             className="image-card absolute cursor-grab active:cursor-grabbing
                      place-self-center border border-slate-400 rounded-xl
-                     shadow-md overflow-hidden will-change-transform"
+                     shadow-md overflow-hidden will-change-transform max-w-125
+                     min-w-95 md:min-w-125 max-h-130 min-h-125
+                     "
             style={
               {
                 "--i": (displayIndex + 1).toString(),
                 zIndex: polaroids.length - displayIndex,
-                width: cardWidth,
-                height: cardHeight,
+                transition:
+                  isSecond || isThird
+                    ? "transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)"
+                    : undefined,
                 transform: `perspective(var(--card-perspective))
                        translateZ(calc(-1 * var(--card-z-offset) * var(--i)))
                        translateY(calc(var(--card-y-offset) * var(--i)))
-                       translateX(var(--swipe-x, 0px))
+                       translateX(calc(var(--swipe-x, 0px) + ${fanTranslatePx}px))
+                       rotateZ(${fanRotateDeg}deg)
                        rotateY(var(--swipe-rotate, 0deg))`,
               } as React.CSSProperties
             }
@@ -233,16 +302,12 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
             <Card
               className={isFirst ? "z-10 cursor-pointer" : "z-0"}
               image={polaroids[originalIndex].image}
+              alt={polaroids[originalIndex].description}
             >
-              <h2>{polaroids[originalIndex].title}</h2>
-              <p>{polaroids[originalIndex].description}</p>
+              <p className="text-ellipsis overflow-hidden">
+                {polaroids[originalIndex].description}
+              </p>
             </Card>
-            <img
-              src={polaroids[originalIndex].image}
-              alt={polaroids[originalIndex].title}
-              className="w-full h-full object-cover select-none pointer-events-none"
-              draggable={false}
-            />
           </article>
         );
       })}
@@ -253,30 +318,36 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
 const Card = ({
   className,
   image,
+  alt,
   children,
 }: {
   className?: string;
   image?: string;
+  alt?: string;
   children?: React.ReactNode;
 }) => {
   return (
     <div
       className={cn(
-        "w-87.5 cursor-pointer h-100 overflow-hidden bg-white rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.02)] border border-gray-200/80",
+        "w-full cursor-pointer h-full min-h-200 overflow-hidden bg-white rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.02)] border border-gray-200/80 p-4",
         className,
       )}
     >
       {image && (
-        <div className="relative h-72 rounded-xl shadow-lg overflow-hidden w-[calc(100%-1rem)] mx-2 mt-2">
+        <div className="relative h-100 rounded-xl shadow-[0_0_6px_rgba(0,0,0,0.5)] overflow-hidden w-[calc(100%-1rem)] mx-2 mt-2">
           <img
             src={image}
-            alt="card"
+            alt={alt || "Polaroid image"}
             className="object-cover mt-0 w-full h-full"
           />
         </div>
       )}
       {children && (
-        <div className="px-4 p-2 flex flex-col gap-y-2">{children}</div>
+        <div
+          className={`px-4 p-2 flex flex-col gap-y-2 ${swankyAndMooMoo.className} text-2xl`}
+        >
+          {children}
+        </div>
       )}
     </div>
   );
