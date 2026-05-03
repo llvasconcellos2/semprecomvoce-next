@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { stats, anoInicio } from "@/app/data";
+import { stats, anoInicio } from "@/data/data";
 
 export function Hero() {
   return (

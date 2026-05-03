@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Blog Posts",
+  "description": "Array of blog posts",
+  "type": "array",
+  "items": {
+    "title": "Blog Post",
+    "description": "A blog post",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The unique identifier for a post",
+        "type": "string"
+      },
+      "date": {
+        "description": "The post date",
+        "type": "object",
+        "properties": {
+          "year": {
+            "description": "The year the post was written",
+            "type": "number"
+          },
+          "month": {
+            "description": "The month of the year the post was written",
+            "type": "number"
+          },
+          "day": {
+            "description": "The day of the month the post was written",
+            "type": "number"
+          }
+        },
+        "required": ["year", "month", "day"]
+      },
+      "title": {
+        "description": "The title for the blog post",
+        "type": "string"
+      },
+      "slug": {
+        "description": "The for the post title",
+        "type": "string"
+      },
+      "intro": {
+        "description": "The intro for the blog post",
+        "type": "string"
+      },
+      "content": {
+        "description": "The full content for the blog post",
+        "type": "string"
+      },
+      "photos": {
+        "description": "The post photos",
+        "type": "array",
+        "items": {
+          "title": "Blog Post Photo",
+          "description": "A blog post picture or photo",
+          "type": "object",
+          "properties": {
+            "path": {
+              "description": "The path of the file",
+              "type": "string"
+            },
+            "alt": {
+              "description": "The alt description of the image",
+              "type": "string"
+            }
+          },
+          "required": ["path", "alt"]
+        }
+      },
+      "tags": {
+        "description": "The post tags",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "id",
+      "date",
+      "title",
+      "slug",
+      "intro",
+      "content",
+      "photos",
+      "tags"
+    ]
+  }
+}

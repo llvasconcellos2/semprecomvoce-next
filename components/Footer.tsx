@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { anoInicio } from "@/app/data";
+import { anoInicio } from "@/data/data";
 
 export function Footer() {
   return (

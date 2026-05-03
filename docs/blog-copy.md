@@ -26,5 +26,7 @@
 - Para cada evento (pasta) escreva um post do blog em Markdown contendo uma introdução (a introdução será exibida no índice do blog junto com uma foto em destaque mas a introdução fará parte do conteúdo do post) - use comentários para delimitar a introdução do restante do post.
 - Salve o que escrever em um arquivo `blog-post.md`.
 - O conteúdo não deve ser muito extenso.
-- Se a pasta já conter um arquivo `blog-post.md` o post já foi escrito e passe para a próxima pasta.
 - Os posts podem conter fotos junto ao texto.
+- Abaixo do conteúdo do post crie uma lista de todos as fotos do evento (pasta) com a informação que será inclusa na tag "alt" de cada imagem - use comentários "gallery" para delimitar a galeria do restante do post.
+- No final de cada arquivo `blog-post.md` crie uma lista de tags para o post - use comentários "tags" para delimitar a galeria do restante do post.
+- Se a pasta já conter um arquivo `blog-post.md` o post já foi escrito, então apenas verifique se no final a listagem de todas as fotos da pasta estão dentro da seção "gallery" e passe para a próxima pasta.

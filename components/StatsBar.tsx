@@ -1,4 +1,4 @@
-import { stats } from "@/app/data";
+import { stats } from "@/data/data";
 
 export function StatsBar() {
   return (
