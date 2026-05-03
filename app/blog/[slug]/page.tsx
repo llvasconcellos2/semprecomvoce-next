@@ -73,7 +73,7 @@ export default async function PostPage({
               sizes="100vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-brand-navy/10 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-brand-navy/70 via-brand-navy/10 to-transparent" />
           </div>
         )}
 
