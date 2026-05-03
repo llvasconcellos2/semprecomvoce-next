@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gen-post-data": "node scripts/gen-post-data.js"
   },
   "dependencies": {
     "next": "16.2.4",
