@@ -66,6 +66,14 @@
             "alt": {
               "description": "The alt description of the image",
               "type": "string"
+            },
+            "height": {
+              "description": "The height of the image",
+              "type": "number"
+            },
+            "width": {
+              "description": "The width of the image",
+              "type": "number"
             }
           },
           "required": ["path", "alt"]

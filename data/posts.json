@@ -1,6 +1,6 @@
 [
   {
-    "id": "2adf6eb3-ed5c-4a28-898f-22982dfa89c5",
+    "id": "1ec04977-56bf-4e81-92e9-0426e6f04762",
     "date": {
       "year": 2019,
       "month": 6,
@@ -14,27 +14,39 @@
     "gallery": [
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-001.jpg",
-        "alt": "Reunião com a paciente e equipe de apoio em ambiente acolhedor"
+        "alt": "Reunião com a paciente e equipe de apoio em ambiente acolhedor",
+        "height": 498,
+        "width": 664
       },
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-002.jpg",
-        "alt": "Grupo reunido em conversa sobre apoio emocional e direitos da paciente"
+        "alt": "Grupo reunido em conversa sobre apoio emocional e direitos da paciente",
+        "height": 484,
+        "width": 647
       },
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-003.jpg",
-        "alt": "Momento de troca e escuta entre os participantes da reunião"
+        "alt": "Momento de troca e escuta entre os participantes da reunião",
+        "height": 476,
+        "width": 634
       },
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-004.jpg",
-        "alt": "Encontro de apoio emocional com a paciente oncológica"
+        "alt": "Encontro de apoio emocional com a paciente oncológica",
+        "height": 434,
+        "width": 578
       },
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-005.jpg",
-        "alt": "Continuidade da reunião de suporte e orientação à paciente"
+        "alt": "Continuidade da reunião de suporte e orientação à paciente",
+        "height": 438,
+        "width": 328
       },
       {
         "path": "/blog/reunioes-com-nossa-paciente-apoio-emocional-e-orientacao-sobre-seus-direitos/img-006.jpg",
-        "alt": "Encerramento do encontro de apoio emocional e orientação sobre direitos"
+        "alt": "Encerramento do encontro de apoio emocional e orientação sobre direitos",
+        "height": 441,
+        "width": 331
       }
     ],
     "tags": [
@@ -47,7 +59,7 @@
     ]
   },
   {
-    "id": "a31effa4-c6cc-47de-ab0c-67c78e6b8f46",
+    "id": "3b3e6794-1bd3-4dab-a2e7-013f7d94d377",
     "date": {
       "year": 2023,
       "month": 6,
@@ -61,7 +73,9 @@
     "gallery": [
       {
         "path": "/blog/visita-ao-universo-down-uma-parceria-que-nasce-do-amor-ao-proximo/img-001.jpg",
-        "alt": "Equipe do Instituto Sempre Com Você junto à equipe do Universo Down em visita institucional"
+        "alt": "Equipe do Instituto Sempre Com Você junto à equipe do Universo Down em visita institucional",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -74,7 +88,7 @@
     ]
   },
   {
-    "id": "864b8a72-03a3-464f-81c1-3ee96e222e9a",
+    "id": "a3189723-7af9-4592-b137-296b8554fc14",
     "date": {
       "year": 2023,
       "month": 6,
@@ -88,27 +102,39 @@
     "gallery": [
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-001.jpg",
-        "alt": "Andrea com uma das pacientes assistidas pelo Instituto em momento de acolhimento"
+        "alt": "Andrea com uma das pacientes assistidas pelo Instituto em momento de acolhimento",
+        "height": 502,
+        "width": 669
       },
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-002.jpg",
-        "alt": "Momento de carinho e presença com as assistidas do Instituto"
+        "alt": "Momento de carinho e presença com as assistidas do Instituto",
+        "height": 514,
+        "width": 385
       },
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-003.jpg",
-        "alt": "Visita de acompanhamento às pacientes assistidas"
+        "alt": "Visita de acompanhamento às pacientes assistidas",
+        "height": 504,
+        "width": 674
       },
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-004.jpg",
-        "alt": "Registro do cuidado e suporte oferecido às assistidas"
+        "alt": "Registro do cuidado e suporte oferecido às assistidas",
+        "height": 504,
+        "width": 378
       },
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-005.jpg",
-        "alt": "Encontro de apoio com as mulheres acompanhadas pelo Instituto"
+        "alt": "Encontro de apoio com as mulheres acompanhadas pelo Instituto",
+        "height": 498,
+        "width": 664
       },
       {
         "path": "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-006.jpg",
-        "alt": "Momento de alegria e conexão entre a equipe e as assistidas"
+        "alt": "Momento de alegria e conexão entre a equipe e as assistidas",
+        "height": 493,
+        "width": 370
       }
     ],
     "tags": [
@@ -122,7 +148,7 @@
     ]
   },
   {
-    "id": "6eedfdcc-657f-4eba-946f-befceae5c37e",
+    "id": "3f33eff0-c5a4-4231-bc9b-bd831a254209",
     "date": {
       "year": 2023,
       "month": 6,
@@ -136,19 +162,27 @@
     "gallery": [
       {
         "path": "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-001.jpg",
-        "alt": "Amigos reunidos em ação solidária com presentes e cestinhas para os pacientes"
+        "alt": "Amigos reunidos em ação solidária com presentes e cestinhas para os pacientes",
+        "height": 616,
+        "width": 461
       },
       {
         "path": "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-002.jpg",
-        "alt": "Grupo celebrando a ação entre amigos com alegria e afeto"
+        "alt": "Grupo celebrando a ação entre amigos com alegria e afeto",
+        "height": 623,
+        "width": 466
       },
       {
         "path": "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-003.jpg",
-        "alt": "Momento de partilha e solidariedade durante a ação entre amigos"
+        "alt": "Momento de partilha e solidariedade durante a ação entre amigos",
+        "height": 672,
+        "width": 377
       },
       {
         "path": "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-004.jpg",
-        "alt": "Encerramento da ação entre amigos com sorriso e gratidão"
+        "alt": "Encerramento da ação entre amigos com sorriso e gratidão",
+        "height": 353,
+        "width": 471
       }
     ],
     "tags": [
@@ -161,7 +195,7 @@
     ]
   },
   {
-    "id": "e5eba7da-5f97-41ff-a9c2-3255afccd4f0",
+    "id": "508f01f9-7b1c-4c58-bb35-0078b840b2c4",
     "date": {
       "year": 2023,
       "month": 6,
@@ -175,11 +209,15 @@
     "gallery": [
       {
         "path": "/blog/acompanhamento-do-paciente-waldir-o-cuidado-que-vai-alem-das-fronteiras-da-cidade/img-001.jpg",
-        "alt": "Andrea com o paciente Waldir e acompanhantes em momento de apoio"
+        "alt": "Andrea com o paciente Waldir e acompanhantes em momento de apoio",
+        "height": 1280,
+        "width": 720
       },
       {
         "path": "/blog/acompanhamento-do-paciente-waldir-o-cuidado-que-vai-alem-das-fronteiras-da-cidade/img-002.jpg",
-        "alt": "Acompanhamento do paciente Waldir, vindo de São Francisco do Sul"
+        "alt": "Acompanhamento do paciente Waldir, vindo de São Francisco do Sul",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -192,7 +230,7 @@
     ]
   },
   {
-    "id": "ccb34d44-220a-4fb0-9c9a-ee0b5fd971f2",
+    "id": "4a7e6995-1151-4c63-97a6-deb262312565",
     "date": {
       "year": 2023,
       "month": 6,
@@ -206,7 +244,9 @@
     "gallery": [
       {
         "path": "/blog/campanhas-para-o-tratamento-e-acompanhamento-dos-nossos-pacientes/img-001.jpg",
-        "alt": "Material de campanha para arrecadação de recursos para o tratamento dos pacientes"
+        "alt": "Material de campanha para arrecadação de recursos para o tratamento dos pacientes",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -219,7 +259,7 @@
     ]
   },
   {
-    "id": "ba0fe30f-2c89-482f-bbda-cf0fd24fe678",
+    "id": "dfea8fe1-8822-4a74-ba8a-b0d2a69de4da",
     "date": {
       "year": 2023,
       "month": 7,
@@ -233,15 +273,21 @@
     "gallery": [
       {
         "path": "/blog/um-terreno-um-sonho-a-prefeitura-de-joinville-nos-abre-as-portas-para-a-nova-sede/img-001.jpg",
-        "alt": "Reunião com o Secretário de Governo Gilberto Leal e equipe do Instituto na Prefeitura de Joinville"
+        "alt": "Reunião com o Secretário de Governo Gilberto Leal e equipe do Instituto na Prefeitura de Joinville",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/um-terreno-um-sonho-a-prefeitura-de-joinville-nos-abre-as-portas-para-a-nova-sede/img-002.jpg",
-        "alt": "Discussão sobre o terreno cedido para a nova sede do Instituto no Bairro Glória"
+        "alt": "Discussão sobre o terreno cedido para a nova sede do Instituto no Bairro Glória",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/um-terreno-um-sonho-a-prefeitura-de-joinville-nos-abre-as-portas-para-a-nova-sede/img-003.jpg",
-        "alt": "Documentação e planejamento para a construção da nova sede"
+        "alt": "Documentação e planejamento para a construção da nova sede",
+        "height": 1280,
+        "width": 720
       }
     ],
     "tags": [
@@ -255,7 +301,7 @@
     ]
   },
   {
-    "id": "a60b6b0b-2a63-40e1-954d-585e8b9ab875",
+    "id": "b0fd5704-e3b9-4e49-b831-6410b5e25043",
     "date": {
       "year": 2023,
       "month": 7,
@@ -269,15 +315,21 @@
     "gallery": [
       {
         "path": "/blog/acompanhamento-do-paciente-antonio-giacomazzi-presenca-que-cura/img-001.jpg",
-        "alt": "Acompanhamento do paciente Antônio Giacomazzi em sessão de apoio"
+        "alt": "Acompanhamento do paciente Antônio Giacomazzi em sessão de apoio",
+        "height": 1280,
+        "width": 720
       },
       {
         "path": "/blog/acompanhamento-do-paciente-antonio-giacomazzi-presenca-que-cura/img-002.jpg",
-        "alt": "Momento de cuidado e presença com Antônio Giacomazzi"
+        "alt": "Momento de cuidado e presença com Antônio Giacomazzi",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/acompanhamento-do-paciente-antonio-giacomazzi-presenca-que-cura/img-003.jpg",
-        "alt": "Registro do acompanhamento oncológico e emocional do paciente Antônio"
+        "alt": "Registro do acompanhamento oncológico e emocional do paciente Antônio",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -290,7 +342,7 @@
     ]
   },
   {
-    "id": "779728a8-acc3-4028-8d82-f52691dc4189",
+    "id": "ae593e9e-4cad-4da8-a597-634f58f2afae",
     "date": {
       "year": 2023,
       "month": 7,
@@ -304,15 +356,21 @@
     "gallery": [
       {
         "path": "/blog/acompanhamento-do-paciente-infantil-arthur-cuidando-de-quem-mal-comecou-a-viver/img-001.jpg",
-        "alt": "Acompanhamento do paciente infantil Arthur em momento de cuidado"
+        "alt": "Acompanhamento do paciente infantil Arthur em momento de cuidado",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/acompanhamento-do-paciente-infantil-arthur-cuidando-de-quem-mal-comecou-a-viver/img-002.jpg",
-        "alt": "Equipe do Instituto com o pequeno Arthur e sua família"
+        "alt": "Equipe do Instituto com o pequeno Arthur e sua família",
+        "height": 1280,
+        "width": 720
       },
       {
         "path": "/blog/acompanhamento-do-paciente-infantil-arthur-cuidando-de-quem-mal-comecou-a-viver/img-003.jpg",
-        "alt": "Registro do suporte oferecido ao paciente infantil Arthur"
+        "alt": "Registro do suporte oferecido ao paciente infantil Arthur",
+        "height": 1280,
+        "width": 720
       }
     ],
     "tags": [
@@ -326,7 +384,7 @@
     ]
   },
   {
-    "id": "daec8f90-f4c2-44c9-9733-c2cc1dea2b37",
+    "id": "968854bd-8170-4016-baf5-cd5997c9c768",
     "date": {
       "year": 2023,
       "month": 8,
@@ -340,7 +398,9 @@
     "gallery": [
       {
         "path": "/blog/reunioes-com-pacientes-garantindo-a-continuidade-do-tratamento/img-001.jpg",
-        "alt": "Reunião com os pacientes do Instituto para continuidade do tratamento"
+        "alt": "Reunião com os pacientes do Instituto para continuidade do tratamento",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -353,7 +413,7 @@
     ]
   },
   {
-    "id": "5dc8a568-4508-40b3-b78f-5edd66f90386",
+    "id": "d0b71e24-a05c-499a-ac77-125a12ba436b",
     "date": {
       "year": 2023,
       "month": 8,
@@ -367,11 +427,15 @@
     "gallery": [
       {
         "path": "/blog/vibrando-a-vitoria-quatro-pacientes-recebem-alta-com-sucesso/img-001.jpg",
-        "alt": "Celebração da remissão do câncer dos quatro pacientes: Adair, Pedro, Antônio e Leila"
+        "alt": "Celebração da remissão do câncer dos quatro pacientes: Adair, Pedro, Antônio e Leila",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/vibrando-a-vitoria-quatro-pacientes-recebem-alta-com-sucesso/img-002.jpg",
-        "alt": "Equipe do Instituto vibrando a vitória das quatro altas médicas"
+        "alt": "Equipe do Instituto vibrando a vitória das quatro altas médicas",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -387,7 +451,7 @@
     ]
   },
   {
-    "id": "74b86ece-e8ee-45d7-bbb8-7b3624053eb7",
+    "id": "93bc0be4-a29e-415e-95b8-bdf9bdb8e0cf",
     "date": {
       "year": 2023,
       "month": 8,
@@ -401,39 +465,57 @@
     "gallery": [
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-001.jpg",
-        "alt": "José Jovelino, paciente que superou o câncer com suporte do Instituto, em depoimento no evento"
+        "alt": "José Jovelino, paciente que superou o câncer com suporte do Instituto, em depoimento no evento",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-002.jpg",
-        "alt": "Ação de angariamento de fundos para o Instituto Sempre Com Você"
+        "alt": "Ação de angariamento de fundos para o Instituto Sempre Com Você",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-003.jpg",
-        "alt": "Participantes do evento beneficente em apoio ao Instituto"
+        "alt": "Participantes do evento beneficente em apoio ao Instituto",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-004.jpg",
-        "alt": "Momento de celebração e solidariedade durante a ação de arrecadação"
+        "alt": "Momento de celebração e solidariedade durante a ação de arrecadação",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-005.jpg",
-        "alt": "Comunidade reunida para apoiar o Instituto na ação de fundos"
+        "alt": "Comunidade reunida para apoiar o Instituto na ação de fundos",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-006.jpg",
-        "alt": "Registros da ação de angariamento de fundos"
+        "alt": "Registros da ação de angariamento de fundos",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-007.jpg",
-        "alt": "Equipe e convidados durante o evento de arrecadação"
+        "alt": "Equipe e convidados durante o evento de arrecadação",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-008.jpg",
-        "alt": "Ambiente festivo da ação beneficente do Instituto"
+        "alt": "Ambiente festivo da ação beneficente do Instituto",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/acao-de-angariamento-de-fundos-a-solidariedade-em-movimento/img-009.jpg",
-        "alt": "Encerramento da ação de angariamento de fundos com gratidão"
+        "alt": "Encerramento da ação de angariamento de fundos com gratidão",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -446,7 +528,7 @@
     ]
   },
   {
-    "id": "49496614-7adc-426d-8b1a-dbe2295b1c35",
+    "id": "899086da-6936-498d-a8af-c30d875777a8",
     "date": {
       "year": 2023,
       "month": 9,
@@ -460,11 +542,15 @@
     "gallery": [
       {
         "path": "/blog/na-alesc-apresentando-o-instituto-sempre-com-voce-para-santa-catarina/img-001.jpg",
-        "alt": "Equipe do Instituto na Assembleia Legislativa do Estado de Santa Catarina (ALESC)"
+        "alt": "Equipe do Instituto na Assembleia Legislativa do Estado de Santa Catarina (ALESC)",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/na-alesc-apresentando-o-instituto-sempre-com-voce-para-santa-catarina/img-002.jpg",
-        "alt": "Apresentação do trabalho do Instituto Sempre Com Você na ALESC em Florianópolis"
+        "alt": "Apresentação do trabalho do Instituto Sempre Com Você na ALESC em Florianópolis",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -478,7 +564,7 @@
     ]
   },
   {
-    "id": "2c5159c1-02b3-4351-b76f-fcc576051ffe",
+    "id": "af1934b0-cb5e-4cab-8503-55e32c9b1b9f",
     "date": {
       "year": 2023,
       "month": 9,
@@ -492,19 +578,27 @@
     "gallery": [
       {
         "path": "/blog/em-florianopolis-com-a-paciente-ana-o-final-de-uma-jornada-o-inicio-de-uma-nova-vida/img-001.jpg",
-        "alt": "Acompanhamento da paciente Ana nos momentos finais do tratamento em Florianópolis"
+        "alt": "Acompanhamento da paciente Ana nos momentos finais do tratamento em Florianópolis",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/em-florianopolis-com-a-paciente-ana-o-final-de-uma-jornada-o-inicio-de-uma-nova-vida/img-002.jpg",
-        "alt": "Andrea com a paciente Ana em Florianópolis durante o encerramento do tratamento"
+        "alt": "Andrea com a paciente Ana em Florianópolis durante o encerramento do tratamento",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/em-florianopolis-com-a-paciente-ana-o-final-de-uma-jornada-o-inicio-de-uma-nova-vida/img-003.jpg",
-        "alt": "Registro do acompanhamento final do tratamento oncológico da paciente Ana"
+        "alt": "Registro do acompanhamento final do tratamento oncológico da paciente Ana",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/em-florianopolis-com-a-paciente-ana-o-final-de-uma-jornada-o-inicio-de-uma-nova-vida/img-004.jpg",
-        "alt": "Momento de celebração e gratidão pelo encerramento bem-sucedido do tratamento de Ana"
+        "alt": "Momento de celebração e gratidão pelo encerramento bem-sucedido do tratamento de Ana",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -518,7 +612,7 @@
     ]
   },
   {
-    "id": "7a8bf936-2233-43e1-a752-15cc95a7433b",
+    "id": "459e3193-03e2-4053-91f8-4124255f5466",
     "date": {
       "year": 2023,
       "month": 10,
@@ -532,19 +626,27 @@
     "gallery": [
       {
         "path": "/blog/paciente-sonia-mais-um-caso-de-sucesso-que-nos-enche-de-alegria/img-001.jpg",
-        "alt": "Paciente Sônia em acompanhamento pelo Instituto Sempre Com Você"
+        "alt": "Paciente Sônia em acompanhamento pelo Instituto Sempre Com Você",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/paciente-sonia-mais-um-caso-de-sucesso-que-nos-enche-de-alegria/img-002.jpg",
-        "alt": "Ação de venda de bonecos de pano para arrecadar fundos para os remédios da Sônia"
+        "alt": "Ação de venda de bonecos de pano para arrecadar fundos para os remédios da Sônia",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/paciente-sonia-mais-um-caso-de-sucesso-que-nos-enche-de-alegria/img-003.jpg",
-        "alt": "Registro das atividades de arrecadação em prol da paciente Sônia"
+        "alt": "Registro das atividades de arrecadação em prol da paciente Sônia",
+        "height": 1280,
+        "width": 720
       },
       {
         "path": "/blog/paciente-sonia-mais-um-caso-de-sucesso-que-nos-enche-de-alegria/img-004.jpg",
-        "alt": "Comemoração do caso de sucesso da paciente Sônia"
+        "alt": "Comemoração do caso de sucesso da paciente Sônia",
+        "height": 1280,
+        "width": 720
       }
     ],
     "tags": [
@@ -558,7 +660,7 @@
     ]
   },
   {
-    "id": "742e3455-c9b4-42b3-8ad3-58454542d2ae",
+    "id": "205b17af-b748-4bdd-bfe8-48e93e1d0c26",
     "date": {
       "year": 2023,
       "month": 11,
@@ -572,7 +674,9 @@
     "gallery": [
       {
         "path": "/blog/acompanhamento-do-paciente-nelson-kopsch-cuidando-do-todo/img-001.jpg",
-        "alt": "Acompanhamento do paciente Nelson Kopsch a exames médicos"
+        "alt": "Acompanhamento do paciente Nelson Kopsch a exames médicos",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -585,7 +689,7 @@
     ]
   },
   {
-    "id": "b2fbdd2d-040e-4c3a-af0f-23027624a647",
+    "id": "ce5f907f-4c77-4312-af03-5e03d73712af",
     "date": {
       "year": 2023,
       "month": 11,
@@ -599,15 +703,21 @@
     "gallery": [
       {
         "path": "/blog/reuniao-com-a-prefeitura-de-joinville-direitos-e-caminhos-para-os-nossos-pacientes/img-001.jpg",
-        "alt": "Reunião com representantes da Prefeitura de Joinville sobre direitos dos pacientes"
+        "alt": "Reunião com representantes da Prefeitura de Joinville sobre direitos dos pacientes",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/reuniao-com-a-prefeitura-de-joinville-direitos-e-caminhos-para-os-nossos-pacientes/img-002.jpg",
-        "alt": "Discussão sobre conselhos e direitos aplicados ao Instituto na Prefeitura de Joinville"
+        "alt": "Discussão sobre conselhos e direitos aplicados ao Instituto na Prefeitura de Joinville",
+        "height": 704,
+        "width": 395
       },
       {
         "path": "/blog/reuniao-com-a-prefeitura-de-joinville-direitos-e-caminhos-para-os-nossos-pacientes/img-003.jpg",
-        "alt": "Encontro institucional com a Prefeitura de Joinville para fortalecer a parceria"
+        "alt": "Encontro institucional com a Prefeitura de Joinville para fortalecer a parceria",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -621,7 +731,7 @@
     ]
   },
   {
-    "id": "d8a91baf-8b6d-4e0f-ab54-0de3c61ce6a0",
+    "id": "cab6a7dd-fda1-469d-98b2-326b4b376b08",
     "date": {
       "year": 2023,
       "month": 12,
@@ -635,7 +745,9 @@
     "gallery": [
       {
         "path": "/blog/arrecadando-fundos-para-o-tratamento-do-antonio-malsckitzky/img-001.jpg",
-        "alt": "Ação de arrecadação de fundos para o tratamento do paciente Antônio Malsckitzky"
+        "alt": "Ação de arrecadação de fundos para o tratamento do paciente Antônio Malsckitzky",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -648,7 +760,7 @@
     ]
   },
   {
-    "id": "40cf8137-3f52-46da-9a74-066715bba4a0",
+    "id": "f0457153-c165-4588-a436-b3c1a5f30095",
     "date": {
       "year": 2023,
       "month": 12,
@@ -662,11 +774,15 @@
     "gallery": [
       {
         "path": "/blog/celebrando-superacao-comemoracao-com-antonio-malsckitzky-e-evandro-sandro-de-moura/img-001.jpg",
-        "alt": "Comemoração com Antônio Malsckitzky e Evandro Sandro de Moura"
+        "alt": "Comemoração com Antônio Malsckitzky e Evandro Sandro de Moura",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/celebrando-superacao-comemoracao-com-antonio-malsckitzky-e-evandro-sandro-de-moura/img-002.jpg",
-        "alt": "Momento de celebração da superação dos pacientes Antônio e Evandro"
+        "alt": "Momento de celebração da superação dos pacientes Antônio e Evandro",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -680,7 +796,7 @@
     ]
   },
   {
-    "id": "e4380484-de81-405e-88ca-3083462c080f",
+    "id": "849b9c25-4a48-4610-8c79-4b08143fe5bf",
     "date": {
       "year": 2023,
       "month": 12,
@@ -694,7 +810,9 @@
     "gallery": [
       {
         "path": "/blog/vencendo-a-depressao-uma-batalha-que-tambem-e-nossa/img-001.jpg",
-        "alt": "Momento de apoio e reflexão sobre como vencer a depressão durante o tratamento oncológico"
+        "alt": "Momento de apoio e reflexão sobre como vencer a depressão durante o tratamento oncológico",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -707,7 +825,7 @@
     ]
   },
   {
-    "id": "0a9f7abb-09f3-4c06-88ba-20455ad8b58d",
+    "id": "a25b1e7b-52b5-4886-b766-037a428b5236",
     "date": {
       "year": 2023,
       "month": 12,
@@ -721,31 +839,45 @@
     "gallery": [
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-001.jpg",
-        "alt": "Grupo da terceira idade do Instituto reunido na comemoração de encerramento do ano"
+        "alt": "Grupo da terceira idade do Instituto reunido na comemoração de encerramento do ano",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-002.jpg",
-        "alt": "Momentos de alegria e emoção na festa de encerramento de 2023"
+        "alt": "Momentos de alegria e emoção na festa de encerramento de 2023",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-003.jpg",
-        "alt": "Confraternização de final de ano com os pacientes e voluntários da terceira idade"
+        "alt": "Confraternização de final de ano com os pacientes e voluntários da terceira idade",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-004.jpg",
-        "alt": "Abraços e sorrisos no encerramento do ano com o grupo da terceira idade"
+        "alt": "Abraços e sorrisos no encerramento do ano com o grupo da terceira idade",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-005.jpg",
-        "alt": "Registro da celebração de encerramento de ano do Instituto Sempre Com Você"
+        "alt": "Registro da celebração de encerramento de ano do Instituto Sempre Com Você",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-006.jpg",
-        "alt": "Momentos de partilha e emoção na comemoração de fim de ano"
+        "alt": "Momentos de partilha e emoção na comemoração de fim de ano",
+        "height": 700,
+        "width": 525
       },
       {
         "path": "/blog/encerrando-2023-com-o-coracao-cheio-celebracao-com-nosso-grupo-da-terceira-idade/img-007.jpg",
-        "alt": "Encerramento da celebração de 2023 com esperança para o novo ano"
+        "alt": "Encerramento da celebração de 2023 com esperança para o novo ano",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -758,7 +890,7 @@
     ]
   },
   {
-    "id": "63ecc812-48f1-4c02-9b8b-ed6bd2163a12",
+    "id": "0985791b-2ccd-4deb-80ec-6e4ec378e6ac",
     "date": {
       "year": 2024,
       "month": 1,
@@ -772,7 +904,9 @@
     "gallery": [
       {
         "path": "/blog/2024-comeca-renovando-forcas-para-seguir-em-frente/img-001.jpg",
-        "alt": "Equipe do Instituto Sempre Com Você no início das atividades de 2024"
+        "alt": "Equipe do Instituto Sempre Com Você no início das atividades de 2024",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -784,7 +918,7 @@
     ]
   },
   {
-    "id": "62c25d77-23eb-4104-8386-13cca6cf5d03",
+    "id": "5e803ca3-5864-40e3-859d-a8152accace7",
     "date": {
       "year": 2024,
       "month": 1,
@@ -798,11 +932,15 @@
     "gallery": [
       {
         "path": "/blog/arrecadando-fundos-para-o-mario-junior-a-solidariedade-que-salva-vidas/img-001.jpg",
-        "alt": "Ação de arrecadação de fundos para o tratamento oncológico do paciente Mario Junior"
+        "alt": "Ação de arrecadação de fundos para o tratamento oncológico do paciente Mario Junior",
+        "height": 960,
+        "width": 1280
       },
       {
         "path": "/blog/arrecadando-fundos-para-o-mario-junior-a-solidariedade-que-salva-vidas/img-002.jpg",
-        "alt": "Comunidade unida na campanha em prol do Mario Junior"
+        "alt": "Comunidade unida na campanha em prol do Mario Junior",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -815,7 +953,7 @@
     ]
   },
   {
-    "id": "739355ae-5217-44e8-91b9-4acc574ea3f4",
+    "id": "4278d88c-2f4c-4485-adbe-d69a3df8ed3a",
     "date": {
       "year": 2024,
       "month": 2,
@@ -829,11 +967,15 @@
     "gallery": [
       {
         "path": "/blog/vania-claudia-e-gilda-tres-historias-uma-so-missao/img-001.jpg",
-        "alt": "Acompanhamento das pacientes Vânia, Claudia e Gilda pelo Instituto"
+        "alt": "Acompanhamento das pacientes Vânia, Claudia e Gilda pelo Instituto",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/vania-claudia-e-gilda-tres-historias-uma-so-missao/img-002.jpg",
-        "alt": "Momento de cuidado e apoio com as pacientes Vânia, Claudia e Gilda"
+        "alt": "Momento de cuidado e apoio com as pacientes Vânia, Claudia e Gilda",
+        "height": 960,
+        "width": 1280
       }
     ],
     "tags": [
@@ -848,7 +990,7 @@
     ]
   },
   {
-    "id": "0b90fe31-fac4-429a-b52d-237587e14e55",
+    "id": "59d1f945-14c0-410e-bde5-12b182fadab3",
     "date": {
       "year": 2024,
       "month": 2,
@@ -862,11 +1004,15 @@
     "gallery": [
       {
         "path": "/blog/na-tv-da-cidade-levando-nossa-causa-para-os-lares-de-joinville/img-001.jpg",
-        "alt": "Pacientes do Instituto Sempre Com Você na campanha da TV da Cidade de Joinville"
+        "alt": "Pacientes do Instituto Sempre Com Você na campanha da TV da Cidade de Joinville",
+        "height": 1280,
+        "width": 960
       },
       {
         "path": "/blog/na-tv-da-cidade-levando-nossa-causa-para-os-lares-de-joinville/img-002.jpg",
-        "alt": "Equipe do Instituto durante a campanha de arrecadação na TV da Cidade"
+        "alt": "Equipe do Instituto durante a campanha de arrecadação na TV da Cidade",
+        "height": 1280,
+        "width": 960
       }
     ],
     "tags": [
@@ -880,7 +1026,7 @@
     ]
   },
   {
-    "id": "d6f99908-e64e-4948-a445-0263a77b7433",
+    "id": "57847b4d-5105-49c8-b6d8-e6305fd81644",
     "date": {
       "year": 2024,
       "month": 3,
@@ -894,19 +1040,27 @@
     "gallery": [
       {
         "path": "/blog/por-amor-ao-zezinho-doacoes-para-o-tratamento-oncologico/img-001.jpg",
-        "alt": "Presidente Andrea em campanha de arrecadação para o tratamento oncológico do Zezinho"
+        "alt": "Presidente Andrea em campanha de arrecadação para o tratamento oncológico do Zezinho",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/por-amor-ao-zezinho-doacoes-para-o-tratamento-oncologico/img-002.jpg",
-        "alt": "Ação de levantamento de doações em prol do paciente Zezinho"
+        "alt": "Ação de levantamento de doações em prol do paciente Zezinho",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/por-amor-ao-zezinho-doacoes-para-o-tratamento-oncologico/img-003.jpg",
-        "alt": "Equipe empenhada na arrecadação de fundos para o Zezinho"
+        "alt": "Equipe empenhada na arrecadação de fundos para o Zezinho",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/por-amor-ao-zezinho-doacoes-para-o-tratamento-oncologico/img-004.jpg",
-        "alt": "Registro da campanha de doações para o tratamento de oncologia do Zezinho"
+        "alt": "Registro da campanha de doações para o tratamento de oncologia do Zezinho",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -920,7 +1074,7 @@
     ]
   },
   {
-    "id": "8d260e6a-ed88-40a5-ad43-494d1398bd1a",
+    "id": "f9bb364e-f058-48d3-86eb-da235426f2f3",
     "date": {
       "year": 2024,
       "month": 3,
@@ -934,19 +1088,27 @@
     "gallery": [
       {
         "path": "/blog/de-doce-em-doce-mantendo-o-instituto-vivo/img-001.jpg",
-        "alt": "Presidente Andrea vendendo doces e guloseimas para manter o Instituto em funcionamento"
+        "alt": "Presidente Andrea vendendo doces e guloseimas para manter o Instituto em funcionamento",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/de-doce-em-doce-mantendo-o-instituto-vivo/img-002.jpg",
-        "alt": "Mesa de doces e guloseimas da ação de arrecadação do Instituto"
+        "alt": "Mesa de doces e guloseimas da ação de arrecadação do Instituto",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/de-doce-em-doce-mantendo-o-instituto-vivo/img-003.jpg",
-        "alt": "Clientes adquirindo os doces e apoiando a causa do Instituto"
+        "alt": "Clientes adquirindo os doces e apoiando a causa do Instituto",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/de-doce-em-doce-mantendo-o-instituto-vivo/img-004.jpg",
-        "alt": "Encerramento da ação de venda de doces com resultado positivo"
+        "alt": "Encerramento da ação de venda de doces com resultado positivo",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -960,7 +1122,7 @@
     ]
   },
   {
-    "id": "3f2fbd72-eb9f-45a9-bfbb-0e8b2901f43b",
+    "id": "e5c1903c-af1e-4467-aba3-8212c6ec19c5",
     "date": {
       "year": 2024,
       "month": 4,
@@ -974,27 +1136,39 @@
     "gallery": [
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-001.jpg",
-        "alt": "Rodrigo, encarregado da CPMA, e Gabriela, Psicóloga da CPMA de Joinville"
+        "alt": "Rodrigo, encarregado da CPMA, e Gabriela, Psicóloga da CPMA de Joinville",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-002.jpg",
-        "alt": "Reunião de prestação de contas com a CPMA de Joinville"
+        "alt": "Reunião de prestação de contas com a CPMA de Joinville",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-003.jpg",
-        "alt": "Equipe do Instituto com representantes da Central de Penas e Medidas Alternativas"
+        "alt": "Equipe do Instituto com representantes da Central de Penas e Medidas Alternativas",
+        "height": 859,
+        "width": 644
       },
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-004.jpg",
-        "alt": "Registro da visita e reunião com a CPMA de Joinville"
+        "alt": "Registro da visita e reunião com a CPMA de Joinville",
+        "height": 840,
+        "width": 630
       },
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-005.jpg",
-        "alt": "Discussão sobre a parceria de seis anos entre o Instituto e a CPMA"
+        "alt": "Discussão sobre a parceria de seis anos entre o Instituto e a CPMA",
+        "height": 852,
+        "width": 639
       },
       {
         "path": "/blog/parceria-solida-com-a-cpma-seis-anos-de-trabalho-conjunto/img-006.jpg",
-        "alt": "Encerramento da reunião com a CPMA com saldo positivo e novos pacientes"
+        "alt": "Encerramento da reunião com a CPMA com saldo positivo e novos pacientes",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1009,7 +1183,7 @@
     ]
   },
   {
-    "id": "5e65683b-20db-4798-95b6-15b9f0ffbbc3",
+    "id": "d7220541-c0e2-4577-8a3c-9a6fdfafa893",
     "date": {
       "year": 2024,
       "month": 4,
@@ -1023,11 +1197,15 @@
     "gallery": [
       {
         "path": "/blog/adair-uma-jornada-de-superacao-da-dor-e-da-depressao/img-001.jpg",
-        "alt": "Acompanhamento do paciente Adair, em recuperação após três cirurgias na coluna"
+        "alt": "Acompanhamento do paciente Adair, em recuperação após três cirurgias na coluna",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/adair-uma-jornada-de-superacao-da-dor-e-da-depressao/img-002.jpg",
-        "alt": "Adair em momento de apoio emocional pelo Instituto Sempre Com Você"
+        "alt": "Adair em momento de apoio emocional pelo Instituto Sempre Com Você",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1041,7 +1219,7 @@
     ]
   },
   {
-    "id": "d5022a92-1a7d-4e78-9190-caa845f42692",
+    "id": "7b20f8f2-7dc9-4a8c-9f0e-679c1a70151c",
     "date": {
       "year": 2024,
       "month": 4,
@@ -1055,11 +1233,15 @@
     "gallery": [
       {
         "path": "/blog/na-camara-de-vereadores-nossa-causa-ganha-voz-no-coracao-de-joinville/img-001.jpg",
-        "alt": "Apresentação do Instituto Sempre Com Você na Câmara de Vereadores de Joinville"
+        "alt": "Apresentação do Instituto Sempre Com Você na Câmara de Vereadores de Joinville",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/na-camara-de-vereadores-nossa-causa-ganha-voz-no-coracao-de-joinville/img-002.jpg",
-        "alt": "Equipe do Instituto com vereadores de Joinville discutindo a nova sede"
+        "alt": "Equipe do Instituto com vereadores de Joinville discutindo a nova sede",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1073,7 +1255,7 @@
     ]
   },
   {
-    "id": "62f317fd-de5c-411e-b290-00561c0d4174",
+    "id": "8710f1fb-84a5-4afd-9061-5eef56a2e849",
     "date": {
       "year": 2024,
       "month": 5,
@@ -1087,11 +1269,15 @@
     "gallery": [
       {
         "path": "/blog/planejando-a-nova-sede-reuniao-com-advogado-e-engenheiro/img-001.jpg",
-        "alt": "Reunião de planejamento da nova sede com o advogado Carlos Meier e o engenheiro Michel"
+        "alt": "Reunião de planejamento da nova sede com o advogado Carlos Meier e o engenheiro Michel",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/planejando-a-nova-sede-reuniao-com-advogado-e-engenheiro/img-002.jpg",
-        "alt": "Discussão técnica e jurídica sobre o projeto da nova sede do Instituto"
+        "alt": "Discussão técnica e jurídica sobre o projeto da nova sede do Instituto",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1105,7 +1291,7 @@
     ]
   },
   {
-    "id": "e13586ee-d9d4-4853-85dc-23eb9a5f056f",
+    "id": "7d60b2b0-8470-4d1e-9750-2fbd542a93e0",
     "date": {
       "year": 2024,
       "month": 5,
@@ -1119,19 +1305,27 @@
     "gallery": [
       {
         "path": "/blog/capacitacao-em-trabalho-social-sempre-aprendendo-para-servir-melhor/img-001.jpg",
-        "alt": "Participantes no curso de capacitação em trabalho social"
+        "alt": "Participantes no curso de capacitação em trabalho social",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/capacitacao-em-trabalho-social-sempre-aprendendo-para-servir-melhor/img-002.jpg",
-        "alt": "Momento de aprendizado no curso de capacitação da área social"
+        "alt": "Momento de aprendizado no curso de capacitação da área social",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/capacitacao-em-trabalho-social-sempre-aprendendo-para-servir-melhor/img-003.jpg",
-        "alt": "Troca de conhecimentos e experiências no curso de trabalho social"
+        "alt": "Troca de conhecimentos e experiências no curso de trabalho social",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/capacitacao-em-trabalho-social-sempre-aprendendo-para-servir-melhor/img-004.jpg",
-        "alt": "Encerramento do excelente curso de capacitação na área de trabalho social"
+        "alt": "Encerramento do excelente curso de capacitação na área de trabalho social",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1143,7 +1337,7 @@
     ]
   },
   {
-    "id": "a202ccb6-a876-4374-9e4e-467e3ec0f5e3",
+    "id": "9de5df98-b456-430c-9d3f-ed28203b1bbb",
     "date": {
       "year": 2024,
       "month": 6,
@@ -1157,15 +1351,21 @@
     "gallery": [
       {
         "path": "/blog/uma-tarde-com-cinco-quando-os-pacientes-se-encontram-e-trocam-forca/img-001.jpg",
-        "alt": "Ana, Francisco, Arthur, Lucas e Cirilo reunidos no Instituto Sempre Com Você"
+        "alt": "Ana, Francisco, Arthur, Lucas e Cirilo reunidos no Instituto Sempre Com Você",
+        "height": 719,
+        "width": 1600
       },
       {
         "path": "/blog/uma-tarde-com-cinco-quando-os-pacientes-se-encontram-e-trocam-forca/img-002.jpg",
-        "alt": "Cinco pacientes trocando experiências em encontro especial"
+        "alt": "Cinco pacientes trocando experiências em encontro especial",
+        "height": 1600,
+        "width": 719
       },
       {
         "path": "/blog/uma-tarde-com-cinco-quando-os-pacientes-se-encontram-e-trocam-forca/img-003.jpg",
-        "alt": "Momento de alegria e fortalecimento mútuo entre os cinco pacientes"
+        "alt": "Momento de alegria e fortalecimento mútuo entre os cinco pacientes",
+        "height": 719,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1180,7 +1380,7 @@
     ]
   },
   {
-    "id": "fb37abf1-79de-4e6f-a00b-a4b9de68ebaa",
+    "id": "3d9c3e2c-f178-4d8b-bc98-fd27d21971e7",
     "date": {
       "year": 2024,
       "month": 6,
@@ -1194,7 +1394,9 @@
     "gallery": [
       {
         "path": "/blog/arthur-francisco-e-katia-o-valor-de-quem-esta-sempre-do-lado/img-001.jpg",
-        "alt": "Pacientes Arthur, Francisco e Katia com seu esposo em visita ao Instituto"
+        "alt": "Pacientes Arthur, Francisco e Katia com seu esposo em visita ao Instituto",
+        "height": 719,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1209,7 +1411,7 @@
     ]
   },
   {
-    "id": "c91dbcb1-2b5b-4980-87af-7f17755ebdec",
+    "id": "12bc73d5-5dcf-4f4c-81d6-4c61dc93c1c2",
     "date": {
       "year": 2024,
       "month": 6,
@@ -1223,7 +1425,9 @@
     "gallery": [
       {
         "path": "/blog/atendimento-ao-alderico-a-dor-que-vai-alem-do-cancer/img-001.jpg",
-        "alt": "Atendimento ao paciente Alderico em sessão de apoio emocional pelo Instituto"
+        "alt": "Atendimento ao paciente Alderico em sessão de apoio emocional pelo Instituto",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1236,7 +1440,7 @@
     ]
   },
   {
-    "id": "3eefc59f-5fd0-4eb9-bbd1-29cb1f8d5a1f",
+    "id": "cb309a05-4b25-4368-b86e-96e22f5918f9",
     "date": {
       "year": 2024,
       "month": 7,
@@ -1250,11 +1454,15 @@
     "gallery": [
       {
         "path": "/blog/inteligencia-emocional-crescendo-para-cuidar-melhor/img-001.jpg",
-        "alt": "Equipe do Instituto participando do Curso de Inteligência Emocional com Omar Ghanem"
+        "alt": "Equipe do Instituto participando do Curso de Inteligência Emocional com Omar Ghanem",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/inteligencia-emocional-crescendo-para-cuidar-melhor/img-002.jpg",
-        "alt": "Aprendizado sobre inteligência emocional aplicada ao cuidado de pacientes oncológicos"
+        "alt": "Aprendizado sobre inteligência emocional aplicada ao cuidado de pacientes oncológicos",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1267,7 +1475,7 @@
     ]
   },
   {
-    "id": "e260a296-e825-4e53-802f-24ed00c1ee52",
+    "id": "cf6fdd79-f6cd-4e5a-8152-749bd4dbb565",
     "date": {
       "year": 2024,
       "month": 7,
@@ -1281,31 +1489,45 @@
     "gallery": [
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-001.jpg",
-        "alt": "Passeio especial com o paciente Artur Mohr, hoje estável e voluntário do Instituto"
+        "alt": "Passeio especial com o paciente Artur Mohr, hoje estável e voluntário do Instituto",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-002.jpg",
-        "alt": "Artur Mohr celebrando sua vitória em passeio com o Instituto"
+        "alt": "Artur Mohr celebrando sua vitória em passeio com o Instituto",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-003.jpg",
-        "alt": "Momentos de alegria e leveza no passeio com Artur Mohr"
+        "alt": "Momentos de alegria e leveza no passeio com Artur Mohr",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-004.jpg",
-        "alt": "Artur Mohr e equipe do Instituto em momento de celebração da vida"
+        "alt": "Artur Mohr e equipe do Instituto em momento de celebração da vida",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-005.jpg",
-        "alt": "Registro do passeio com o ex-paciente e voluntário Artur Mohr"
+        "alt": "Registro do passeio com o ex-paciente e voluntário Artur Mohr",
+        "height": 696,
+        "width": 522
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-006.jpg",
-        "alt": "Artur Mohr sorridente em mais um momento de superação celebrado"
+        "alt": "Artur Mohr sorridente em mais um momento de superação celebrado",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/passeio-com-artur-mohr-celebrando-uma-vida-que-recomecou/img-007.jpg",
-        "alt": "Encerramento do passeio com Artur Mohr com muita gratidão"
+        "alt": "Encerramento do passeio com Artur Mohr com muita gratidão",
+        "height": 701,
+        "width": 526
       }
     ],
     "tags": [
@@ -1319,7 +1541,7 @@
     ]
   },
   {
-    "id": "aa074f76-4a63-4ff1-81de-e4ec3d9697ef",
+    "id": "25deeaec-9fea-4bd6-abd4-3c534e5168c3",
     "date": {
       "year": 2024,
       "month": 8,
@@ -1333,15 +1555,21 @@
     "gallery": [
       {
         "path": "/blog/reconhecidos-pelos-deputados-estaduais-uma-honra-que-nos-fortalece/img-001.jpg",
-        "alt": "Equipe do Instituto com o Deputado Estadual Maurício Peixer e o Deputado Fernando Krellig"
+        "alt": "Equipe do Instituto com o Deputado Estadual Maurício Peixer e o Deputado Fernando Krellig",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/reconhecidos-pelos-deputados-estaduais-uma-honra-que-nos-fortalece/img-002.jpg",
-        "alt": "Reconhecimento do trabalho do Instituto pelos Deputados Estaduais de Santa Catarina"
+        "alt": "Reconhecimento do trabalho do Instituto pelos Deputados Estaduais de Santa Catarina",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/reconhecidos-pelos-deputados-estaduais-uma-honra-que-nos-fortalece/img-003.jpg",
-        "alt": "Momento de gratidão e reconhecimento institucional pelos deputados estaduais"
+        "alt": "Momento de gratidão e reconhecimento institucional pelos deputados estaduais",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1355,7 +1583,7 @@
     ]
   },
   {
-    "id": "5262f2ef-528f-46db-86f2-35c56384cb6b",
+    "id": "0a348baf-688e-4904-b18f-a25d196f5c39",
     "date": {
       "year": 2024,
       "month": 8,
@@ -1369,7 +1597,9 @@
     "gallery": [
       {
         "path": "/blog/parabens-ana-cristina-uma-recuperacao-que-e-motivo-de-muita-alegria/img-001.jpg",
-        "alt": "Celebração da recuperação da paciente Ana Cristina"
+        "alt": "Celebração da recuperação da paciente Ana Cristina",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1383,7 +1613,7 @@
     ]
   },
   {
-    "id": "bec692a2-ff96-4d97-a75d-8d3b6df8ec09",
+    "id": "d6814d41-55b3-4e85-9527-1f083f445c9d",
     "date": {
       "year": 2024,
       "month": 8,
@@ -1397,7 +1627,9 @@
     "gallery": [
       {
         "path": "/blog/walter-um-exemplo-vivo-de-superacao/img-001.jpg",
-        "alt": "O paciente Walter em momento que demonstra sua superação e serve de exemplo aos demais"
+        "alt": "O paciente Walter em momento que demonstra sua superação e serve de exemplo aos demais",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1411,7 +1643,7 @@
     ]
   },
   {
-    "id": "68715b20-2378-468a-9498-5db9e21573f2",
+    "id": "ebe875a9-4f8e-4959-a17f-3c02cee7f29b",
     "date": {
       "year": 2024,
       "month": 10,
@@ -1425,11 +1657,15 @@
     "gallery": [
       {
         "path": "/blog/priscila-uma-nova-caminhada-que-comeca-com-esperanca/img-001.jpg",
-        "alt": "A nova paciente Priscila iniciando seu acompanhamento no Instituto Sempre Com Você"
+        "alt": "A nova paciente Priscila iniciando seu acompanhamento no Instituto Sempre Com Você",
+        "height": 1600,
+        "width": 719
       },
       {
         "path": "/blog/priscila-uma-nova-caminhada-que-comeca-com-esperanca/img-002.jpg",
-        "alt": "Priscila em seu primeiro atendimento, inspirada no exemplo da paciente Ana"
+        "alt": "Priscila em seu primeiro atendimento, inspirada no exemplo da paciente Ana",
+        "height": 719,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1442,7 +1678,7 @@
     ]
   },
   {
-    "id": "3e48bb47-8a03-4cd1-8a7b-e7ed25ac29ae",
+    "id": "03154233-a9c3-463f-b929-4ea111fd0686",
     "date": {
       "year": 2024,
       "month": 10,
@@ -1456,7 +1692,9 @@
     "gallery": [
       {
         "path": "/blog/o-instituto-recebe-o-apoio-do-vereador-brandel-junior/img-001.jpg",
-        "alt": "Andrea com o Vereador Brandel Junior em encontro de apoio ao Instituto na Câmara de Joinville"
+        "alt": "Andrea com o Vereador Brandel Junior em encontro de apoio ao Instituto na Câmara de Joinville",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1469,7 +1707,7 @@
     ]
   },
   {
-    "id": "51914ebb-076a-4efc-a4e7-2c0f8ba3d59d",
+    "id": "0d7ab52e-5182-4347-b392-17e30abeed9f",
     "date": {
       "year": 2024,
       "month": 10,
@@ -1483,15 +1721,21 @@
     "gallery": [
       {
         "path": "/blog/rubens-de-paciente-a-parceiro-do-instituto/img-001.jpg",
-        "alt": "Rubens, já recuperado, de volta ao Instituto como parceiro e apoiador"
+        "alt": "Rubens, já recuperado, de volta ao Instituto como parceiro e apoiador",
+        "height": 846,
+        "width": 635
       },
       {
         "path": "/blog/rubens-de-paciente-a-parceiro-do-instituto/img-002.jpg",
-        "alt": "Rubens ajudando o projeto do Instituto após sua superação do câncer"
+        "alt": "Rubens ajudando o projeto do Instituto após sua superação do câncer",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/rubens-de-paciente-a-parceiro-do-instituto/img-003.jpg",
-        "alt": "Registro da parceria do ex-paciente Rubens com o Instituto Sempre Com Você"
+        "alt": "Registro da parceria do ex-paciente Rubens com o Instituto Sempre Com Você",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1505,7 +1749,7 @@
     ]
   },
   {
-    "id": "07af0282-099e-4aae-8bde-caa223399070",
+    "id": "e2511985-634a-452f-a703-168d7d4b6257",
     "date": {
       "year": 2024,
       "month": 11,
@@ -1519,11 +1763,15 @@
     "gallery": [
       {
         "path": "/blog/apoio-aos-familiares-porque-a-dor-da-perda-tambem-precisa-de-cuidado/img-001.jpg",
-        "alt": "Atendimento ao Jovelino, que sofre de depressão pela perda da esposa vítima de câncer"
+        "alt": "Atendimento ao Jovelino, que sofre de depressão pela perda da esposa vítima de câncer",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/apoio-aos-familiares-porque-a-dor-da-perda-tambem-precisa-de-cuidado/img-002.jpg",
-        "alt": "Conversa de apoio e escuta ativa com familiar enlutado pelo câncer"
+        "alt": "Conversa de apoio e escuta ativa com familiar enlutado pelo câncer",
+        "height": 850,
+        "width": 638
       }
     ],
     "tags": [
@@ -1538,7 +1786,7 @@
     ]
   },
   {
-    "id": "3c685932-4d27-47ea-8a12-bfb31cabccae",
+    "id": "7219809b-e9fb-41fb-9e02-d433f31ff32c",
     "date": {
       "year": 2024,
       "month": 11,
@@ -1552,15 +1800,21 @@
     "gallery": [
       {
         "path": "/blog/casa-cheia-ex-pacientes-que-viraram-voluntarios/img-001.jpg",
-        "alt": "Casa cheia com ex-pacientes voluntários reunidos no Instituto"
+        "alt": "Casa cheia com ex-pacientes voluntários reunidos no Instituto",
+        "height": 705,
+        "width": 529
       },
       {
         "path": "/blog/casa-cheia-ex-pacientes-que-viraram-voluntarios/img-002.jpg",
-        "alt": "Grupo de voluntários que foram pacientes e hoje ajudam outros em tratamento"
+        "alt": "Grupo de voluntários que foram pacientes e hoje ajudam outros em tratamento",
+        "height": 751,
+        "width": 563
       },
       {
         "path": "/blog/casa-cheia-ex-pacientes-que-viraram-voluntarios/img-003.jpg",
-        "alt": "Momento de gratidão e celebração com os ex-pacientes voluntários do Instituto"
+        "alt": "Momento de gratidão e celebração com os ex-pacientes voluntários do Instituto",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1574,7 +1828,7 @@
     ]
   },
   {
-    "id": "17ced7eb-955c-4a6e-babd-b9f7271bd205",
+    "id": "3bd48d6c-fc71-4025-ab93-13d09bbc9134",
     "date": {
       "year": 2024,
       "month": 11,
@@ -1588,7 +1842,9 @@
     "gallery": [
       {
         "path": "/blog/lady-e-paulo-bem-vindos-a-nossa-familia/img-001.jpg",
-        "alt": "Pacientes Lady e Paulo em atendimento e acompanhamento pelo Instituto Sempre Com Você"
+        "alt": "Pacientes Lady e Paulo em atendimento e acompanhamento pelo Instituto Sempre Com Você",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1602,7 +1858,7 @@
     ]
   },
   {
-    "id": "0bd31b4b-b1a9-4719-9340-1164abfe66fd",
+    "id": "7f5a94ca-1510-44d2-ac74-575452c6a45c",
     "date": {
       "year": 2024,
       "month": 12,
@@ -1616,7 +1872,9 @@
     "gallery": [
       {
         "path": "/blog/com-o-prefeito-de-joinville-apresentando-nossa-missao-no-farol-do-saber/img-001.jpg",
-        "alt": "Andrea e o Prefeito de Joinville Adriano Silva no Farol do Saber durante apresentação do Instituto"
+        "alt": "Andrea e o Prefeito de Joinville Adriano Silva no Farol do Saber durante apresentação do Instituto",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1630,7 +1888,7 @@
     ]
   },
   {
-    "id": "dd53f311-fd17-4c31-8b14-dd391cff956f",
+    "id": "e4a4ea7d-96df-4779-8b61-3031d27d3fc8",
     "date": {
       "year": 2024,
       "month": 12,
@@ -1644,11 +1902,15 @@
     "gallery": [
       {
         "path": "/blog/olhando-para-2025-planejamento-com-o-time-juridico-do-instituto/img-001.jpg",
-        "alt": "Reunião de planejamento para 2025 com o time de advogados do Instituto"
+        "alt": "Reunião de planejamento para 2025 com o time de advogados do Instituto",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/olhando-para-2025-planejamento-com-o-time-juridico-do-instituto/img-002.jpg",
-        "alt": "Alinhamento jurídico e estratégico dos projetos do Instituto para o ano de 2025"
+        "alt": "Alinhamento jurídico e estratégico dos projetos do Instituto para o ano de 2025",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1662,7 +1924,7 @@
     ]
   },
   {
-    "id": "b737d98c-d27b-4f82-985e-e0fa71f0e80a",
+    "id": "ecf69617-a272-45d6-972d-6674086450c7",
     "date": {
       "year": 2025,
       "month": 1,
@@ -1676,11 +1938,15 @@
     "gallery": [
       {
         "path": "/blog/luto-que-vira-amor-samuel-e-juvelino-transformam-a-dor-em-voluntariado/img-001.jpg",
-        "alt": "Samuel e Juvelino, viúvos que perderam esposas para o câncer, hoje voluntários do Instituto"
+        "alt": "Samuel e Juvelino, viúvos que perderam esposas para o câncer, hoje voluntários do Instituto",
+        "height": 844,
+        "width": 633
       },
       {
         "path": "/blog/luto-que-vira-amor-samuel-e-juvelino-transformam-a-dor-em-voluntariado/img-002.jpg",
-        "alt": "Encontro de Samuel e Juvelino no Instituto Sempre Com Você como voluntários"
+        "alt": "Encontro de Samuel e Juvelino no Instituto Sempre Com Você como voluntários",
+        "height": 907,
+        "width": 680
       }
     ],
     "tags": [
@@ -1695,7 +1961,7 @@
     ]
   },
   {
-    "id": "ff088d4a-544a-4488-ad82-ee7e48fa2ade",
+    "id": "ab282d28-9c53-4f34-921d-9a3632548a87",
     "date": {
       "year": 2025,
       "month": 1,
@@ -1709,15 +1975,21 @@
     "gallery": [
       {
         "path": "/blog/alceu-roque-com-muita-fe-um-tratamento-bem-sucedido/img-001.jpg",
-        "alt": "Alceu Roque com Andrea e padre em momento de gratidão pelo tratamento bem-sucedido"
+        "alt": "Alceu Roque com Andrea e padre em momento de gratidão pelo tratamento bem-sucedido",
+        "height": 532,
+        "width": 710
       },
       {
         "path": "/blog/alceu-roque-com-muita-fe-um-tratamento-bem-sucedido/img-002.jpg",
-        "alt": "Alceu Roque celebrando sua recuperação com muita fé e alegria"
+        "alt": "Alceu Roque celebrando sua recuperação com muita fé e alegria",
+        "height": 821,
+        "width": 616
       },
       {
         "path": "/blog/alceu-roque-com-muita-fe-um-tratamento-bem-sucedido/img-003.jpg",
-        "alt": "Registro especial do paciente Alceu Roque agradecendo o tratamento do Instituto"
+        "alt": "Registro especial do paciente Alceu Roque agradecendo o tratamento do Instituto",
+        "width": 681,
+        "height": 511
       }
     ],
     "tags": [
@@ -1731,7 +2003,7 @@
     ]
   },
   {
-    "id": "8cf88169-18b0-4664-84dc-8bfb139de385",
+    "id": "8a7710e9-5037-4640-8e08-1d7b4a14dd69",
     "date": {
       "year": 2025,
       "month": 2,
@@ -1745,11 +2017,15 @@
     "gallery": [
       {
         "path": "/blog/milton-e-vinicios-com-as-esposas-ao-lado-o-tratamento-fica-mais-leve/img-001.jpg",
-        "alt": "Milton e Vinícios com suas esposas em atendimento no Instituto Sempre Com Você"
+        "alt": "Milton e Vinícios com suas esposas em atendimento no Instituto Sempre Com Você",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/milton-e-vinicios-com-as-esposas-ao-lado-o-tratamento-fica-mais-leve/img-002.jpg",
-        "alt": "As esposas dos pacientes Milton e Vinícios como parte fundamental do processo de cura"
+        "alt": "As esposas dos pacientes Milton e Vinícios como parte fundamental do processo de cura",
+        "height": 1200,
+        "width": 1600
       }
     ],
     "tags": [
@@ -1764,7 +2040,7 @@
     ]
   },
   {
-    "id": "fc5d2758-8ec0-4890-9d78-97582b5f4568",
+    "id": "c420744c-a493-4833-bf87-604911efddc1",
     "date": {
       "year": 2025,
       "month": 2,
@@ -1778,15 +2054,21 @@
     "gallery": [
       {
         "path": "/blog/mesa-posta-para-oito-cuidado-que-tambem-alimenta-a-alma/img-001.jpg",
-        "alt": "Mesa posta para os oito pacientes do Instituto reunidos em encontro especial"
+        "alt": "Mesa posta para os oito pacientes do Instituto reunidos em encontro especial",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/mesa-posta-para-oito-cuidado-que-tambem-alimenta-a-alma/img-002.jpg",
-        "alt": "Senhor Paulo, de 76 anos, com o aparelho auditivo conquistado com apoio do Instituto"
+        "alt": "Senhor Paulo, de 76 anos, com o aparelho auditivo conquistado com apoio do Instituto",
+        "height": 836,
+        "width": 627
       },
       {
         "path": "/blog/mesa-posta-para-oito-cuidado-que-tambem-alimenta-a-alma/img-003.jpg",
-        "alt": "Momentos de celebração e partilha no encontro com os oito pacientes"
+        "alt": "Momentos de celebração e partilha no encontro com os oito pacientes",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1800,7 +2082,7 @@
     ]
   },
   {
-    "id": "aac434fa-b92a-4aff-8d3e-8a8ec75fb9a1",
+    "id": "4e54f8f1-795d-471d-97c2-55362df1259d",
     "date": {
       "year": 2025,
       "month": 3,
@@ -1814,11 +2096,15 @@
     "gallery": [
       {
         "path": "/blog/margarete-uma-historia-de-coragem-que-merece-ser-contada/img-001.jpg",
-        "alt": "Paciente Margarete em acompanhamento pelo Instituto Sempre Com Você"
+        "alt": "Paciente Margarete em acompanhamento pelo Instituto Sempre Com Você",
+        "height": 1200,
+        "width": 1600
       },
       {
         "path": "/blog/margarete-uma-historia-de-coragem-que-merece-ser-contada/img-002.jpg",
-        "alt": "Momento de cuidado e apoio à paciente Margarete"
+        "alt": "Momento de cuidado e apoio à paciente Margarete",
+        "height": 1600,
+        "width": 1200
       }
     ],
     "tags": [
@@ -1831,7 +2117,7 @@
     ]
   },
   {
-    "id": "77c9195a-8312-46ad-8244-b572aaff5ed8",
+    "id": "d7726bde-fdcc-4c3c-a14b-6c119bbefd74",
     "date": {
       "year": 2025,
       "month": 3,
@@ -1845,7 +2131,9 @@
     "gallery": [
       {
         "path": "/blog/antes-pacientes-agora-voluntarios-alceu-e-eloi-inspiram-o-instituto/img-001.jpg",
-        "alt": "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto Sempre Com Você"
+        "alt": "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto Sempre Com Você",
+        "height": 1600,
+        "width": 900
       }
     ],
     "tags": [
@@ -1859,7 +2147,7 @@
     ]
   },
   {
-    "id": "9fb21d8d-b034-45cc-94fb-3bd3c3216143",
+    "id": "084c465e-bfa0-492d-8d6e-8cf73eeda9b8",
     "date": {
       "year": 2025,
       "month": 4,
@@ -1873,31 +2161,45 @@
     "gallery": [
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-001.jpg",
-        "alt": "Mesa com alimentos e itens do evento beneficente de abril de 2025"
+        "alt": "Mesa com alimentos e itens do evento beneficente de abril de 2025",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-002.jpg",
-        "alt": "Participantes da terceira idade animando o evento beneficente"
+        "alt": "Participantes da terceira idade animando o evento beneficente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-003.jpg",
-        "alt": "Momentos de alegria e solidariedade no evento beneficente de abril"
+        "alt": "Momentos de alegria e solidariedade no evento beneficente de abril",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-004.jpg",
-        "alt": "Comunidade reunida para apoiar o Instituto no evento beneficente"
+        "alt": "Comunidade reunida para apoiar o Instituto no evento beneficente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-005.jpg",
-        "alt": "Registros do evento beneficente com participação da terceira idade"
+        "alt": "Registros do evento beneficente com participação da terceira idade",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-006.jpg",
-        "alt": "Ambiente festivo e solidário do evento beneficente de abril de 2025"
+        "alt": "Ambiente festivo e solidário do evento beneficente de abril de 2025",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-com-a-terceira-idade-a-solidariedade-que-festeja/img-007.jpg",
-        "alt": "Encerramento do evento beneficente com resultado positivo para o Instituto"
+        "alt": "Encerramento do evento beneficente com resultado positivo para o Instituto",
+        "height": 1600,
+        "width": 900
       }
     ],
     "tags": [
@@ -1910,7 +2212,7 @@
     ]
   },
   {
-    "id": "bd1549be-2e34-4b75-b723-182acbfd5a59",
+    "id": "07654dff-5d50-4c4f-b143-5361345044d2",
     "date": {
       "year": 2025,
       "month": 4,
@@ -1924,7 +2226,9 @@
     "gallery": [
       {
         "path": "/blog/palavras-amigas-das-freiras-fe-e-esperanca-que-chegam-de-maos-dadas/img-001.jpg",
-        "alt": "Alceu, Andrea e duas freiras em conversa amiga de fé e esperança"
+        "alt": "Alceu, Andrea e duas freiras em conversa amiga de fé e esperança",
+        "height": 1600,
+        "width": 900
       }
     ],
     "tags": [
@@ -1939,7 +2243,7 @@
     ]
   },
   {
-    "id": "cc9edc91-a2ca-43a1-8aff-23af58ab0900",
+    "id": "fb9603ee-6b3d-4123-b616-c4d43723ee14",
     "date": {
       "year": 2025,
       "month": 5,
@@ -1953,7 +2257,9 @@
     "gallery": [
       {
         "path": "/blog/cecilia-de-paciente-a-voluntaria-superamos-juntas/img-001.jpg",
-        "alt": "Cecília, nova voluntária e ex-paciente do Instituto, segurando placa de apoio à causa"
+        "alt": "Cecília, nova voluntária e ex-paciente do Instituto, segurando placa de apoio à causa",
+        "height": 1600,
+        "width": 900
       }
     ],
     "tags": [
@@ -1967,7 +2273,7 @@
     ]
   },
   {
-    "id": "6e48c308-df42-4baa-aa46-f3b9175aacb9",
+    "id": "d9b5b8bc-c943-4d02-a9ac-139c37dc7fdd",
     "date": {
       "year": 2025,
       "month": 6,
@@ -1981,43 +2287,63 @@
     "gallery": [
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-001.jpg",
-        "alt": "Preparativos do evento beneficente de junho com produtos organizados para venda"
+        "alt": "Preparativos do evento beneficente de junho com produtos organizados para venda",
+        "height": 852,
+        "width": 479
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-002.jpg",
-        "alt": "Evento beneficente de junho em pleno andamento com público presente"
+        "alt": "Evento beneficente de junho em pleno andamento com público presente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-003.jpg",
-        "alt": "Terceira idade e familiares participando ativamente do evento beneficente"
+        "alt": "Terceira idade e familiares participando ativamente do evento beneficente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-004.jpg",
-        "alt": "Comunidade reunida no evento beneficente de junho de 2025"
+        "alt": "Comunidade reunida no evento beneficente de junho de 2025",
+        "height": 887,
+        "width": 500
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-005.jpg",
-        "alt": "Momentos de alegria e solidariedade no evento beneficente"
+        "alt": "Momentos de alegria e solidariedade no evento beneficente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-006.jpg",
-        "alt": "Ambiente festivo e acolhedor do evento beneficente de junho"
+        "alt": "Ambiente festivo e acolhedor do evento beneficente de junho",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-007.jpg",
-        "alt": "Participantes do evento beneficente apoiando a missão do Instituto"
+        "alt": "Participantes do evento beneficente apoiando a missão do Instituto",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-008.jpg",
-        "alt": "Registros do evento beneficente de junho com ótima participação"
+        "alt": "Registros do evento beneficente de junho com ótima participação",
+        "height": 1600,
+        "width": 1200
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-009.jpg",
-        "alt": "Voluntários e familiares trabalhando juntos no evento beneficente"
+        "alt": "Voluntários e familiares trabalhando juntos no evento beneficente",
+        "height": 1600,
+        "width": 900
       },
       {
         "path": "/blog/evento-beneficente-de-junho-amor-em-forma-de-festa/img-010.jpg",
-        "alt": "Encerramento do evento beneficente de junho com gratidão e sucesso"
+        "alt": "Encerramento do evento beneficente de junho com gratidão e sucesso",
+        "height": 1600,
+        "width": 900
       }
     ],
     "tags": [

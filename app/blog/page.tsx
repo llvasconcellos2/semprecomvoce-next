@@ -34,6 +34,12 @@ function PostCard({ post }: { post: Post }) {
             alt={cover.alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            style={{
+              objectPosition:
+                cover.width && cover.height && cover.width < cover.height
+                  ? "50% 20%"
+                  : "center",
+            }}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
@@ -93,6 +99,12 @@ function FeaturedPost({ post }: { post: Post }) {
             alt={cover.alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            style={{
+              objectPosition:
+                cover.width && cover.height && cover.width < cover.height
+                  ? "50% -10%"
+                  : "center",
+            }}
             sizes="(max-width: 768px) 100vw, 50vw"
             priority
           />
