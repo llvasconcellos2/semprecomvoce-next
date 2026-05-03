@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState, useCallback } from "react";
 
 interface Polaroid {
@@ -15,9 +14,6 @@ interface PolaroidSwiperProps {
   cardWidth?: number;
   cardHeight?: number;
   className?: string;
-  spreadDistance?: number;
-  rotationAngle?: number;
-  animationDelay?: number;
 }
 
 export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
@@ -25,17 +21,12 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
   cardWidth = 256, // 16rem = 256px
   cardHeight = 352, // 22rem = 352px
   className = "",
-  spreadDistance = 40,
-  rotationAngle = 5,
-  animationDelay = 0.1,
 }) => {
   const cardStackRef = useRef<HTMLDivElement>(null);
   const isSwiping = useRef(false);
   const startX = useRef(0);
   const currentX = useRef(0);
   const animationFrameId = useRef<number | null>(null);
-
-  const [isHovering, setIsHovering] = useState(false);
 
   const [cardOrder, setCardOrder] = useState<number[]>(() =>
     Array.from({ length: polaroids.length }, (_, i) => i),
@@ -238,10 +229,6 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
                        rotateY(var(--swipe-rotate, 0deg))`,
               } as React.CSSProperties
             }
-            {...(isFirst && {
-              onHoverStart: () => setIsHovering(true),
-              onHoverEnd: () => setIsHovering(false),
-            })}
           >
             <Card
               className={isFirst ? "z-10 cursor-pointer" : "z-0"}
