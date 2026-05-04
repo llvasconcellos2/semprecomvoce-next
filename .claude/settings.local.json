@@ -16,7 +16,9 @@
       "Bash(node -e \"const d = require\\('./data/posts.json'\\); console.log\\('Posts:', d.length\\); d.forEach\\(\\(p,i\\) => i < 5 && console.log\\(i, p.date, p.slug\\)\\)\")",
       "WebFetch(domain:www.institutosemprecomvoce.com.br)",
       "Bash(node scripts/gen-post-data.js)",
-      "Bash(node -e \"const p = require\\('./data/posts.json'\\); console.log\\(JSON.stringify\\(p[0].gallery[0], null, 2\\)\\)\")"
+      "Bash(node -e \"const p = require\\('./data/posts.json'\\); console.log\\(JSON.stringify\\(p[0].gallery[0], null, 2\\)\\)\")",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot"
     ]
   },
   "enableAllProjectMcpServers": true,

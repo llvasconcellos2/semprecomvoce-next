@@ -33,7 +33,7 @@ export function Programs() {
   return (
     <section
       id="programas"
-      className="py-28 lg:py-36 bg-brand-pink-light relative grain overflow-hidden"
+      className="py-28 lg:py-36 relative z-10 grain overflow-hidden"
     >
       {/* Decorative blob */}
       <div className="absolute top-0 right-0 w-125 h-125 rounded-full bg-brand-blue/6 blur-[120px] pointer-events-none" />

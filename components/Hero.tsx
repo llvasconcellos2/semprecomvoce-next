@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { stats, anoInicio } from "@/data/data";
 import { LogoDrawing } from "./logo/LogoDrawing";
 import { LogoText } from "./logo/LogoText";
@@ -6,7 +5,7 @@ import ActionButton from "./ActionButton";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white grain">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden grain z-10">
       {/* Atmospheric gradient blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -right-40 w-187.5 h-187.5 rounded-full bg-brand-pink/[0.07] blur-[130px]" />
