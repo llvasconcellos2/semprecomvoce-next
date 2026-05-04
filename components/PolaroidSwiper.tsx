@@ -2,12 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState, useCallback } from "react";
-import { Swanky_and_Moo_Moo } from "next/font/google";
-
-const swankyAndMooMoo = Swanky_and_Moo_Moo({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 interface Polaroid {
   image: string;
@@ -304,7 +298,7 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
               image={polaroids[originalIndex].image}
               alt={polaroids[originalIndex].description}
             >
-              <p className="text-ellipsis overflow-hidden">
+              <p className="line-clamp-2 text-center font-[cursive] text-lg">
                 {polaroids[originalIndex].description}
               </p>
             </Card>
@@ -343,11 +337,7 @@ const Card = ({
         </div>
       )}
       {children && (
-        <div
-          className={`px-4 p-2 flex flex-col gap-y-2 ${swankyAndMooMoo.className} text-2xl`}
-        >
-          {children}
-        </div>
+        <div className={`px-4 p-2 flex flex-col gap-y-2`}>{children}</div>
       )}
     </div>
   );
