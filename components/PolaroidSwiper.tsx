@@ -25,6 +25,7 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
   const isRevealAnimating = useRef(false);
   const revealTimers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const [isRevealed, setIsRevealed] = useState(false);
+  const [showSwipeTip, setShowSwipeTip] = useState(true);
 
   const [cardOrder, setCardOrder] = useState<number[]>(() =>
     Array.from({ length: polaroids.length }, (_, i) => i),
@@ -152,6 +153,9 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
         cancelAnimationFrame(animationFrameId.current);
       }
       animationFrameId.current = requestAnimationFrame(() => {
+        if (showSwipeTip) {
+          setShowSwipeTip(false);
+        }
         currentX.current = clientX;
         const deltaX = currentX.current - startX.current;
         applySwipeStyles(deltaX);
@@ -305,6 +309,29 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
           </article>
         );
       })}
+      {showSwipeTip && (
+        <div className="inline-flex items-center gap-2.5 bg-brand-pink/60 text-white text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase animate-sideways-float absolute top-1/2 left-1/20 z-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fillRule="evenodd"
+              d="M20.75 12a.75.75 0 0 0-.75-.75h-9.25v1.5H20a.75.75 0 0 0 .75-.75"
+              clipRule="evenodd"
+              opacity="0.5"
+            />
+            <path
+              fill="currentColor"
+              d="M10.75 18a.75.75 0 0 1-1.28.53l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.28.53z"
+            />
+          </svg>
+          Deslize
+        </div>
+      )}
     </section>
   );
 };

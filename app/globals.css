@@ -97,6 +97,16 @@ h6 {
   }
 }
 
+@keyframes sideways-float {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+
 /* ─── Utility classes ─── */
 
 .animate-spin-slow {
@@ -109,6 +119,10 @@ h6 {
 
 .animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.animate-sideways-float {
+  animation: sideways-float 2s ease-in-out infinite;
 }
 
 li.bounce:hover .animate-float-sm {
