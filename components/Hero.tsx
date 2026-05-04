@@ -156,9 +156,9 @@ export function Hero() {
           >
             <path
               fill="currentColor"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M12 3.25a.75.75 0 0 1 .75.75v9.25h-1.5V4a.75.75 0 0 1 .75-.75"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               opacity=".5"
             ></path>
             <path
