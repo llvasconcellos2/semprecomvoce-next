@@ -17,8 +17,8 @@ export function Hero() {
         {/* ── Left: Content ── */}
         <div className="flex flex-col gap-8 order-2 lg:order-1">
           {/* Badge */}
-          <div className="hidden sm:inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-pulse-dot" />
+          <div className="hidden sm:inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase animate-pulse-dot">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-pink" />
             Cuidando de você · Desde {anoInicio}
           </div>
 
