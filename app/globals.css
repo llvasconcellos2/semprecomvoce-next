@@ -34,6 +34,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, sans-serif;
+  transition: transform 0.4s cubic-bezier(0.32, 0.08, 0.24, 1);
+}
+
+body.mobile-nav-open {
+  transform: translateX(280px);
 }
 
 h1,
