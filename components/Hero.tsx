@@ -96,7 +96,7 @@ export function Hero() {
           <div className="absolute w-87.5 h-87.5 rounded-full bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-75" />
 
           {/* Logo drawing — floating */}
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center">
             <LogoDrawing
               width={300}
               height={300}
@@ -104,7 +104,7 @@ export function Hero() {
               aria-hidden="true"
             />
             <LogoText
-              width={300}
+              width={200}
               height={41}
               className="relative z-10 drop-shadow-2xl animate-float"
               aria-hidden="true"
