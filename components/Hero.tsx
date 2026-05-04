@@ -55,7 +55,9 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
-            <ActionButton href="#doe">Conheça Nosso Trabalho</ActionButton>
+            <ActionButton className="px-8" href="#doe">
+              Conheça Nosso Trabalho
+            </ActionButton>
             <a
               href="#doe"
               className="border-2 border-brand-navy/15 text-brand-navy font-semibold font-display text-sm px-8 py-4 rounded-full
