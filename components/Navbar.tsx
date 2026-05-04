@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LogoDrawing } from "@/components/logo/LogoDrawing";
 import { LogoText } from "@/components/logo/LogoText";
+import ActionButton from "./ActionButton";
 
 const navLinks = [
   { label: "Sobre", href: "/#sobre" },
@@ -30,15 +31,7 @@ export function Navbar() {
             </Link>
           ))}
         </div>
-
-        <Link
-          href="/#doe"
-          className="shrink-0 bg-brand-pink text-white text-sm font-semibold font-display px-6 py-3 rounded-full
-                     hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30 hover:-translate-y-px
-                     active:translate-y-0 active:shadow-none transition-all duration-200"
-        >
-          Doe Agora
-        </Link>
+        <ActionButton href="/#doe">Doe Agora</ActionButton>
       </div>
     </nav>
   );

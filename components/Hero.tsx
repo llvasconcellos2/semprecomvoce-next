@@ -2,6 +2,7 @@ import Image from "next/image";
 import { stats, anoInicio } from "@/data/data";
 import { LogoDrawing } from "./logo/LogoDrawing";
 import { LogoText } from "./logo/LogoText";
+import ActionButton from "./ActionButton";
 
 export function Hero() {
   return (
@@ -55,14 +56,7 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
-            <a
-              href="#programas"
-              className="bg-brand-pink text-white font-semibold font-display text-sm px-8 py-4 rounded-full
-                         hover:bg-brand-pink/90 hover:shadow-xl hover:shadow-brand-pink/30 hover:-translate-y-0.5
-                         active:translate-y-0 transition-all duration-200"
-            >
-              Conheça Nosso Trabalho
-            </a>
+            <ActionButton href="#doe">Conheça Nosso Trabalho</ActionButton>
             <a
               href="#doe"
               className="border-2 border-brand-navy/15 text-brand-navy font-semibold font-display text-sm px-8 py-4 rounded-full

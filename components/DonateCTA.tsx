@@ -1,3 +1,5 @@
+import ActionButton from "./ActionButton";
+
 const helpOptions = [
   {
     icon: "💝",
@@ -68,18 +70,24 @@ export function DonateCTA() {
               <p className="text-white/50 text-sm leading-relaxed">
                 {item.description}
               </p>
-              <a
-                href="#"
-                className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
+              {item.primary ? (
+                <ActionButton className="mt-auto w-full">
+                  {item.cta}
+                </ActionButton>
+              ) : (
+                <a
+                  href="#"
+                  className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
                            hover:-translate-y-0.5 active:translate-y-0
                            ${
                              item.primary
                                ? "bg-brand-pink text-white hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30"
                                : "border border-white/20 text-white hover:bg-white/10"
                            }`}
-              >
-                {item.cta}
-              </a>
+                >
+                  {item.cta}
+                </a>
+              )}
             </div>
           ))}
         </div>
