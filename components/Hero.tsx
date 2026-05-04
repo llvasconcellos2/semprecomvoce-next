@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { stats, anoInicio } from "@/data/data";
+import { LogoDrawing } from "./logo/LogoDrawing";
+import { LogoText } from "./logo/LogoText";
 
 export function Hero() {
   return (
@@ -95,24 +97,17 @@ export function Hero() {
 
           {/* Logo drawing — floating */}
           <div className="flex flex-col">
-            <Image
-              src="/logo-drawing.svg"
-              alt=""
+            <LogoDrawing
               width={300}
               height={300}
               className="relative z-10 drop-shadow-2xl animate-float"
               aria-hidden="true"
-              priority
             />
-
-            <Image
-              src="/logo-text.svg"
-              alt=""
+            <LogoText
               width={300}
-              height={300}
+              height={41}
               className="relative z-10 drop-shadow-2xl animate-float"
               aria-hidden="true"
-              priority
             />
           </div>
           {/* Floating card — top right */}
