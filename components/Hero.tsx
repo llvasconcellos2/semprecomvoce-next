@@ -142,8 +142,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* <iconify-icon icon="solar:arrow-down-bold-duotone" class="text-2xl text-white animate-bounce"><template shadowrootmode="open"><style data-style="data-style">:host{display:inline-block;vertical-align:0}span,svg{display:block}</style><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 3.25a.75.75 0 0 1 .75.75v9.25h-1.5V4a.75.75 0 0 1 .75-.75" clip-rule="evenodd" opacity=".5"></path><path fill="currentColor" d="M6 13.25a.75.75 0 0 0-.53 1.28l6 6a.75.75 0 0 0 1.06 0l6-6a.75.75 0 0 0-.53-1.28z"></path></svg></template></iconify-icon> */}
-
       {/* Scroll cue */}
       <div className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 sm:flex flex-col items-center gap-2 z-10">
         <span className="text-[10px] font-semibold font-display tracking-[0.15em] uppercase text-brand-navy/50">
