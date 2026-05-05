@@ -1,6 +1,4 @@
 import posts from "@/data/posts.json";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -168,63 +166,59 @@ export default function BlogPage() {
 
   return (
     <>
-      <Navbar />
-      <main className="pt-20 min-h-screen">
-        {/* ── Hero ── */}
-        <section className="relative bg-brand-navy overflow-hidden">
-          <div
-            className="absolute inset-0 opacity-25 pointer-events-none"
-            style={{
-              backgroundImage:
-                "radial-gradient(ellipse 60% 80% at 15% 60%, #E8178A 0%, transparent 70%), radial-gradient(ellipse 50% 70% at 85% 40%, #29ABE2 0%, transparent 70%)",
-            }}
-          />
-          <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 text-center">
-            <span className="inline-block text-brand-pink text-xs font-display font-semibold tracking-[0.2em] uppercase mb-5">
-              Blog
-            </span>
-            <h1 className="font-display font-extrabold text-white! text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 tracking-tight">
-              Histórias de
-              <br />
-              <span className="text-brand-pink">Cuidado</span>
-            </h1>
-            <p className="text-white/55 text-lg max-w-xl mx-auto leading-relaxed">
-              Acompanhe os momentos de superação, amor e solidariedade que fazem
-              parte do dia a dia do Instituto.
-            </p>
-            <div className="mt-8 flex items-center justify-center gap-2 text-white/30 text-sm font-display">
-              <span>{posts.length}</span>
-              <span>histórias compartilhadas</span>
-            </div>
+      {/* ── Hero ── */}
+      <section className="relative bg-brand-navy overflow-hidden mt-20">
+        <div
+          className="absolute inset-0 opacity-25 pointer-events-none"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 60% 80% at 15% 60%, #E8178A 0%, transparent 70%), radial-gradient(ellipse 50% 70% at 85% 40%, #29ABE2 0%, transparent 70%)",
+          }}
+        />
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 text-center">
+          <span className="inline-block text-brand-pink text-xs font-display font-semibold tracking-[0.2em] uppercase mb-5">
+            Blog
+          </span>
+          <h1 className="font-display font-extrabold text-white! text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 tracking-tight">
+            Histórias de
+            <br />
+            <span className="text-brand-pink">Cuidado</span>
+          </h1>
+          <p className="text-white/55 text-lg max-w-xl mx-auto leading-relaxed">
+            Acompanhe os momentos de superação, amor e solidariedade que fazem
+            parte do dia a dia do Instituto.
+          </p>
+          <div className="mt-8 flex items-center justify-center gap-2 text-white/30 text-sm font-display">
+            <span>{posts.length}</span>
+            <span>histórias compartilhadas</span>
           </div>
+        </div>
+      </section>
+
+      {/* ── Featured post ── */}
+      {featured && (
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8 border-b border-brand-navy/6">
+          <FeaturedPost post={featured} />
         </section>
+      )}
 
-        {/* ── Featured post ── */}
-        {featured && (
-          <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8 border-b border-brand-navy/6">
-            <FeaturedPost post={featured} />
-          </section>
-        )}
+      {/* ── All posts grid ── */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+        <div className="flex items-baseline gap-3 mb-12">
+          <h2 className="font-display font-bold text-brand-navy text-2xl">
+            Todas as histórias
+          </h2>
+          <span className="text-brand-navy/30 text-sm font-display">
+            {rest.length} publicações
+          </span>
+        </div>
 
-        {/* ── All posts grid ── */}
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
-          <div className="flex items-baseline gap-3 mb-12">
-            <h2 className="font-display font-bold text-brand-navy text-2xl">
-              Todas as histórias
-            </h2>
-            <span className="text-brand-navy/30 text-sm font-display">
-              {rest.length} publicações
-            </span>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {rest.map((post) => (
-              <PostCard key={post.id} post={post} />
-            ))}
-          </div>
-        </section>
-      </main>
-      <Footer />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {rest.map((post) => (
+            <PostCard key={post.id} post={post} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
