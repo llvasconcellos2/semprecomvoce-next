@@ -1,4 +1,5 @@
 import ActionButton from "./ActionButton";
+import { GlowCard, GlowCardContent, GlowCardWrapper } from "./GlowCard";
 
 const helpOptions = [
   {
@@ -57,40 +58,39 @@ export function DonateCTA() {
         </p>
 
         {/* Action cards */}
-        <div className="grid md:grid-cols-3 gap-5 mb-12">
+        <GlowCardWrapper className="w-full grid md:grid-cols-3 gap-5 mb-12">
           {helpOptions.map((item) => (
-            <div
-              key={item.title}
-              className="bg-white/[0.07] backdrop-blur-sm rounded-3xl p-8 flex flex-col items-center gap-4 text-center border border-white/8 hover:bg-white/12 transition-colors duration-300"
-            >
-              <span className="text-4xl">{item.icon}</span>
-              <h3 className="font-display font-bold text-xl text-white!">
-                {item.title}
-              </h3>
-              <p className="text-white/50 text-sm leading-relaxed">
-                {item.description}
-              </p>
-              {item.primary ? (
-                <ActionButton className="mt-auto w-full">
-                  {item.cta}
-                </ActionButton>
-              ) : (
-                <a
-                  href="#"
-                  className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
+            <GlowCard key={item.title} className="rounded-3xl">
+              <GlowCardContent className="p-8 flex flex-col items-center gap-4 text-center bg-[#2f3b5c]">
+                <span className="text-4xl">{item.icon}</span>
+                <h3 className="font-display font-bold text-xl text-white!">
+                  {item.title}
+                </h3>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+                {item.primary ? (
+                  <ActionButton className="mt-auto w-full">
+                    {item.cta}
+                  </ActionButton>
+                ) : (
+                  <a
+                    href="#"
+                    className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
                            hover:-translate-y-0.5 active:translate-y-0
                            ${
                              item.primary
                                ? "bg-brand-pink text-white hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30"
                                : "border border-white/20 text-white hover:bg-white/10"
                            }`}
-                >
-                  {item.cta}
-                </a>
-              )}
-            </div>
+                  >
+                    {item.cta}
+                  </a>
+                )}
+              </GlowCardContent>
+            </GlowCard>
           ))}
-        </div>
+        </GlowCardWrapper>
 
         <p className="text-white/25 text-xs tracking-wide">
           Instituto Sempre Com Você · ONG registrada · Todas as doações são
