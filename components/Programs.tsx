@@ -1,3 +1,5 @@
+import GradientBackground from "./backgrounds/GradientBackground";
+
 const programs = [
   {
     icon: "🧠",
@@ -35,6 +37,7 @@ export function Programs() {
       id="programas"
       className="py-28 lg:py-36 relative z-10 grain overflow-hidden"
     >
+      <GradientBackground />
       {/* Decorative blob */}
       <div className="absolute top-0 right-0 w-125 h-125 rounded-full bg-brand-blue/6 blur-[120px] pointer-events-none" />
 

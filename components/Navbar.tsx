@@ -14,7 +14,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-navy/6">
+    <nav className="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur-md border-b border-brand-navy/6 flex-1">
       {/* Mobile layout — MobileNav renders the header bar, drawer, and overlay */}
       <MobileNav navLinks={navLinks} />
 
@@ -22,7 +22,7 @@ export function Navbar() {
       <div className="hidden md:flex max-w-7xl mx-auto px-6 lg:px-8 h-20 items-center justify-between gap-8">
         <Link href="/" className="shrink-0 flex gap-6 items-center">
           <LogoDrawing className="h-12 w-auto" />
-          <LogoText className="h-4.5 sm:h-8 w-auto" />
+          <LogoText className="h-4.5 sm:h-8 customsize:w-auto w-30" />
         </Link>
 
         <div className="flex items-center gap-8">
@@ -37,7 +37,9 @@ export function Navbar() {
           ))}
         </div>
 
-        <ActionButton href="/#doe">Doe Agora</ActionButton>
+        <ActionButton href="/#doe" className="whitespace-nowrap">
+          Doe Agora
+        </ActionButton>
       </div>
     </nav>
   );

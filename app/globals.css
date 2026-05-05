@@ -24,6 +24,9 @@
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-customsize: 60rem;
 }
 
 html {
@@ -31,14 +34,28 @@ html {
 }
 
 body {
-  background: var(--background);
+  background-color: var(--color-brand-navy);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, sans-serif;
   transition: transform 0.4s cubic-bezier(0.32, 0.08, 0.24, 1);
 }
 
 body.mobile-nav-open {
-  transform: translateX(280px);
+  transform: translate(280px, 50px) !important;
+}
+
+main {
+  background-color: var(--color-background);
+}
+main,
+nav {
+  transition: border-radius 0.4s linear;
+}
+
+body.mobile-nav-open main,
+body.mobile-nav-open nav {
+  border-top-left-radius: 30px;
+  overflow: hidden;
 }
 
 h1,

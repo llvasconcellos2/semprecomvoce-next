@@ -2,10 +2,20 @@ import { stats, anoInicio } from "@/data/data";
 import { LogoDrawing } from "./logo/LogoDrawing";
 import { LogoText } from "./logo/LogoText";
 import ActionButton from "./ActionButton";
+import { RaysBackground } from "./backgrounds/RaysBackground";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden grain z-10">
+      <RaysBackground
+        reach={35}
+        rays={45}
+        alpha1={0.6}
+        alpha2={0.6}
+        intensity={30}
+        speed={10}
+        className="absolute inset-0"
+      />
       {/* Atmospheric gradient blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -right-40 w-187.5 h-187.5 rounded-full bg-brand-pink/[0.07] blur-[130px]" />

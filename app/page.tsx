@@ -12,27 +12,12 @@ import GradientBackground from "@/components/backgrounds/GradientBackground";
 export default function Home() {
   return (
     <>
-      <div className="relative h-screen">
-        <RaysBackground
-          reach={35}
-          rays={45}
-          alpha1={0.6}
-          alpha2={0.6}
-          intensity={30}
-          speed={10}
-          className="absolute inset-0"
-        />
-        <Hero />
-      </div>
+      <Hero />
       <StatsBar />
       <Mission />
-      <div className="relative">
-        <GradientBackground />
-        <Programs />
-      </div>
+      <Programs />
       <Testimonials />
       <DonateCTA />
-      <Footer />
     </>
   );
 }
