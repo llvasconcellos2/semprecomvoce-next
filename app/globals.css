@@ -29,7 +29,7 @@
   --breakpoint-customsize: 60rem;
 }
 
-html {
+* {
   scroll-behavior: smooth;
 }
 
