@@ -35,28 +35,50 @@ html {
 
 body {
   background-color: var(--color-brand-navy);
+  background-image: radial-gradient(at 0% 0%, #1e3b60 0%, #e91e63 500%);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, sans-serif;
-  transition: transform 0.4s cubic-bezier(0.32, 0.08, 0.24, 1);
 }
 
 body.mobile-nav-open {
-  transform: translate(280px, 50px) !important;
-}
-
-main {
-  background-color: var(--color-background);
-}
-main,
-nav {
-  transition: border-radius 0.4s linear;
-}
-
-body.mobile-nav-open main,
-body.mobile-nav-open nav {
-  border-top-left-radius: 30px;
+  height: 100vh;
   overflow: hidden;
 }
+
+#viewport {
+  transition: all 0.5s ease-in-out;
+  height: 100vh;
+  overflow: scroll;
+}
+
+body.mobile-nav-open > #viewport {
+  transform: translate(280px, 50px) scale(0.9) !important;
+  position: absolute;
+  height: 90vh;
+  overflow: hidden;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.mobile-nav-drawer {
+  transition: all 0.5s ease-in-out;
+}
+
+/* .mobile-nav-drawer {
+ position: "fixed",
+              left: -DRAWER_WIDTH,
+              top: scrollOffset,
+              height: "100vh",
+              width: `${DRAWER_WIDTH}px`,
+              zIndex: 60,
+              // Always subtract the body's translateX so drawer stays at the left edge of the screen
+              // transform: `translate(0px, 0px)`,
+              // transform: `translate(-${DRAWER_WIDTH}px, -50px)`,
+} */
 
 h1,
 h2,
