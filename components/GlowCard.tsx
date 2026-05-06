@@ -23,7 +23,7 @@ export function GlowCardWrapper({
       const rect = card.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
-      card.style.background = `radial-gradient(960px circle at ${x}px ${y}px, rgba(59, 248, 251, 0.6), transparent 15%)`;
+      card.style.background = `radial-gradient(1300px circle at ${x}px ${y}px, rgba(59, 248, 251, 0.6), transparent 15%)`;
     });
   }, []);
 
