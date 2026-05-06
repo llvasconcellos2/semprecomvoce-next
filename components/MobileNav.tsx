@@ -3,10 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-import { LogoDrawing } from "@/components/logo/LogoDrawing";
-import { LogoText } from "@/components/logo/LogoText";
 import ActionButton from "./ActionButton";
-import { useWindowDimensions } from "@/lib/hooks/useWindowDimensions";
 
 interface NavLink {
   label: string;
@@ -36,6 +33,9 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
       document.body.classList.add("mobile-nav-open");
       if (viewport) viewport.style.overflow = "hidden";
       if (navHeader) navHeader.style.top = `${scrollY}px`;
+      setTimeout(() => {
+        if (navHeader) navHeader.style.top = `${scrollY}px`;
+      }, 500);
     } else {
       document.body.style.overflow = "";
       document.body.classList.remove("mobile-nav-open");
