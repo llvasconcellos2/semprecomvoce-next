@@ -3,6 +3,7 @@ import { LogoDrawing } from "./logo/LogoDrawing";
 import { LogoText } from "./logo/LogoText";
 import ActionButton from "./ActionButton";
 import { RaysBackground } from "./backgrounds/RaysBackground";
+import { RevealGroup } from "./RevealGroup";
 
 export function Hero() {
   return (
@@ -28,10 +29,14 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-1 sm:py-24 md:py-0 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         {/* ── Left: Content ── */}
-        <div className="flex flex-col gap-8 order-2 lg:order-1">
+        {/* <div className="flex flex-col gap-8 order-2 lg:order-1"> */}
+        <RevealGroup
+          stagger={150}
+          className="flex flex-col gap-8 order-2 lg:order-1"
+        >
           {/* Badge */}
           <div className="hidden sm:inline-flex items-center gap-2.5 bg-brand-pink/9 text-brand-pink text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase animate-pulse-dot">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-pink" />
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-pink animate-ping" />
             Cuidando de você · Desde {anoInicio}
           </div>
 
@@ -94,7 +99,7 @@ export function Hero() {
               </div>
             ))}
           </div>
-        </div>
+        </RevealGroup>
 
         {/* ── Right: Visual ── */}
         <div className="hidden relative md:flex items-center justify-center order-1 lg:order-2 min-h-110">

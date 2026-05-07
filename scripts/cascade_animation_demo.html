@@ -1,0 +1,170 @@
+
+<style>
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim-el {
+  opacity: 0;
+  animation: fadeInUp 0.55s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+.demo-wrap {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 28px 24px 20px;
+  background: var(--color-background-primary);
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+.demo-label {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--color-background-info);
+  color: var(--color-text-info);
+  margin-bottom: 10px;
+}
+.fake-h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.fake-p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0 0 16px;
+  line-height: 1.6;
+  max-width: 320px;
+}
+.fake-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-text-primary);
+  color: var(--color-background-primary);
+  cursor: pointer;
+  border: none;
+}
+.controls {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;
+}
+.ctrl-btn {
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: var(--border-radius-md);
+}
+.speed-row {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+}
+.speed-row label { font-size: 13px; color: var(--color-text-secondary); }
+.speed-row input { flex: 1; max-width: 160px; }
+.speed-val { font-size: 13px; font-weight: 500; min-width: 48px; color: var(--color-text-primary); }
+.easing-row { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
+.easing-row label { font-size: 13px; color: var(--color-text-secondary); }
+.easing-row select { font-size: 13px; }
+.delay-indicator {
+  display: flex; gap: 0; margin-top: 18px; align-items: flex-end;
+}
+.delay-bar {
+  display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1;
+}
+.delay-bar-fill {
+  height: 6px; border-radius: 3px;
+  background: var(--color-background-info);
+  transition: width 0.3s;
+}
+.delay-bar span { font-size: 10px; color: var(--color-text-tertiary); }
+</style>
+
+<h2 class="sr-only">Interactive cascade animation demo — adjust speed and easing to preview fade-in-up sequences</h2>
+
+<div class="speed-row">
+  <label>Stagger delay</label>
+  <input type="range" min="50" max="400" value="120" step="10" id="stagger" />
+  <span class="speed-val" id="stagger-val">120ms</span>
+</div>
+<div class="easing-row">
+  <label>Easing</label>
+  <select id="easing">
+    <option value="cubic-bezier(0.22,1,0.36,1)">spring (recommended)</option>
+    <option value="ease">ease</option>
+    <option value="ease-out">ease-out</option>
+    <option value="cubic-bezier(0.4,0,0.2,1)">material</option>
+    <option value="linear">linear</option>
+  </select>
+</div>
+<div class="controls">
+  <button class="ctrl-btn" id="replay-btn">↺ Replay animation</button>
+</div>
+
+<div class="demo-wrap" id="demo">
+  <div class="demo-label">preview</div>
+  <div class="anim-el tag" id="el0">new release</div>
+  <div class="anim-el fake-h1" id="el1">Build faster, ship with confidence</div>
+  <div class="anim-el fake-p" id="el2">The toolkit that gets out of your way — so you can focus on what actually matters.</div>
+  <div class="anim-el" id="el3">
+    <button class="fake-btn"><i class="ti ti-arrow-right" aria-hidden="true" style="font-size:15px"></i> Get started free</button>
+  </div>
+</div>
+
+<div class="delay-indicator" id="delay-bars"></div>
+
+<script>
+const ids = ['el0','el1','el2','el3'];
+const labels = ['tag','headline','subtitle','button'];
+let stagger = 120;
+let easing = 'cubic-bezier(0.22,1,0.36,1)';
+
+function buildBars() {
+  const wrap = document.getElementById('delay-bars');
+  wrap.innerHTML = '';
+  ids.forEach((id, i) => {
+    const ms = i * stagger;
+    const maxMs = (ids.length - 1) * stagger || 1;
+    const pct = Math.round((ms / Math.max(maxMs, 1)) * 100);
+    const div = document.createElement('div');
+    div.className = 'delay-bar';
+    div.innerHTML = `<div class="delay-bar-fill" style="width:${Math.max(8, pct)}%;min-width:8px"></div><span>${labels[i]}<br>${ms}ms</span>`;
+    wrap.appendChild(div);
+  });
+}
+
+function replay() {
+  ids.forEach((id, i) => {
+    const el = document.getElementById(id);
+    el.style.animation = 'none';
+    el.offsetHeight;
+    const delay = i * stagger;
+    el.style.animation = `fadeInUp 0.55s ${easing} ${delay}ms forwards`;
+  });
+  buildBars();
+}
+
+document.getElementById('stagger').addEventListener('input', e => {
+  stagger = +e.target.value;
+  document.getElementById('stagger-val').textContent = stagger + 'ms';
+  replay();
+});
+document.getElementById('easing').addEventListener('change', e => {
+  easing = e.target.value;
+  replay();
+});
+document.getElementById('replay-btn').addEventListener('click', replay);
+
+buildBars();
+</script>
