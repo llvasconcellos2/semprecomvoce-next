@@ -31,6 +31,8 @@ export function Hero() {
         {/* ── Left: Content ── */}
         {/* <div className="flex flex-col gap-8 order-2 lg:order-1"> */}
         <RevealGroup
+          blur
+          blurAmount={12}
           stagger={150}
           className="flex flex-col gap-8 order-2 lg:order-1"
         >
