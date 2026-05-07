@@ -131,7 +131,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="lg:col-span-4">
-            <h4 className="font-display font-semibold text-white/90 text-sm mb-5 tracking-wide">
+            <h4 className="font-display font-bold text-brand-pink! text-[11px] uppercase text-sm my-6 tracking-wide">
               Contato
             </h4>
             <ul className="flex flex-col gap-3.5 text-sm text-white/70">
