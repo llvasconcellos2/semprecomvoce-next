@@ -6,6 +6,7 @@ import { RaysBackground } from "./backgrounds/RaysBackground";
 import { RevealGroup } from "./RevealGroup";
 import { Reveal } from "./Reveal";
 import { StatNumber } from "./StatNumber";
+import HeroBackground from "./backgrounds/HeroBackground";
 
 export function Hero() {
   return (
@@ -13,15 +14,7 @@ export function Hero() {
       id="home"
       className="relative min-h-screen flex items-center pt-20 overflow-hidden grain z-10"
     >
-      <RaysBackground
-        reach={35}
-        rays={45}
-        alpha1={0.6}
-        alpha2={0.6}
-        intensity={30}
-        speed={10}
-        className="absolute inset-0"
-      />
+      <HeroBackground />
       {/* Atmospheric gradient blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -right-40 w-187.5 h-187.5 rounded-full bg-brand-pink/[0.07] blur-[130px]" />
