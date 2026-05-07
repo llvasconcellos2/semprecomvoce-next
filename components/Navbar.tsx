@@ -5,7 +5,7 @@ import ActionButton from "./ActionButton";
 import { MobileNav } from "./MobileNav";
 
 const navLinks = [
-  { label: "Inicial", href: "/" },
+  { label: "Inicial", href: "/#home" },
   { label: "Sobre", href: "/#sobre" },
   { label: "Programas", href: "/#programas" },
   { label: "Depoimentos", href: "/#depoimentos" },

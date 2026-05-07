@@ -6,7 +6,10 @@ import { RaysBackground } from "./backgrounds/RaysBackground";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden grain z-10">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden grain z-10"
+    >
       <RaysBackground
         reach={35}
         rays={45}
