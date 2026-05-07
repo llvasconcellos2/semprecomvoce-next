@@ -4,26 +4,26 @@ import { RevealGroup } from "./RevealGroup";
 const testimonials = [
   {
     quote:
-      "Quando recebi o diagnóstico, senti o chão desaparecer. O Instituto foi meu porto seguro — aprendi que não estava sozinha nessa batalha.",
-    name: "Maria Aparecida",
+      "Quando recebi o diagnóstico, senti o chão desaparecer. O Instituto foi meu porto seguro — aprendi que não estava sozinho nessa batalha.",
+    name: "Waldir",
     role: "Paciente em remissão",
-    avatar: "https://placehold.co/80x80/FEE9F4/E8178A?text=MA",
+    avatar: "/testimonials/01.jpg",
     featured: false,
   },
   {
     quote:
       "Como marido de uma paciente, me sentir acolhido também foi fundamental. Os grupos de apoio me ensinaram a ser mais forte para cuidar de quem amo.",
-    name: "Roberto Silva",
+    name: "Juvelino",
     role: "Familiar assistido",
-    avatar: "https://placehold.co/80x80/1D2B4F/ffffff?text=RS",
+    avatar: "/testimonials/02.jpg",
     featured: true,
   },
   {
     quote:
       "A assistência social me ajudou a conseguir meus medicamentos gratuitamente e o transporte para o tratamento. Sem isso, não sei o que teria sido de mim.",
-    name: "Beatriz Moura",
+    name: "Ana",
     role: "Paciente assistida",
-    avatar: "https://placehold.co/80x80/FEE9F4/E8178A?text=BM",
+    avatar: "/testimonials/03.jpg",
     featured: false,
   },
 ];
