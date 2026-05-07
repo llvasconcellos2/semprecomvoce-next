@@ -44,30 +44,6 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
-body.mobile-nav-open {
-  height: 100vh;
-  overflow: hidden;
-}
-
-#viewport {
-  transition: all 0.5s ease-in-out;
-  height: 100vh;
-  overflow: scroll;
-}
-
-body.mobile-nav-open > #viewport {
-  transform: translate(280px, 50px) scale(0.9) !important;
-  position: absolute;
-  height: 90vh;
-  overflow: hidden;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.mobile-nav-drawer {
-  transition: all 0.5s ease-in-out;
-}
-
 h1,
 h2,
 h3,

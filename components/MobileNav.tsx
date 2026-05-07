@@ -4,13 +4,12 @@ import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import ActionButton from "./ActionButton";
+import "./MobileNav.css";
 
 interface NavLink {
   label: string;
   href: string;
 }
-
-const DRAWER_WIDTH = 280;
 
 export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
   const [mounted, setMounted] = useState(false);
@@ -29,23 +28,18 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
     setScrollOffset(scrollY);
 
     if (isOpen) {
-      document.body.style.overflow = "hidden";
       document.body.classList.add("mobile-nav-open");
-      if (viewport) viewport.style.overflow = "hidden";
       if (navHeader) navHeader.style.top = `${scrollY}px`;
       setTimeout(() => {
         if (navHeader) navHeader.style.top = `${scrollY}px`;
       }, 500);
     } else {
-      document.body.style.overflow = "";
       document.body.classList.remove("mobile-nav-open");
       setTimeout(() => {
         if (navHeader) navHeader.style.top = "0px";
-        if (viewport) viewport.style.overflow = "auto";
       }, 500);
     }
     return () => {
-      document.body.style.overflow = "";
       document.body.classList.remove("mobile-nav-open");
     };
   }, [isOpen]);
@@ -74,20 +68,10 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
     ? createPortal(
         <>
           <div
+            id="mobile-nav-drawer"
             role="dialog"
             aria-modal="true"
             aria-label="Menu de navegação"
-            style={{
-              position: "fixed",
-              left: 0,
-              top: 0,
-              height: "100vh",
-              width: `${DRAWER_WIDTH}px`,
-              transform: isOpen
-                ? "translateX(0)"
-                : `translateX(-${DRAWER_WIDTH}px)`,
-            }}
-            className="flex flex-col overflow-hidden mobile-nav-drawer"
           >
             {/* Drawer header */}
             <div className="relative flex items-center  gap-4 px-5 h-20 border-b border-white/10">
@@ -124,17 +108,9 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
                   href={href}
                   onClick={close}
                   style={{
-                    transitionProperty: "transform, opacity",
-                    transitionDuration: "0.5s, 0.5s",
-                    transitionTimingFunction:
-                      "cubic-bezier(0.32, 0.08, 0.24, 1), ease",
                     transitionDelay: isOpen ? `${55 + i * 50}ms` : "0ms",
-                    transform: isOpen ? "translateX(0)" : "translateX(-128px)",
-                    opacity: isOpen ? 1 : 0,
                   }}
-                  className="group flex items-center justify-between px-4 py-3.5 rounded-xl
-                             text-white/65 font-semibold font-display text-lg
-                             hover:text-white hover:bg-white/8 transition-colors duration-200"
+                  className="group font-semibold font-display text-lg hover:text-white/20 hover:bg-white/8 transition-colors duration-200 mobile-nav-link"
                 >
                   {label}
                   <svg
@@ -157,17 +133,11 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
 
             {/* CTA button */}
             <div
-              className="relative flex-1 px-6 pt-30 [&_.shimmer-ring]:block [&_.shimmer-ring]:w-full text-center"
+              className="relative flex-1 px-6 pt-30 [&_.shimmer-ring]:block [&_.shimmer-ring]:w-full text-center mobile-nav-cta"
               style={{
-                transitionProperty: "transform, opacity",
-                transitionDuration: "0.4s, 0.4s",
-                transitionTimingFunction:
-                  "cubic-bezier(0.32, 0.08, 0.24, 1), ease",
                 transitionDelay: isOpen
                   ? `${55 + navLinks.length * 40}ms`
                   : "0ms",
-                transform: isOpen ? "translateY(0)" : "translateY(34px)",
-                opacity: isOpen ? 1 : 0,
               }}
             >
               <ActionButton href="/#doe" onClick={close}>
@@ -244,18 +214,7 @@ function Backdrop({
       id="mobile-nav-backdrop"
       onClick={close}
       aria-hidden="true"
-      style={{
-        position: "fixed",
-        top: scrollOffset,
-        left: 0,
-        right: 0,
-        height: "calc(100vh * 0.9)",
-        zIndex: 59,
-        // background: "rgba(10, 15, 35, 0.55)",
-        opacity: isOpen ? 1 : 0,
-        pointerEvents: isOpen ? "auto" : "none",
-        transition: "opacity 0.4s cubic-bezier(0.32, 0.08, 0.24, 1)",
-      }}
+      style={{ top: scrollOffset }}
     />
   );
 }

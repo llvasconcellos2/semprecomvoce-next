@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <nav
       id="nav-header"
-      className="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur-md border-b border-brand-navy/6 flex-1"
+      className="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur-md border-b border-brand-navy/6 flex-1 drop-shadow-lg"
     >
       <div className="flex max-w-7xl mx-auto px-6 lg:px-8 h-20 items-center justify-between gap-4">
         <MobileNav navLinks={navLinks} />

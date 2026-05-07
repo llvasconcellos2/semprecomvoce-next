@@ -1,0 +1,101 @@
+@reference "tailwindcss";
+
+:root {
+  --mobile-nav-width: 280px;
+}
+
+body.mobile-nav-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#viewport {
+  transition: all 0.5s ease-in-out;
+  height: 100vh;
+  overflow: scroll;
+}
+
+body.mobile-nav-open > #viewport {
+  transform: translate(280px, 50px) scale(0.9) !important;
+  position: absolute;
+  height: 90vh;
+  overflow: hidden;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#mobile-nav-drawer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: var(--mobile-nav-width);
+  transform: translateX(calc(-1 * var(--mobile-nav-width)));
+  transition: all 0.5s ease-in-out;
+}
+
+body.mobile-nav-open > #mobile-nav-drawer {
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: calc(var(--spacing) * 4) /* 1rem = 16px */;
+  padding-block: calc(var(--spacing) * 3.5) /* 0.875rem = 14px */;
+  color: color-mix(
+    in oklab,
+    var(--color-white) /* #fff = #ffffff */ 65%,
+    transparent
+  );
+  transition-property: transform, opacity;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: cubic-bezier(0.32, 0.08, 0.24, 1), ease;
+  transform: translateX(-128px);
+  opacity: 0;
+  /* border-radius: var(--radius-xl) 0.75rem = 12px; */
+}
+
+body.mobile-nav-open > #mobile-nav-drawer .mobile-nav-link {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+body > #mobile-nav-drawer .mobile-nav-cta {
+  transition-property: transform, opacity;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: cubic-bezier(0.32, 0.08, 0.24, 1), ease;
+  transform: translateX(34px);
+  opacity: 0;
+}
+
+body.mobile-nav-open > #mobile-nav-drawer .mobile-nav-cta {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+body #mobile-nav-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 59;
+  background-color: rgba(10, 15, 35, 0.3);
+  opacity: 0;
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: ease-in-out, ease;
+  pointer-events: none;
+}
+
+body.mobile-nav-open #mobile-nav-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+  height: calc(100vh * 0.9);
+}
