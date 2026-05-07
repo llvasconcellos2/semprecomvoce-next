@@ -1,5 +1,5 @@
 import { Children, ReactNode } from "react";
-import { Reveal } from "./Reveal";
+import { Direction, Reveal } from "./Reveal";
 
 interface RevealGroupProps {
   children: ReactNode;
@@ -12,6 +12,7 @@ interface RevealGroupProps {
   once?: boolean;
   blur?: boolean;
   blurAmount?: number;
+  direction?: Direction;
 }
 
 export function RevealGroup({
@@ -24,6 +25,7 @@ export function RevealGroup({
   once,
   blur,
   blurAmount,
+  direction,
 }: RevealGroupProps) {
   return (
     <div className={className}>

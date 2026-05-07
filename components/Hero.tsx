@@ -4,6 +4,7 @@ import { LogoText } from "./logo/LogoText";
 import ActionButton from "./ActionButton";
 import { RaysBackground } from "./backgrounds/RaysBackground";
 import { RevealGroup } from "./RevealGroup";
+import { Reveal } from "./Reveal";
 
 export function Hero() {
   return (
@@ -105,7 +106,15 @@ export function Hero() {
         </RevealGroup>
 
         {/* ── Right: Visual ── */}
-        <div className="hidden relative md:flex items-center justify-center order-1 lg:order-2 min-h-110">
+
+        <Reveal
+          blur
+          blurAmount={12}
+          direction="left"
+          duration={700}
+          distance={60}
+          className="hidden relative md:flex items-center justify-center order-1 lg:order-2 min-h-110"
+        >
           {/* Spinning ring */}
           <div className="absolute w-107.5 h-107.5 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
           {/* Gradient fill */}
@@ -155,11 +164,16 @@ export function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       {/* Scroll cue */}
-      <div className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 sm:flex flex-col items-center gap-2 z-10">
+      <Reveal
+        blur
+        blurAmount={12}
+        duration={700}
+        className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 sm:flex flex-col items-center gap-2 z-10"
+      >
         <span className="text-[10px] font-semibold font-display tracking-[0.15em] uppercase text-brand-navy/50">
           Role para baixo
         </span>
@@ -183,7 +197,7 @@ export function Hero() {
             ></path>
           </svg>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
