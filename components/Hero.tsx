@@ -33,6 +33,7 @@ export function Hero() {
         <RevealGroup
           blur
           blurAmount={12}
+          duration={700}
           stagger={150}
           className="flex flex-col gap-8 order-2 lg:order-1"
         >
