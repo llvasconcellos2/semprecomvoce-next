@@ -177,6 +177,25 @@ export function Footer() {
                 </span>{" "}
                 <a
                   className="hover:text-white/80 transition-colors duration-200"
+                  href="tel:(47) 3207-2897"
+                >
+                  (47) 3207-2897
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5 bounce">
+                <span>
+                  <Image
+                    src="/whatsapp.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="relative z-10 animate-float-sm"
+                    aria-hidden="true"
+                    priority
+                  />
+                </span>{" "}
+                <a
+                  className="hover:text-white/80 transition-colors duration-200"
                   href="tel:(47) 9971-33353"
                 >
                   (47) 9971-33353
@@ -189,7 +208,7 @@ export function Footer() {
                   (47) 99971-7565
                 </a>
               </li>
-              <li className="flex items-center gap-2.5 bounce">
+              {/* <li className="flex items-center gap-2.5 bounce">
                 <span>
                   <Image
                     src="/whatsapp.svg"
@@ -207,7 +226,7 @@ export function Footer() {
                 >
                   (47) 9971-33353
                 </a>
-              </li>
+              </li> */}
               <li className="flex items-center gap-2.5 bounce">
                 <span>
                   <Image
