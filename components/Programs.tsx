@@ -1,4 +1,6 @@
 import GradientBackground from "./backgrounds/GradientBackground";
+import { Reveal } from "./Reveal";
+import { RevealGroup } from "./RevealGroup";
 
 const programs = [
   {
@@ -43,7 +45,7 @@ export function Programs() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <RevealGroup className="text-center max-w-2xl mx-auto mb-16">
           <div className="text-brand-pink text-[11px] font-bold font-display tracking-[0.18em] uppercase mb-4">
             Nossos Programas
           </div>
@@ -56,12 +58,14 @@ export function Programs() {
             Cada programa é desenhado para atender às necessidades reais de
             pacientes e familiares, em todas as fases da jornada.
           </p>
-        </div>
+        </RevealGroup>
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
-          {programs.map((program) => (
-            <div
+          {programs.map((program, index) => (
+            <Reveal
+              direction={index % 2 === 0 ? "right" : "left"}
+              delay={index * 200}
               key={program.title}
               className={`bg-white rounded-3xl p-8 flex flex-col gap-5
                          hover:-translate-y-1.5 transition-all duration-300 hover:shadow-2xl
@@ -115,7 +119,7 @@ export function Programs() {
                   />
                 </svg>
               </a>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

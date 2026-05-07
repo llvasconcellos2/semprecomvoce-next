@@ -1,4 +1,5 @@
 import { PolaroidSwiper } from "./PolaroidSwiper";
+import { Reveal } from "./Reveal";
 
 export function Mission() {
   const POLAROIDS = [
@@ -53,13 +54,23 @@ export function Mission() {
 
   return (
     <section id="sobre" className="py-28 lg:py-36 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 xl:gap-28 items-center justify-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 xl:gap-28 items-center justify-center overflow-y-hidden">
         {/* Image block */}
-        <div className="relative order-2 lg:order-1 flex items-center justify-center">
+        <Reveal
+          direction="right"
+          duration={700}
+          distance={150}
+          className="relative order-2 lg:order-1 flex items-center justify-center"
+        >
           <PolaroidSwiper polaroids={POLAROIDS} />
-        </div>
+        </Reveal>
         {/* Text block */}
-        <div className="flex flex-col gap-6 order-1 lg:order-2">
+        <Reveal
+          direction="left"
+          duration={700}
+          distance={150}
+          className="flex flex-col gap-6 order-1 lg:order-2"
+        >
           <div className="text-brand-pink text-[11px] font-bold font-display tracking-[0.18em] uppercase">
             Quem Somos
           </div>
@@ -105,7 +116,7 @@ export function Mission() {
               />
             </svg>
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

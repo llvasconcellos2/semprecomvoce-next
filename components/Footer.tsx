@@ -20,13 +20,22 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-12 mb-14">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <Image
-              src="/logo-semprecomvc.png"
-              alt="Instituto Sempre Com Você"
-              width={200}
-              height={50}
-              className="h-16 w-auto brightness-0 invert mb-5 opacity-90"
-            />
+            <div className="flex gap-4 items-center">
+              <Image
+                src="/logo-drawing.svg"
+                alt="Instituto Sempre Com Você"
+                width={200}
+                height={50}
+                className="h-16 w-auto mb-5 opacity-90"
+              />
+              <Image
+                src="/logo-text.svg"
+                alt="Instituto Sempre Com Você"
+                width={200}
+                height={12}
+                className="h-3 w-auto brightness-0 invert mb-5 opacity-90"
+              />
+            </div>
             <p className="text-white/45 text-sm leading-relaxed max-w-sm">
               Nossa missão é melhorar a vida de pessoas com câncer e suas
               famílias, oferecendo apoio integral com amor, cuidado e dedicação

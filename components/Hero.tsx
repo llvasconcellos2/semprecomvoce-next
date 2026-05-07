@@ -5,6 +5,7 @@ import ActionButton from "./ActionButton";
 import { RaysBackground } from "./backgrounds/RaysBackground";
 import { RevealGroup } from "./RevealGroup";
 import { Reveal } from "./Reveal";
+import { StatNumber } from "./StatNumber";
 
 export function Hero() {
   return (
@@ -94,9 +95,11 @@ export function Hero() {
           <div className="flex gap-8 pt-6 border-t border-brand-navy/[0.07]">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-0.5">
-                <span className="font-display font-extrabold text-2xl text-brand-pink leading-none">
-                  {stat.number}
-                </span>
+                <StatNumber
+                  duration={3000}
+                  value={stat.number}
+                  className="font-display font-extrabold text-2xl text-brand-pink leading-none"
+                />
                 <span className="text-xs text-brand-navy/50 font-medium mt-1">
                   {stat.label}
                 </span>

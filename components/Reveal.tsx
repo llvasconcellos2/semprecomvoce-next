@@ -33,7 +33,7 @@ function getTransform(direction: Direction, distance: number) {
 export function Reveal({
   children,
   delay = 0,
-  duration = 500,
+  duration = 700,
   distance = 24,
   threshold = 0.15,
   className = "",

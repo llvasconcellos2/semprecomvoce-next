@@ -1,3 +1,6 @@
+import { Reveal } from "./Reveal";
+import { RevealGroup } from "./RevealGroup";
+
 const testimonials = [
   {
     quote:
@@ -29,7 +32,7 @@ export function Testimonials() {
   return (
     <section id="depoimentos" className="py-28 lg:py-36 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center max-w-xl mx-auto mb-16">
+        <RevealGroup className="text-center max-w-xl mx-auto mb-16">
           <div className="text-brand-pink text-[11px] font-bold font-display tracking-[0.18em] uppercase mb-4">
             Depoimentos
           </div>
@@ -38,11 +41,13 @@ export function Testimonials() {
             <br />
             nos inspiram
           </h2>
-        </div>
+        </RevealGroup>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
-            <div
+          {testimonials.map((t, index) => (
+            <Reveal
+              direction={index % 2 === 0 ? "right" : "left"}
+              delay={index * 200}
               key={t.name}
               className={`rounded-3xl p-8 flex flex-col gap-6 transition-all duration-300 hover:-translate-y-1
                          ${
@@ -95,7 +100,7 @@ export function Testimonials() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

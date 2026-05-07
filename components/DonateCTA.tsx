@@ -1,5 +1,6 @@
 import ActionButton from "./ActionButton";
 import { GlowCard, GlowCardContent, GlowCardWrapper } from "./GlowCard";
+import { RevealGroup } from "./RevealGroup";
 
 const helpOptions = [
   {
@@ -40,7 +41,7 @@ export function DonateCTA() {
         <div className="absolute -bottom-40 -right-40 w-150 h-150 rounded-full bg-brand-blue/10 blur-[130px]" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <RevealGroup className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/8 text-white text-[11px] font-bold font-display px-4 py-2 rounded-full mb-8 tracking-[0.12em] uppercase">
           ❤️ &nbsp;Como Ajudar
@@ -96,7 +97,7 @@ export function DonateCTA() {
           Instituto Sempre Com Você · ONG registrada · Todas as doações são
           revertidas integralmente para nossos programas.
         </p>
-      </div>
+      </RevealGroup>
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import { stats } from "@/data/data";
+import { StatNumber } from "./StatNumber";
 
 export function StatsBar() {
   return (
@@ -11,9 +12,11 @@ export function StatsBar() {
               className="flex flex-col items-center text-center px-8 gap-2"
             >
               <span className="text-2xl">{stat.icon}</span>
-              <span className="font-display font-extrabold text-[2.25rem] text-brand-pink leading-none">
-                {stat.number}
-              </span>
+              <StatNumber
+                duration={3000}
+                value={stat.number}
+                className="font-display font-extrabold text-[2.25rem] text-brand-pink leading-none"
+              ></StatNumber>
               <span className="text-white/50 text-sm font-medium">
                 {stat.label}
               </span>
