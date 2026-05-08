@@ -19,6 +19,57 @@ const footerLinks = [
   { label: "Blog", href: "/blog" },
 ];
 
+const socialLinks = [
+  {
+    label: (
+      <LinkedInIcon
+        width={32}
+        height={32}
+        className="relative z-10 animate-float-sm"
+        aria-hidden="true"
+      />
+    ),
+    title: "LinkedIn",
+    link: "#",
+  },
+  {
+    label: (
+      <FacebookIcon
+        width={32}
+        height={32}
+        className="relative z-10 animate-float-sm"
+        aria-hidden="true"
+      />
+    ),
+    title: "Facebook",
+    link: "https://www.facebook.com/InstitutoSempreComVocecomAndreiaNunes",
+  },
+  {
+    label: (
+      <InstagramIcon
+        width={32}
+        height={32}
+        className="relative z-10 animate-float-sm"
+        aria-hidden="true"
+      />
+    ),
+    title: "Instagram",
+    link: "https://www.instagram.com/instituto_semprecomvoce",
+  },
+  {
+    label: (
+      <YoutubeIcon
+        width={32}
+        height={32}
+        className="relative z-10 animate-float-sm"
+        aria-hidden="true"
+      />
+    ),
+    title: "Youtube",
+    link: "https://www.youtube.com/@programasemprecomvocecoman5847",
+  },
+];
+
 export function Footer() {
   return (
     <footer
@@ -49,56 +100,7 @@ export function Footer() {
               desde {anoInicio}.
             </p>
             <div className="flex gap-3 mt-6">
-              {[
-                {
-                  label: (
-                    <LinkedInIcon
-                      width={32}
-                      height={32}
-                      className="relative z-10 animate-float-sm"
-                      aria-hidden="true"
-                    />
-                  ),
-                  title: "LinkedIn",
-                  link: "#",
-                },
-                {
-                  label: (
-                    <FacebookIcon
-                      width={32}
-                      height={32}
-                      className="relative z-10 animate-float-sm"
-                      aria-hidden="true"
-                    />
-                  ),
-                  title: "Facebook",
-                  link: "https://www.facebook.com/InstitutoSempreComVocecomAndreiaNunes",
-                },
-                {
-                  label: (
-                    <InstagramIcon
-                      width={32}
-                      height={32}
-                      className="relative z-10 animate-float-sm"
-                      aria-hidden="true"
-                    />
-                  ),
-                  title: "Instagram",
-                  link: "https://www.instagram.com/instituto_semprecomvoce",
-                },
-                {
-                  label: (
-                    <YoutubeIcon
-                      width={32}
-                      height={32}
-                      className="relative z-10 animate-float-sm"
-                      aria-hidden="true"
-                    />
-                  ),
-                  title: "Youtube",
-                  link: "https://www.youtube.com/@programasemprecomvocecoman5847",
-                },
-              ].map((s) => (
+              {socialLinks.map((s) => (
                 <a
                   key={s.title}
                   href={s.link}
