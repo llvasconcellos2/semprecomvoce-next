@@ -2,11 +2,11 @@ import { stats, anoInicio } from "@/data/data";
 import { LogoDrawing } from "./logo/LogoDrawing";
 import { LogoText } from "./logo/LogoText";
 import ActionButton from "./ActionButton";
-import { RaysBackground } from "./backgrounds/RaysBackground";
 import { RevealGroup } from "./RevealGroup";
 import { Reveal } from "./Reveal";
 import { StatNumber } from "./StatNumber";
 import HeroBackground from "./backgrounds/HeroBackground";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -24,7 +24,6 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-1 sm:py-24 md:py-0 w-full grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         {/* ── Left: Content ── */}
-        {/* <div className="flex flex-col gap-8 order-2 lg:order-1"> */}
         <RevealGroup
           blur
           blurAmount={12}
@@ -71,17 +70,17 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
-            <ActionButton className="px-8" href="#doe">
+            <ActionButton className="px-8" href="/#programas">
               Conheça Nosso Trabalho
             </ActionButton>
-            <a
-              href="#doe"
+            <Link
+              href="/#doe"
               className="border-2 border-brand-navy/15 text-brand-navy font-semibold font-display text-sm px-8 py-4 rounded-full
                          hover:border-brand-navy hover:bg-brand-navy hover:text-white hover:-translate-y-0.5
                          active:translate-y-0 transition-all duration-200"
             >
-              Como Ajudar
-            </a>
+              Como Ajudar?
+            </Link>
           </div>
 
           {/* Quick stats */}

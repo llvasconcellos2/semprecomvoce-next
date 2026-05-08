@@ -67,11 +67,15 @@ export function DonateCTA() {
                 <h3 className="font-display font-bold text-xl text-white!">
                   {item.title}
                 </h3>
-                <p className="text-white/50 text-sm leading-relaxed">
+                <p className="text-white/50 text-sm leading-relaxed flex-1">
                   {item.description}
                 </p>
                 {item.primary ? (
-                  <ActionButton className="mt-auto w-full">
+                  <ActionButton
+                    href={"/"}
+                    boxClassName="w-full"
+                    className="mt-auto w-full"
+                  >
                     {item.cta}
                   </ActionButton>
                 ) : (

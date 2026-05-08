@@ -6,7 +6,7 @@ import { MobileNav } from "./MobileNav";
 import { Reveal } from "./Reveal";
 
 const navLinks = [
-  { label: "Inicial", href: "/#home" },
+  { label: "Inicial", href: "/" },
   { label: "Sobre", href: "/#sobre" },
   { label: "Programas", href: "/#programas" },
   { label: "Depoimentos", href: "/#depoimentos" },
