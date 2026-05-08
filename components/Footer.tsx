@@ -1,6 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 import { anoInicio } from "@/data/data";
+import { LogoDrawing } from "./logo/LogoDrawing";
+import { LogoText } from "./logo/LogoText";
+import { FacebookIcon } from "./icons/FacebookIcon";
+import { InstagramIcon } from "./icons/InstagramIcon";
+import { LinkedInIcon } from "./icons/LinkedInIcon";
+import { YoutubeIcon } from "./icons/YoutubeIcon";
+import { GmailIcon } from "./icons/GmailIcon";
+import { PhoneIcon } from "./icons/PhoneIcon";
+import { WhatsAppIcon } from "./icons/WhatsAppIcon";
+import { GoogleMapsIcon } from "./icons/GoogleMapsIcon";
 
 const footerLinks = [
   { label: "Quem Somos", href: "/#sobre" },
@@ -21,19 +30,17 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
             <div className="flex gap-4 items-center">
-              <Image
-                src="/logo-drawing.svg"
-                alt="Instituto Sempre Com Você"
-                width={200}
-                height={50}
-                className="h-16 w-auto mb-5 opacity-90"
+              <LogoDrawing
+                width={48}
+                height={64}
+                className="relative mb-5"
+                aria-hidden="true"
               />
-              <Image
-                src="/logo-text.svg"
-                alt="Instituto Sempre Com Você"
-                width={200}
+              <LogoText
+                width={86}
                 height={12}
-                className="h-3 w-auto brightness-0 invert mb-5 opacity-90"
+                className="brightness-0 invert mb-5"
+                aria-hidden="true"
               />
             </div>
             <p className="text-white/45 text-sm leading-relaxed max-w-sm">
@@ -45,14 +52,11 @@ export function Footer() {
               {[
                 {
                   label: (
-                    <Image
-                      src="/linkedin.svg"
-                      alt=""
+                    <LinkedInIcon
                       width={32}
                       height={32}
                       className="relative z-10 animate-float-sm"
                       aria-hidden="true"
-                      priority
                     />
                   ),
                   title: "LinkedIn",
@@ -60,14 +64,11 @@ export function Footer() {
                 },
                 {
                   label: (
-                    <Image
-                      src="/facebook.svg"
-                      alt=""
+                    <FacebookIcon
                       width={32}
                       height={32}
                       className="relative z-10 animate-float-sm"
                       aria-hidden="true"
-                      priority
                     />
                   ),
                   title: "Facebook",
@@ -75,14 +76,11 @@ export function Footer() {
                 },
                 {
                   label: (
-                    <Image
-                      src="/instagram.svg"
-                      alt=""
+                    <InstagramIcon
                       width={32}
                       height={32}
                       className="relative z-10 animate-float-sm"
                       aria-hidden="true"
-                      priority
                     />
                   ),
                   title: "Instagram",
@@ -90,14 +88,11 @@ export function Footer() {
                 },
                 {
                   label: (
-                    <Image
-                      src="/youtube.svg"
-                      alt=""
+                    <YoutubeIcon
                       width={32}
                       height={32}
                       className="relative z-10 animate-float-sm"
                       aria-hidden="true"
-                      priority
                     />
                   ),
                   title: "Youtube",
@@ -146,14 +141,11 @@ export function Footer() {
             <ul className="flex flex-col gap-3.5 text-sm text-white/70">
               <li className="flex items-center gap-2.5 bounce">
                 <span>
-                  <Image
-                    src="/gmail.svg"
-                    alt=""
+                  <GmailIcon
                     width={20}
                     height={20}
                     className="relative z-10 animate-float-sm"
-                    aria-hidden="true"
-                    priority
+                    // aria-hidden="true"
                   />
                 </span>
                 <a
@@ -165,14 +157,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5 bounce">
                 <span>
-                  <Image
-                    src="/phone.svg"
-                    alt=""
+                  <PhoneIcon
                     width={20}
                     height={20}
                     className="relative z-10 animate-float-sm"
-                    aria-hidden="true"
-                    priority
+                    // aria-hidden="true"
                   />
                 </span>{" "}
                 <a
@@ -184,14 +173,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5 bounce">
                 <span>
-                  <Image
-                    src="/whatsapp.svg"
-                    alt=""
+                  <WhatsAppIcon
                     width={20}
                     height={20}
                     className="relative z-10 animate-float-sm"
-                    aria-hidden="true"
-                    priority
+                    // aria-hidden="true"
                   />
                 </span>{" "}
                 <a
@@ -208,35 +194,13 @@ export function Footer() {
                   (47) 99971-7565
                 </a>
               </li>
-              {/* <li className="flex items-center gap-2.5 bounce">
-                <span>
-                  <Image
-                    src="/whatsapp.svg"
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="relative z-10 animate-float-sm"
-                    aria-hidden="true"
-                    priority
-                  />
-                </span>
-                <a
-                  className="hover:text-white/80 transition-colors duration-200"
-                  href="tel:(47) 9971-33353"
-                >
-                  (47) 9971-33353
-                </a>
-              </li> */}
               <li className="flex items-center gap-2.5 bounce">
                 <span>
-                  <Image
-                    src="/google-maps.svg"
-                    alt=""
+                  <GoogleMapsIcon
                     width={20}
                     height={20}
                     className="relative z-10 animate-float-sm"
-                    aria-hidden="true"
-                    priority
+                    // aria-hidden="true"
                   />
                 </span>
                 <a
