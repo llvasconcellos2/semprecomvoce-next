@@ -43,7 +43,7 @@ export function Navbar() {
             ))}
           </div>
 
-          <ActionButton href="/#doe" className="whitespace-nowrap">
+          <ActionButton href="/apoie" className="whitespace-nowrap">
             Doe Agora
           </ActionButton>
         </div>

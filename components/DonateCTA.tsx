@@ -72,7 +72,7 @@ export function DonateCTA() {
                 </p>
                 {item.primary ? (
                   <ActionButton
-                    href={"/"}
+                    href={"/apoie"}
                     boxClassName="w-full"
                     className="mt-auto w-full"
                   >
