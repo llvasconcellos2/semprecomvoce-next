@@ -66,16 +66,17 @@ export function DonationWidget() {
           {/* CONFIGURE: Replace src with your real Pix QR code image */}
           <div className="rounded-2xl border-2 border-brand-blue/20 bg-brand-blue-light p-3">
             <Image
-              src="https://placehold.co/160x160/29ABE2/ffffff?text=QR+Pix"
+              src="/PixCaixa-QRCode.png"
               alt="QR Code Pix Instituto Sempre Com Você"
-              width={160}
-              height={160}
-              className="rounded-xl"
+              width={506}
+              height={508}
+              className="rounded-xl w-50"
             />
           </div>
           <PixCopyButton chavePix={CHAVE_PIX} />
           <p className="text-xs text-brand-navy/30 text-center">
-            ✓ Seguro&nbsp;&nbsp;·&nbsp;&nbsp;✓ Instantâneo&nbsp;&nbsp;·&nbsp;&nbsp;✓ Sem taxas extras
+            ✓ Seguro&nbsp;&nbsp;·&nbsp;&nbsp;✓
+            Instantâneo&nbsp;&nbsp;·&nbsp;&nbsp;✓ Sem taxas extras
           </p>
         </div>
       )}
@@ -117,7 +118,9 @@ export function DonationWidget() {
             Quero escolher outro valor
           </a>
           <div className="flex items-center justify-center gap-1.5 pt-1">
-            <span className="text-xs" aria-hidden="true">🔒</span>
+            <span className="text-xs" aria-hidden="true">
+              🔒
+            </span>
             <span className="text-xs text-brand-navy/35">
               Pagamento seguro via MercadoPago
             </span>

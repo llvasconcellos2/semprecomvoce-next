@@ -39,6 +39,7 @@ export function RevealGroup({
           once={once}
           blur={blur}
           blurAmount={blurAmount}
+          direction={direction}
         >
           {child}
         </Reveal>

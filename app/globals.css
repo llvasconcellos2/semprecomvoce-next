@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #1d2b4f;
+  --text-shadow-hero: 1px 1px black;
 }
 
 @theme inline {
