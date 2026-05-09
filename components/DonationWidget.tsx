@@ -65,7 +65,7 @@ export function DonationWidget() {
           </p>
           {/* CONFIGURE: Replace src with your real Pix QR code image */}
           <div className="rounded-2xl border-2 border-brand-blue/20 bg-brand-blue-light p-3">
-            <Image
+            <img
               src="/PixCaixa-QRCode.png"
               alt="QR Code Pix Instituto Sempre Com Você"
               width={506}
