@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import posts from "@/data/posts.json";
+
+export const metadata: Metadata = {
+  title: "Blog — Instituto Sempre Com Você",
+  description:
+    "Histórias, atualizações e momentos do Instituto Sempre Com Você. Acompanhe nossas ações e o impacto na vida de pacientes com câncer.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog — Instituto Sempre Com Você",
+    description:
+      "Histórias e momentos do Instituto Sempre Com Você.",
+    url: "/blog",
+  },
+};
 import Link from "next/link";
 import Image from "next/image";
 

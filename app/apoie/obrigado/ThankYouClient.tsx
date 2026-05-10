@@ -137,28 +137,16 @@ function ConfettiBurst() {
   );
 }
 
-interface FloatingHeart {
-  left: string;
-  delay: string;
-  dur: string;
-  size: number;
-  opacity: number;
-}
+// Deterministic — safe to compute at module level (no hydration mismatch)
+const HEARTS = Array.from({ length: 10 }, (_, i) => ({
+  left: `${5 + i * 9.2}%`,
+  delay: `${(i * 0.7) % 5}s`,
+  dur: `${5 + ((i * 0.9) % 5)}s`,
+  size: 8 + ((i * 3) % 14),
+  opacity: 0.04 + ((i * 0.01) % 0.08),
+}));
 
 function FloatingHearts() {
-  const [hearts, setHearts] = useState<FloatingHeart[]>([]);
-
-  useEffect(() => {
-    setHearts(
-      Array.from({ length: 10 }, (_, i) => ({
-        left: `${5 + i * 9.2}%`,
-        delay: `${(i * 0.7) % 5}s`,
-        dur: `${5 + ((i * 0.9) % 5)}s`,
-        size: 8 + ((i * 3) % 14),
-        opacity: 0.04 + ((i * 0.01) % 0.08),
-      })),
-    );
-  }, []);
 
   return (
     <>
@@ -174,7 +162,7 @@ function FloatingHearts() {
         className="fixed inset-0 pointer-events-none overflow-hidden"
         aria-hidden
       >
-        {hearts.map((h, i) => (
+        {HEARTS.map((h, i) => (
           <div
             key={i}
             className="absolute"

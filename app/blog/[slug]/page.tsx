@@ -38,9 +38,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
+  const cover = post.gallery[0];
   return {
     title: `${post.title} — Instituto Sempre Com Você`,
     description: post.intro,
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.intro,
+      url: `/blog/${slug}`,
+      type: "article",
+      images: cover
+        ? [{ url: cover.path, width: cover.width, height: cover.height, alt: cover.alt }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.intro,
+      images: cover ? [cover.path] : undefined,
+    },
   };
 }
 

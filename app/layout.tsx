@@ -20,10 +20,31 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const SITE_URL = "https://institutosemprecomvoce.com.br";
+const DEFAULT_OG_IMAGE =
+  "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-001.jpg";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Instituto Sempre Com Você",
   description:
     "Nossa missão é melhorar a vida de pessoas com câncer e suas famílias.",
+  openGraph: {
+    siteName: "Instituto Sempre Com Você",
+    locale: "pt_BR",
+    type: "website",
+    title: "Instituto Sempre Com Você",
+    description:
+      "Nossa missão é melhorar a vida de pessoas com câncer e suas famílias.",
+    images: [{ url: DEFAULT_OG_IMAGE, alt: "Instituto Sempre Com Você" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Instituto Sempre Com Você",
+    description:
+      "Nossa missão é melhorar a vida de pessoas com câncer e suas famílias.",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function RootLayout({

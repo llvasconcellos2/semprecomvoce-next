@@ -14,8 +14,23 @@ export const metadata: Metadata = {
   title: "Apoie o Instituto Sempre Com Você",
   description:
     "Faça sua doação e ajude pessoas com câncer e suas famílias. Pix, cartão e boleto — rápido, seguro e transparente.",
-  alternates: {
-    canonical: "https://institutosemprecomvoce.com.br/apoie",
+  alternates: { canonical: "/apoie" },
+  openGraph: {
+    title: "Instituto Sempre Com Você",
+    description:
+      "Faça sua doação e ajude pacientes de câncer e suas famílias.",
+    url: "/apoie",
+    images: [
+      {
+        url: "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-001.jpg",
+        alt: "Instituto Sempre Com Você — faça sua doação",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Instituto Sempre Com Você",
+    description: "Faça sua doação e ajude pacientes de câncer e suas famílias.",
   },
 };
 
