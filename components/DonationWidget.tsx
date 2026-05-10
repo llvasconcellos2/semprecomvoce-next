@@ -43,35 +43,48 @@ const AMOUNTS = ["25", "50", "100", "200"] as const;
 export function DonationWidget() {
   const [tab, setTab] = useState<Tab>("pix");
   const [amount, setAmount] = useState("50");
-  const [qrcodeExpanded, setQrcodeExpanded] = useState(false);
-  const [qrcodeVisible, setQrcodeVisible] = useState(false);
-  const [origin, setOrigin] = useState({ x: 0, y: 0 });
+  type Rect = { top: number; left: number; width: number; height: number };
+  const [animRect, setAnimRect] = useState<Rect | null>(null);
+  const [targetRect, setTargetRect] = useState<Rect | null>(null);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const openQrcode = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setOrigin({
-      x: rect.left + rect.width / 2 - window.innerWidth / 2,
-      y: rect.top + rect.height / 2 - window.innerHeight / 2,
+    const r = e.currentTarget.getBoundingClientRect();
+    const pw = Math.min(480, window.innerWidth * 0.85);
+    const ph = Math.min(
+      Math.round((pw * 1280) / 711),
+      window.innerHeight * 0.82,
+    );
+    console.log({ ph });
+    setAnimRect({ top: r.top, left: r.left, width: r.width, height: r.height });
+    setTargetRect({
+      top: (window.innerHeight - ph) / 2,
+      left: (window.innerWidth - pw) / 2,
+      width: pw,
+      height: ph,
     });
-    setQrcodeExpanded(true);
+    setIsExpanded(false);
     requestAnimationFrame(() =>
-      requestAnimationFrame(() => setQrcodeVisible(true)),
+      requestAnimationFrame(() => setIsExpanded(true)),
     );
   };
 
   const closeQrcode = useCallback(() => {
-    setQrcodeVisible(false);
-    setTimeout(() => setQrcodeExpanded(false), 300);
+    setIsExpanded(false);
+    setTimeout(() => {
+      setAnimRect(null);
+      setTargetRect(null);
+    }, 380);
   }, []);
 
   useEffect(() => {
-    if (!qrcodeExpanded) return;
+    if (!animRect) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeQrcode();
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [qrcodeExpanded, closeQrcode]);
+  }, [animRect, closeQrcode]);
 
   return (
     <>
@@ -130,13 +143,17 @@ export function DonationWidget() {
               ))}
             </div>
             <p className="text-brand-navy/60 text-sm text-center leading-relaxed">
-              Click no QR code para ampliar ou copie o código
+              <b>Clique</b> no QR code para ampliar ou copie o código
             </p>
 
             {/* PIX QRCODE */}
             <button
               id="qrcode"
               onClick={openQrcode}
+              style={{
+                opacity: animRect ? 0 : 1,
+                transition: "opacity 80ms ease",
+              }}
               className="rounded-2xl border-2 border-brand-blue/20 bg-brand-blue-light p-3 transition-all
               duration-200 hover:bg-brand-blue/90 hover:shadow-lg hover:shadow-brand-blue/25
               hover:-translate-y-0.5 active:translate-y-0 cursor-pointer
@@ -213,53 +230,82 @@ export function DonationWidget() {
         )}
       </div>
 
-      {qrcodeExpanded &&
+      {animRect &&
+        targetRect &&
         createPortal(
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-label="QR Code ampliado"
-            onClick={closeQrcode}
-            className="fixed inset-0 z-50 flex items-center justify-center p-6"
-            style={{
-              backgroundColor: `rgba(10,24,61,${qrcodeVisible ? 0.7 : 0})`,
-              backdropFilter: qrcodeVisible ? "blur(6px)" : "blur(0px)",
-              transition:
-                "background-color 300ms ease, backdrop-filter 300ms ease",
-            }}
-          >
+          <>
+            {/* Backdrop */}
             <div
-              onClick={(e) => e.stopPropagation()}
+              onClick={closeQrcode}
               style={{
-                transformOrigin: `calc(50% + ${origin.x}px) calc(50% + ${origin.y}px)`,
-                transform: qrcodeVisible ? "scale(1)" : "scale(0.08)",
-                opacity: qrcodeVisible ? 1 : 0,
+                position: "fixed",
+                inset: 0,
+                zIndex: 40,
+                backgroundColor: `rgba(10,24,61,${isExpanded ? 0.72 : 0})`,
+                backdropFilter: isExpanded ? "blur(6px)" : "blur(0px)",
                 transition:
-                  "transform 350ms cubic-bezier(0.34,1.56,0.64,1), opacity 250ms ease",
+                  "background-color 1000ms ease, backdrop-filter 1000ms ease",
               }}
-              className="relative"
+            />
+
+            {/* Hero element — morphs from button rect to popup rect */}
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label="QR Code ampliado"
+              className="border-4 border-brand-blue bg-brand-blue-light"
+              style={{
+                position: "fixed",
+                zIndex: 50,
+                // overflow: "hidden",
+                borderRadius: "1rem",
+                top: isExpanded ? targetRect.top : animRect.top,
+                left: isExpanded ? targetRect.left : animRect.left,
+                width: isExpanded ? targetRect.width : animRect.width,
+                height: isExpanded ? targetRect.height : animRect.height,
+                boxShadow: isExpanded
+                  ? "0 24px 64px rgba(10,24,61,0.35)"
+                  : "0 4px 12px rgba(10,24,61,0.15)",
+                transition: [
+                  "top 1000ms cubic-bezier(0.34,1.56,0.64,1)",
+                  "left 1000ms cubic-bezier(0.34,1.56,0.64,1)",
+                  "width 1000ms cubic-bezier(0.34,1.56,0.64,1)",
+                  "height 1000ms cubic-bezier(0.34,1.56,0.64,1)",
+                  "box-shadow 1000ms ease",
+                ].join(", "),
+
+                //   transformOrigin: `calc(50% + ${origin.x}px) calc(50% + ${origin.y}px)`,
+                //   transform: qrcodeVisible ? "scale(1)" : "scale(0.08)",
+                //   opacity: qrcodeVisible ? 1 : 0,
+                //   transition:
+                //     "transform 350ms cubic-bezier(0.34,1.56,0.64,1), opacity 250ms ease",
+                // }}
+                // className="relative"
+              }}
             >
-              <button
-                onClick={closeQrcode}
-                aria-label="Fechar"
-                className="absolute -top-3 -right-3 z-10 w-9 h-9 rounded-full bg-white shadow-lg shadow-brand-navy/25 flex items-center justify-center text-brand-navy text-sm font-bold hover:bg-brand-navy hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue active:scale-95"
-                style={{
-                  transition:
-                    "background-color 150ms ease, color 150ms ease, transform 100ms ease",
-                }}
-              >
-                ✕
-              </button>
               <Image
                 src={PIX[amount].qrcode}
                 alt="QR Code Pix Instituto Sempre Com Você"
-                width={320}
-                height={320}
-                className="rounded-2xl shadow-2xl shadow-brand-navy/30 border-2 border-white/30 block"
-                style={{ width: "min(320px, 80vw)", height: "auto" }}
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="280px"
               />
+              <button
+                onClick={closeQrcode}
+                aria-label="Fechar"
+                style={{
+                  zIndex: 1000,
+                  opacity: isExpanded ? 1 : 0,
+                  transform: isExpanded ? "scale(1)" : "scale(0.6)",
+                  transition:
+                    "background-color 400ms ease, color 400ms ease, transform 400ms ease",
+                }}
+                className="cursor-pointer absolute -top-3 -right-3 z-10 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm shadow-lg shadow-brand-navy/25 flex items-center justify-center text-brand-navy text-sm font-bold hover:bg-brand-blue hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue active:scale-95"
+              >
+                ✕
+              </button>
             </div>
-          </div>,
+          </>,
           document.body,
         )}
     </>

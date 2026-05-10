@@ -17,8 +17,10 @@ export function PixCopyButton({ chavePix }: { chavePix: string }) {
 
   return (
     <div className="w-full flex flex-col gap-2">
-      <div className="w-full bg-brand-blue-light rounded-xl px-4 py-3 text-xs font-mono text-brand-navy/50 text-center break-all select-all leading-relaxed overflow-y-auto h-11">
-        {chavePix}
+      <div className="w-full bg-brand-blue-light border border-brand-blue rounded-xl overflow-hidden">
+        <div className="px-2 py-1 text-xs font-mono text-brand-navy/50 text-center break-all select-all leading-relaxed overflow-y-auto h-11">
+          {chavePix}
+        </div>
       </div>
       <button
         onClick={handleCopy}
