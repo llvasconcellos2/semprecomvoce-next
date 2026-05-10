@@ -76,7 +76,7 @@ export default function ApoiePage() {
       {/* ─── Hero ──────────────────────────────────────────────────── */}
       <section
         id="hero"
-        className="relative bg-brand-pink grain overflow-hidden border-b-4 border-brand-pink"
+        className="relative grain overflow-hidden border-b-4 border-brand-pink"
         style={{
           backgroundImage: "url(/cancer/quimioterapia.jpg)",
           backgroundRepeat: "no-repeat",
