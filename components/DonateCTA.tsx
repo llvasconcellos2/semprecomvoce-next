@@ -1,5 +1,7 @@
 import ActionButton from "./ActionButton";
 import { GlowCard, GlowCardContent, GlowCardWrapper } from "./GlowCard";
+import { HandsPrayingIcon } from "./icons/HandsPrayingIcon";
+import { HeartIcon } from "./icons/HeartIcon";
 import { ShareIcon } from "./icons/ShareIcon";
 import { RevealGroup } from "./RevealGroup";
 import { ShareButton } from "./ShareButton";
@@ -79,9 +81,9 @@ export function DonateCTA() {
                   <ActionButton
                     href={"/apoie"}
                     boxClassName="w-full"
-                    className="mt-auto w-full"
+                    className="mt-auto w-full flex gap-3 items-center justify-center"
                   >
-                    {item.cta}
+                    <HeartIcon /> {item.cta}
                   </ActionButton>
                 ) : item.share ? (
                   <ShareButton className="cursor-pointer mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10 flex items-center justify-center gap-3">
@@ -90,9 +92,9 @@ export function DonateCTA() {
                 ) : (
                   <a
                     href="#"
-                    className="mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10"
+                    className="flex items-center justify-center gap-3 mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10"
                   >
-                    {item.cta}
+                    <HandsPrayingIcon width={28} height={28} /> {item.cta}
                   </a>
                 )}
               </GlowCardContent>
