@@ -39,7 +39,7 @@ const helpOptions = [
 export function DonateCTA() {
   return (
     <section
-      id="doe"
+      id="ajudar"
       className="py-28 lg:py-36 bg-brand-navy relative overflow-hidden grain"
     >
       {/* Blobs */}

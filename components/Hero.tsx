@@ -74,7 +74,7 @@ export function Hero() {
               Conheça Nosso Trabalho
             </ActionButton>
             <Link
-              href="/#doe"
+              href="/#ajudar"
               className="border-2 border-brand-navy/15 text-brand-navy font-semibold font-display text-sm px-8 py-4 rounded-full
                          hover:border-brand-navy hover:bg-brand-navy hover:text-white hover:-translate-y-0.5
                          active:translate-y-0 transition-all duration-200"
