@@ -4,9 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { PixCopyButton } from "./PixCopyButton";
 
-// CONFIGURE: Replace with your Pix key (email, CPF, CNPJ, or phone) or full EMV code
-const CHAVE_PIX = "contato@institutosemprecomvoce.com.br";
-
 // CONFIGURE: Replace with payment links from your MercadoPago dashboard
 const MP_LINKS: Record<string, string> = {
   outro: "https://mpago.la/17gjCoA",
@@ -19,23 +16,23 @@ const MP_LINKS: Record<string, string> = {
 const PIX: Record<string, { text: string; qrcode: string }> = {
   outro: {
     text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406200.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe20063041315",
-    qrcode: "/pix/pix100.jpg",
+    qrcode: "/pix/Pix.jpeg",
   },
   "25": {
     text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br520400005303986540525.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62090505Doe2563047754",
-    qrcode: "/pix/pix25.jpg",
+    qrcode: "/pix/Pix25.jpeg",
   },
   "50": {
     text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br520400005303986540550.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62090505Doe5063047754",
-    qrcode: "/pix/pix50.jpg",
+    qrcode: "/pix/Pix50.jpeg",
   },
   "100": {
     text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406100.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe100630443E0",
-    qrcode: "/pix/pix100.jpg",
+    qrcode: "/pix/Pix100.jpeg",
   },
   "200": {
     text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406200.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe20063041315",
-    qrcode: "/pix/pix100.jpg",
+    qrcode: "/pix/Pix200.jpeg",
   },
 };
 
@@ -104,17 +101,21 @@ export function DonationWidget() {
           <p className="text-brand-navy/60 text-sm text-center leading-relaxed">
             Click no QR code para ampliar ou copie o código
           </p>
-          {/* CONFIGURE: Replace src with your real Pix QR code image */}
+
+          {/* PIX QRCODE */}
           <button
             id="qrcode"
-            className="rounded-2xl border-2 border-brand-blue/20 bg-brand-blue-light p-3 transition-all duration-200  hover:bg-brand-blue/90 hover:shadow-lg hover:shadow-brand-blue/25 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+            className="rounded-2xl border-2 border-brand-blue/20 bg-brand-blue-light p-3 transition-all
+            duration-200  hover:bg-brand-blue/90 hover:shadow-lg hover:shadow-brand-blue/25
+            hover:-translate-y-0.5 active:translate-y-0 cursor-pointer
+            w-27 h-27  overflow-hidden flex relative justify-center"
           >
             <Image
-              src="/PIXCaixa-QRCode.png"
+              src={PIX[amount].qrcode}
               alt="QR Code Pix Instituto Sempre Com Você"
-              width={506}
-              height={508}
-              className="rounded-xl w-20"
+              width={711}
+              height={1280}
+              className="rounded-xl w-40 max-w-40 h-74 -top-18 -left-8 absolute"
             />
           </button>
           <PixCopyButton chavePix={PIX[amount].text} />
