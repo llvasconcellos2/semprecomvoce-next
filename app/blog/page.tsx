@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import posts from "@/data/posts.json";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Blog — Instituto Sempre Com Você",
@@ -8,13 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog — Instituto Sempre Com Você",
-    description:
-      "Histórias e momentos do Instituto Sempre Com Você.",
+    description: "Histórias e momentos do Instituto Sempre Com Você.",
     url: "/blog",
   },
 };
-import Link from "next/link";
-import Image from "next/image";
 
 type Post = (typeof posts)[0];
 
@@ -168,12 +167,6 @@ function FeaturedPost({ post }: { post: Post }) {
     </Link>
   );
 }
-
-export const metadata = {
-  title: "Blog — Instituto Sempre Com Você",
-  description:
-    "Histórias de cuidado, superação e solidariedade do Instituto Sempre Com Você.",
-};
 
 export default function BlogPage() {
   const [featured, ...rest] = sortedPosts;
