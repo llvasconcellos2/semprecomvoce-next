@@ -10,6 +10,8 @@ import { GmailIcon } from "./icons/GmailIcon";
 import { PhoneIcon } from "./icons/PhoneIcon";
 import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 import { GoogleMapsIcon } from "./icons/GoogleMapsIcon";
+import { ShareButton } from "./ShareButton";
+import { ShareIcon } from "./icons/ShareIcon";
 
 const footerLinks = [
   { label: "Quem Somos", href: "/#sobre" },
@@ -113,6 +115,14 @@ export function Footer() {
                   {s.label}
                 </a>
               ))}
+
+              <ShareButton
+                className="w-10 h-10 rounded-full bg-white/8 flex items-center justify-center
+                             text-white/50 text-xs font-bold font-display uppercase
+                             hover:bg-brand-pink hover:text-white transition-all duration-200 cursor-pointer"
+              >
+                <ShareIcon />
+              </ShareButton>
             </div>
           </div>
 

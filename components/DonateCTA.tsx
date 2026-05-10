@@ -1,6 +1,8 @@
 import ActionButton from "./ActionButton";
 import { GlowCard, GlowCardContent, GlowCardWrapper } from "./GlowCard";
+import { ShareIcon } from "./icons/ShareIcon";
 import { RevealGroup } from "./RevealGroup";
+import { ShareButton } from "./ShareButton";
 
 const helpOptions = [
   {
@@ -10,6 +12,7 @@ const helpOptions = [
       "Sua contribuição, grande ou pequena, financia programas, materiais e profissionais dedicados a transformar vidas.",
     cta: "Fazer uma Doação",
     primary: true,
+    share: false,
   },
   {
     icon: "🙌",
@@ -18,6 +21,7 @@ const helpOptions = [
       "Dedique seu tempo e talento. Temos espaço para psicólogos, assistentes sociais, motoristas, comunicadores e muito mais.",
     cta: "Quero Voluntariar",
     primary: false,
+    share: false,
   },
   {
     icon: "📢",
@@ -26,6 +30,7 @@ const helpOptions = [
       "Espalhe nossa missão. Cada pessoa que nos conhece pode ser a ponte para alguém que precisa de apoio agora.",
     cta: "Compartilhar Agora",
     primary: false,
+    share: true,
   },
 ];
 
@@ -78,16 +83,14 @@ export function DonateCTA() {
                   >
                     {item.cta}
                   </ActionButton>
+                ) : item.share ? (
+                  <ShareButton className="cursor-pointer mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10 flex items-center justify-center gap-3">
+                    <ShareIcon /> Compartilhar Agora
+                  </ShareButton>
                 ) : (
                   <a
                     href="#"
-                    className={`mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-all duration-200
-                           hover:-translate-y-0.5 active:translate-y-0
-                           ${
-                             item.primary
-                               ? "bg-brand-pink text-white hover:bg-brand-pink/90 hover:shadow-lg hover:shadow-brand-pink/30"
-                               : "border border-white/20 text-white hover:bg-white/10"
-                           }`}
+                    className="mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10"
                   >
                     {item.cta}
                   </a>
