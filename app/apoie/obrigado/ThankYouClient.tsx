@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/constants";
 
 type PaymentStatus = string;
 
@@ -147,7 +148,6 @@ const HEARTS = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 function FloatingHearts() {
-
   return (
     <>
       <style>{`
@@ -206,9 +206,7 @@ export default function ThankYouClient({ status }: { status: PaymentStatus }) {
   const shareText = encodeURIComponent(
     "Acabei de fazer uma doação para o Instituto Sempre Com Você! Uma ONG incrível que apoia famílias de pacientes com câncer. Junte-se a mim! 💜",
   );
-  const shareUrl = encodeURIComponent(
-    "https://institutosemprecomvoce.com.br/apoie",
-  );
+  const shareUrl = encodeURIComponent(`${SITE_URL}/apoie`);
 
   return (
     <div className="relative min-h-[calc(100vh-280px)] flex flex-col items-center justify-center px-6 py-20 pt-40!">

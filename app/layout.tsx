@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SITE_URL } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,6 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const SITE_URL = "https://institutosemprecomvoce.com.br";
 const DEFAULT_OG_IMAGE =
   "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-001.jpg";
 
