@@ -1,0 +1,52 @@
+.impossible-avatar {
+  --size: 400px;
+  --noggin: calc(var(--size) * 0.3);
+  --height-with-noggin: calc(var(--size) + var(--noggin));
+  --border-width: calc(var(--size) * 0.015);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: var(--border-width) solid #fff;
+  background-color: yellow;
+  /* background-image: url("https://madcss.com/assets/dots005-CGuUpkHL.svg"); */
+  display: flex;
+  align-items: end;
+  position: relative;
+  --mask-size: calc(var(--size) / 2 - var(--border-width));
+  --mask-image:
+    linear-gradient(to bottom, orange 0%, orange 50%, transparent 50%),
+    /* Circle cutout */
+    radial-gradient(
+        circle at center center,
+        blue 0%,
+        blue var(--mask-size),
+        transparent var(--mask-size),
+        transparent 100%
+      );
+  --mask-repeat: no-repeat, no-repeat;
+  --mask-position:
+    center center, center calc(var(--noggin) / 2 + var(--border-width));
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--height-with-noggin);
+    background-image: var(--mask-image);
+    background-repeat: var(--mask-repeat);
+    background-position: var(--mask-position);
+    opacity: 0.7;
+    display: none;
+  }
+  img {
+    width: 100%;
+    height: var(--height-with-noggin);
+    object-fit: cover;
+    mask-image: var(--mask-image);
+    mask-repeat: var(--mask-repeat);
+    mask-position: var(--mask-position);
+    mask-mode: alpha;
+  }
+}

@@ -7,6 +7,7 @@ import { Reveal } from "./Reveal";
 import { StatNumber } from "./StatNumber";
 import HeroBackground from "./backgrounds/HeroBackground";
 import Link from "next/link";
+import ImpossibleAvatar from "./avatar/ImpossibleAvatar";
 
 export function Hero() {
   return (
@@ -101,33 +102,25 @@ export function Hero() {
         </RevealGroup>
 
         {/* ── Right: Visual ── */}
-
         <Reveal
           blur
           blurAmount={12}
           direction="left"
           duration={700}
           distance={60}
-          className="hidden relative md:flex items-center justify-center order-1 lg:order-2 min-h-110"
+          className="relative flex items-center justify-center order-2 md:min-h-110 -m-10 pt-10 scale-70 md:scale-100"
         >
           {/* Spinning ring */}
-          <div className="absolute w-107.5 h-107.5 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
-          {/* Gradient fill */}
-          <div className="absolute w-87.5 h-87.5 rounded-full bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-75" />
+          <div className="absolute w-130 h-130 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
 
           {/* Logo drawing — floating */}
           <div className="flex flex-col items-center">
-            <LogoDrawing
-              width={300}
-              height={300}
-              className="relative z-10 drop-shadow-2xl animate-float"
-              aria-hidden="true"
-            />
-            <LogoText
-              width={200}
-              height={41}
-              className="relative z-10 drop-shadow-2xl animate-float"
-              aria-hidden="true"
+            <ImpossibleAvatar
+              imgSrc="/andrea.png"
+              imgWidth={463}
+              imgHeight={602}
+              imgAlt="Andrea"
+              className="relative z-10 drop-shadow-2xl animate-float bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-75"
             />
           </div>
           {/* Floating card — top right */}
