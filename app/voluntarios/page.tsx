@@ -4,6 +4,8 @@ import { Reveal } from "@/components/Reveal";
 import { RevealGroup } from "@/components/RevealGroup";
 import GradientBackground from "@/components/backgrounds/GradientBackground";
 import ActionButton from "@/components/ActionButton";
+import { HandsIcon } from "@/components/icons/HandsIcon";
+import { HeartIcon } from "@/components/icons/HeartIcon";
 
 export const metadata: Metadata = {
   title: "Seja Voluntário — Instituto Sempre Com Você",
@@ -128,38 +130,34 @@ export default function VoluntariosPage() {
       {/* ─────────────────────────────────────────
           1. HERO
       ───────────────────────────────────────── */}
-      <section className="relative bg-brand-blue-light overflow-hidden pt-20">
+      <section className="relative bg-brand-blue-light overflow-hidden pt-20 xl:pt-30">
         {/* Decorative blobs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-brand-blue/10 blur-[100px]" />
-          <div className="absolute bottom-0 left-1/4 w-72 h-72 rounded-full bg-brand-pink/8 blur-[80px]" />
+          <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-brand-blue/40 blur-[100px]" />
+          <div className="absolute -bottom-1/6 -left-1/18 w-72 h-72 rounded-full bg-brand-pink/20 blur-[80px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 sm:max-w-2xl lg:max-w-5xl max-w-7xl mx-auto">
           {/* Two-column grid — both mobile and desktop */}
-          <div className="grid grid-cols-2 lg:gap-16 items-end min-h-80 lg:min-h-140">
+          <div className="grid grid-cols-[1fr_200px] lg:grid-cols-[1fr_450px] xl:grid-cols-[1fr_700px] lg:gap-16 min-h-50 lg:min-h-140">
             {/* Left: Text */}
             <RevealGroup
               blur
               blurAmount={10}
               duration={700}
               stagger={150}
-              className="flex flex-col gap-3 lg:gap-6 pb-8 lg:pb-20"
+              className="flex flex-col gap-3 lg:gap-6 pb-0 pt-6 pl-4 justify-center lg:pb-8 xl:pb-14"
             >
               {/* Badge — desktop only */}
-              <div className="hidden lg:inline-flex items-center gap-2 bg-brand-blue/15 text-brand-blue text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
+              <div className="hidden lg:inline-flex gap-2 bg-brand-blue/15 text-brand-blue text-[11px] font-bold font-display px-4 py-2 rounded-full w-fit tracking-[0.12em] uppercase">
                 ✨ Seja Voluntário
               </div>
 
               {/* Headline */}
-              <h1 className="font-display font-extrabold text-[1.5rem] sm:text-[2rem] lg:text-[3.5rem] xl:text-[4.25rem] text-brand-navy leading-[1.05] tracking-tight">
-                Doe seu
+              <h1 className="font-display font-extrabold text-[1.8rem] sm:text-[2rem] lg:text-[3.5rem] xl:text-[4.25rem] text-brand-navy leading-[1.15] tracking-tight">
+                <span className="text-brand-pink">Doe</span> seu tempo.
                 <br />
-                tempo.
-                <br />
-                <span className="text-brand-pink">Transforme</span>
-                <br />
-                vidas.
+                <span className="text-brand-pink">Transforme</span> vidas.
               </h1>
 
               {/* Description — desktop only */}
@@ -184,28 +182,49 @@ export default function VoluntariosPage() {
               direction="left"
               duration={700}
               distance={40}
-              className="self-end flex items-end justify-center lg:justify-end"
+              className="self-end flex items-end justify-end lg:justify-end"
             >
               <Image
-                src="/cancer/voluntario.png"
+                src="/cancer/voluntario-coracao.png"
                 alt="Voluntária do Instituto Sempre Com Você cuidando de paciente"
-                width={848}
-                height={1105}
-                className="h-52 sm:h-64 lg:h-[500px] w-auto object-contain object-bottom"
+                width={944}
+                height={793}
+                className="h-40  lg:h-125 w-auto object-contain object-bottom"
                 priority
               />
             </Reveal>
           </div>
 
           {/* Mobile-only: description + CTA below the grid */}
-          <div className="lg:hidden pb-10 pt-2">
+          <div className="lg:hidden pb-10 pt-2 px-4">
             <Reveal blur blurAmount={8} duration={600} delay={200}>
               <p className="text-brand-navy/65 text-base leading-[1.75] mb-6">
                 Voluntariar-se no Instituto é escolher estar ao lado de quem
                 mais precisa. Cada hora doada muda histórias e aquece o coração
                 de quem enfrenta o câncer.
               </p>
-              <ActionButton href="#">Quero me voluntariar</ActionButton>
+              <ActionButton
+                href="#"
+                className="w-full flex items-center justify-center gap-3"
+                boxClassName="w-full"
+              >
+                <p>Quero me voluntariar</p>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </ActionButton>
             </Reveal>
           </div>
         </div>
@@ -252,8 +271,8 @@ export default function VoluntariosPage() {
               <p className="text-brand-navy/70 text-lg leading-[1.8]">
                 Pesquisas mostram que voluntários relatam maior sensação de
                 propósito, redução do estresse e crescimento pessoal
-                significativo. No Instituto, isso se traduz em histórias de
-                cura — não só dos pacientes, mas também de quem cuida.
+                significativo. No Instituto, isso se traduz em histórias de cura
+                — não só dos pacientes, mas também de quem cuida.
               </p>
             </Reveal>
           </div>
@@ -304,7 +323,7 @@ export default function VoluntariosPage() {
       ───────────────────────────────────────── */}
       <section className="py-28 lg:py-36 relative z-10 grain overflow-hidden">
         <GradientBackground />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-pink/6 blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-125 h-125 rounded-full bg-brand-pink/6 blur-[120px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <RevealGroup
@@ -370,7 +389,7 @@ export default function VoluntariosPage() {
           4. GRATIDÃO
       ───────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-brand-pink-light relative z-10 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-80 rounded-full bg-brand-pink/10 blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-80 rounded-full bg-brand-pink/10 blur-[100px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <RevealGroup
@@ -479,8 +498,8 @@ export default function VoluntariosPage() {
       ───────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-brand-navy relative overflow-hidden grain">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-brand-pink/12 blur-[130px]" />
-          <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-blue/10 blur-[130px]" />
+          <div className="absolute -top-40 -left-40 w-150 h-150 rounded-full bg-brand-pink/12 blur-[130px]" />
+          <div className="absolute -bottom-40 -right-40 w-150 h-150 rounded-full bg-brand-blue/10 blur-[130px]" />
         </div>
 
         <RevealGroup

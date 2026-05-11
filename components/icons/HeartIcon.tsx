@@ -1,12 +1,23 @@
 import type { SVGProps } from "react";
 
-export function HeartIcon(props: SVGProps<SVGSVGElement>) {
+export function HeartIcon({
+  width = 24,
+  height = 24,
+  className,
+  props,
+}: {
+  width?: number;
+  height?: number;
+  className?: string;
+  props?: SVGProps<SVGSVGElement>;
+}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
+      className={className ?? ""}
       {...props}
     >
       <title>Coração</title>
