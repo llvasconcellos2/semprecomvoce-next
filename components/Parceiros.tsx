@@ -55,7 +55,7 @@ const partners = [
   },
   {
     name: "RAC",
-    logo: "/parceiros/ra.png",
+    logo: "/parceiros/rac.png",
     url: "https://www.facebook.com/rac1centroautomotivo/",
   },
   {

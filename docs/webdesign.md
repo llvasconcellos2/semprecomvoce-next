@@ -13,7 +13,7 @@
 ## Local Server
 
 - **Always serve on localhost** — never screenshot a `file:///` URL.
-- Start the dev server: `pnpm dev` (serves the project root at `http://localhost:3000`)
+- Start the dev server: `pnpm dev` (serves the project root at `https://localhost:3000`)
 - Start the dev server in the background before taking any screenshots.
 - If the server is already running, do not start a second instance.
 

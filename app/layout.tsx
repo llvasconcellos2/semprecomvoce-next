@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { DonationPopup } from "@/components/DonationPopup";
 import { SITE_URL } from "@/lib/constants";
 
 const geistSans = Geist({
@@ -64,6 +65,7 @@ export default function RootLayout({
           <main className="flex-1 bg-white">{children}</main>
           <Footer />
         </div>
+        <DonationPopup delay={60_000} />
       </body>
     </html>
   );

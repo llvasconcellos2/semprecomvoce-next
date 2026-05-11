@@ -256,7 +256,7 @@ export function DonationWidget() {
               className="border-4 border-brand-blue bg-brand-blue-light"
               style={{
                 position: "fixed",
-                zIndex: 50,
+                zIndex: 100,
                 // overflow: "hidden",
                 borderRadius: "1rem",
                 top: isExpanded ? targetRect.top : animRect.top,
