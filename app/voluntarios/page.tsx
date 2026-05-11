@@ -4,8 +4,6 @@ import { Reveal } from "@/components/Reveal";
 import { RevealGroup } from "@/components/RevealGroup";
 import GradientBackground from "@/components/backgrounds/GradientBackground";
 import ActionButton from "@/components/ActionButton";
-import { HandsIcon } from "@/components/icons/HandsIcon";
-import { HeartIcon } from "@/components/icons/HeartIcon";
 
 export const metadata: Metadata = {
   title: "Seja Voluntário — Instituto Sempre Com Você",
@@ -29,6 +27,13 @@ const areas: {
   accent: Accent;
 }[] = [
   {
+    icon: "📊",
+    title: "Administrativo e Financeiro",
+    description:
+      "Sua experiência em gestão, finanças ou administração fortalece nossa capacidade de ajudar cada vez mais pessoas.",
+    accent: "green",
+  },
+  {
     icon: "🤝",
     title: "Assistência Social",
     description:
@@ -43,6 +48,20 @@ const areas: {
     accent: "pink",
   },
   {
+    icon: "💰",
+    title: "Captação de Recursos",
+    description:
+      "Contribua para a sustentabilidade do Instituto através de campanhas, parcerias e iniciativas de arrecadação.",
+    accent: "blue",
+  },
+  {
+    icon: "📢",
+    title: "Marketing",
+    description:
+      "Use sua criatividade para ampliar a voz do Instituto: redes sociais, campanhas, design e comunicação com propósito.",
+    accent: "purple",
+  },
+  {
     icon: "🩺",
     title: "Trabalhadores da Saúde",
     description:
@@ -55,27 +74,6 @@ const areas: {
     description:
       "Ajude pacientes a chegarem às consultas e tratamentos. Um trajeto pode ser a diferença entre se cuidar ou não.",
     accent: "orange",
-  },
-  {
-    icon: "📢",
-    title: "Marketing",
-    description:
-      "Use sua criatividade para ampliar a voz do Instituto: redes sociais, campanhas, design e comunicação com propósito.",
-    accent: "purple",
-  },
-  {
-    icon: "💰",
-    title: "Captação de Recursos",
-    description:
-      "Contribua para a sustentabilidade do Instituto através de campanhas, parcerias e iniciativas de arrecadação.",
-    accent: "blue",
-  },
-  {
-    icon: "📊",
-    title: "Administrativo e Financeiro",
-    description:
-      "Sua experiência em gestão, finanças ou administração fortalece nossa capacidade de ajudar cada vez mais pessoas.",
-    accent: "green",
   },
 ];
 
@@ -169,7 +167,11 @@ export default function VoluntariosPage() {
 
               {/* CTA — desktop only */}
               <div className="hidden lg:block">
-                <ActionButton href="#" boxClassName="w-fit">
+                <ActionButton
+                  target="_blank"
+                  href="https://forms.gle/gkEwPJXEnHFS2aM78"
+                  boxClassName="w-fit"
+                >
                   Quero me voluntariar
                 </ActionButton>
               </div>
@@ -204,7 +206,8 @@ export default function VoluntariosPage() {
                 de quem enfrenta o câncer.
               </p>
               <ActionButton
-                href="#"
+                target="_blank"
+                href="https://forms.gle/gkEwPJXEnHFS2aM78"
                 className="w-full flex items-center justify-center gap-3"
                 boxClassName="w-full"
               >
@@ -526,7 +529,8 @@ export default function VoluntariosPage() {
 
           <div className="flex justify-center">
             <ActionButton
-              href="#"
+              target="_blank"
+              href="https://forms.gle/gkEwPJXEnHFS2aM78"
               className="px-12 text-base text-center"
               boxClassName="inline-block"
             >
