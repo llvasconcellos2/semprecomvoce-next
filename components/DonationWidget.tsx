@@ -273,14 +273,6 @@ export function DonationWidget() {
                   "height 1000ms cubic-bezier(0.34,1.56,0.64,1)",
                   "box-shadow 1000ms ease",
                 ].join(", "),
-
-                //   transformOrigin: `calc(50% + ${origin.x}px) calc(50% + ${origin.y}px)`,
-                //   transform: qrcodeVisible ? "scale(1)" : "scale(0.08)",
-                //   opacity: qrcodeVisible ? 1 : 0,
-                //   transition:
-                //     "transform 350ms cubic-bezier(0.34,1.56,0.64,1), opacity 250ms ease",
-                // }}
-                // className="relative"
               }}
             >
               <Image

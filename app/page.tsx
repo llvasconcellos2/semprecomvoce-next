@@ -18,6 +18,7 @@ import { Mission } from "@/components/Mission";
 import { Programs } from "@/components/Programs";
 import { Testimonials } from "@/components/Testimonials";
 import { DonateCTA } from "@/components/DonateCTA";
+import { Parceiros } from "@/components/Parceiros";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <StatsBar />
       <Mission />
       <Programs />
+      <Parceiros />
       <Testimonials />
       <DonateCTA />
     </>
