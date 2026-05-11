@@ -91,7 +91,7 @@ export function DonateCTA() {
                   </ShareButton>
                 ) : (
                   <a
-                    href="#"
+                    href="/voluntarios"
                     className="flex items-center justify-center gap-3 mt-auto w-full py-3.5 rounded-full font-semibold font-display text-sm transition-[transform,background-color] duration-200 hover:-translate-y-0.5 active:translate-y-0 border border-white/20 text-white hover:bg-white/10"
                   >
                     <HandsPrayingIcon width={28} height={28} /> {item.cta}
