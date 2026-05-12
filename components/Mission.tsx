@@ -13,7 +13,7 @@ export function Mission() {
       image:
         "/blog/margarete-uma-historia-de-coragem-que-merece-ser-contada/img-001.jpg",
       description:
-        "Paciente Margarete em acompanhamento pelo Instituto Sempre Com Você",
+        "Paciente Margarete em acompanhamento pelo Instituto do Câncer Sempre Com Você",
     },
     {
       image:
@@ -80,10 +80,10 @@ export function Mission() {
             do tratamento médico
           </h2>
           <p className="text-brand-navy/60 text-lg leading-[1.8]">
-            Fundado em 2009, o Instituto Sempre Com Você nasceu da convicção de
-            que o cuidado integral ao paciente com câncer precisa ir muito além
-            da medicina — envolve o ser humano em sua totalidade: emoções,
-            relações e condições de vida.
+            Fundado em 2009, o Instituto do Câncer Sempre Com Você nasceu da
+            convicção de que o cuidado integral ao paciente com câncer precisa
+            ir muito além da medicina — envolve o ser humano em sua totalidade:
+            emoções, relações e condições de vida.
           </p>
           <blockquote className="border-l-4 border-brand-pink pl-6 py-1 my-2">
             <p className="text-brand-navy font-semibold text-xl leading-relaxed font-display italic">

@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Blog — Instituto Sempre Com Você",
+  title: "Blog — Instituto do Câncer Sempre Com Você",
   description:
-    "Histórias, atualizações e momentos do Instituto Sempre Com Você. Acompanhe nossas ações e o impacto na vida de pacientes com câncer.",
+    "Histórias, atualizações e momentos do Instituto do Câncer Sempre Com Você. Acompanhe nossas ações e o impacto na vida de pacientes com câncer.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog — Instituto Sempre Com Você",
-    description: "Histórias e momentos do Instituto Sempre Com Você.",
+    title: "Blog — Instituto do Câncer Sempre Com Você",
+    description: "Histórias e momentos do Instituto do Câncer Sempre Com Você.",
     url: "/blog",
   },
 };

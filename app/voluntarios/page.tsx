@@ -6,13 +6,13 @@ import GradientBackground from "@/components/backgrounds/GradientBackground";
 import ActionButton from "@/components/ActionButton";
 
 export const metadata: Metadata = {
-  title: "Seja Voluntário — Instituto Sempre Com Você",
+  title: "Seja Voluntário — Instituto do Câncer Sempre Com Você",
   description:
-    "Doe seu tempo e conhecimento para transformar vidas. Junte-se aos voluntários do Instituto Sempre Com Você e faça parte dessa corrente do bem.",
+    "Doe seu tempo e conhecimento para transformar vidas. Junte-se aos voluntários do Instituto do Câncer Sempre Com Você e faça parte dessa corrente do bem.",
   openGraph: {
-    title: "Seja Voluntário — Instituto Sempre Com Você",
+    title: "Seja Voluntário — Instituto do Câncer Sempre Com Você",
     description:
-      "Doe seu tempo e conhecimento para transformar vidas. Junte-se aos voluntários do Instituto Sempre Com Você.",
+      "Doe seu tempo e conhecimento para transformar vidas. Junte-se aos voluntários do Instituto do Câncer Sempre Com Você.",
     url: "/voluntarios",
   },
   alternates: { canonical: "/voluntarios" },
@@ -104,13 +104,13 @@ const galleryPhotos = [
   },
   {
     src: "/blog/luto-que-vira-amor-samuel-e-juvelino-transformam-a-dor-em-voluntariado/img-002.jpg",
-    alt: "Encontro de Samuel e Juvelino no Instituto Sempre Com Você como voluntários",
+    alt: "Encontro de Samuel e Juvelino no Instituto do Câncer Sempre Com Você como voluntários",
     width: 680,
     height: 907,
   },
   {
     src: "/blog/antes-pacientes-agora-voluntarios-alceu-e-eloi-inspiram-o-instituto/img-001.jpg",
-    alt: "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto Sempre Com Você",
+    alt: "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto do Câncer Sempre Com Você",
     width: 900,
     height: 1600,
   },
@@ -188,7 +188,7 @@ export default function VoluntariosPage() {
             >
               <Image
                 src="/cancer/voluntario-coracao.png"
-                alt="Voluntária do Instituto Sempre Com Você cuidando de paciente"
+                alt="Voluntária do Instituto do Câncer Sempre Com Você cuidando de paciente"
                 width={944}
                 height={793}
                 className="h-40  lg:h-125 w-auto object-contain object-bottom"
@@ -258,10 +258,11 @@ export default function VoluntariosPage() {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-start mb-20">
             <Reveal direction="right" duration={700} blur blurAmount={8}>
               <p className="text-brand-navy/70 text-lg leading-[1.8]">
-                Ser voluntário no Instituto Sempre Com Você é muito mais do que
-                dedicar horas — é mergulhar em uma experiência profundamente
-                humana. Cada visita, cada conversa, cada transporte para uma
-                consulta carrega o peso de algo que realmente importa.
+                Ser voluntário no Instituto do Câncer Sempre Com Você é muito
+                mais do que dedicar horas — é mergulhar em uma experiência
+                profundamente humana. Cada visita, cada conversa, cada
+                transporte para uma consulta carrega o peso de algo que
+                realmente importa.
               </p>
             </Reveal>
             <Reveal
@@ -539,8 +540,8 @@ export default function VoluntariosPage() {
           </div>
 
           <p className="text-white/25 text-xs tracking-wide mt-8">
-            Instituto Sempre Com Você · ONG registrada · Voluntários fazem a
-            diferença todos os dias.
+            Instituto do Câncer Sempre Com Você · ONG registrada · Voluntários
+            fazem a diferença todos os dias.
           </p>
         </RevealGroup>
       </section>

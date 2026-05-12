@@ -4,10 +4,10 @@ import { Children, useEffect, useRef, useState } from "react";
 import { SITE_URL } from "@/lib/constants";
 
 const SHARE_TEXT =
-  "Conheça o Instituto Sempre Com Você, uma ONG que transforma vidas de pessoas com câncer e suas famílias.";
+  "Conheça o Instituto do Câncer Sempre Com Você, uma ONG que transforma vidas de pessoas com câncer e suas famílias.";
 
 const SHARE_DATA = {
-  title: "Instituto Sempre Com Você",
+  title: "Instituto do Câncer Sempre Com Você",
   text: SHARE_TEXT,
   url: SITE_URL,
 };

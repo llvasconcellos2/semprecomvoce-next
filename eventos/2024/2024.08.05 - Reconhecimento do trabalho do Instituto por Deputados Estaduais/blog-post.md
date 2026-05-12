@@ -1,7 +1,9 @@
 # Reconhecidos pelos Deputados Estaduais: Uma Honra que nos Fortalece
 
 <!-- intro -->
-Em agosto de 2024, recebemos um reconhecimento que nos tocou profundamente: o Deputado Estadual Maurício Peixer e o nosso apoiador, o Deputado Fernando Krellig, elogiaram publicamente o trabalho do Instituto Sempre Com Você. Uma honra que nos enche de responsabilidade e gratidão!
+
+Em agosto de 2024, recebemos um reconhecimento que nos tocou profundamente: o Deputado Estadual Maurício Peixer e o nosso apoiador, o Deputado Fernando Krellig, elogiaram publicamente o trabalho do Instituto do Câncer Sempre Com Você. Uma honra que nos enche de responsabilidade e gratidão!
+
 <!-- /intro -->
 
 Ser reconhecido por quem representa o povo catarinense na Assembleia Legislativa é uma confirmação de que o trabalho que fazemos importa — e chega longe. O apoio de parlamentares comprometidos com causas sociais como a nossa é fundamental para que possamos crescer, ampliar nosso alcance e defender os direitos dos nossos pacientes em todos os espaços necessários.
@@ -15,12 +17,14 @@ Somos muito gratas ao Deputado Maurício Peixer e ao Deputado Fernando Krellig p
 Com renovada determinação, seguimos em frente! 💙🙏
 
 <!-- gallery -->
+
 - ![Equipe do Instituto com o Deputado Estadual Maurício Peixer e o Deputado Fernando Krellig](./image132.jpg)
 - ![Reconhecimento do trabalho do Instituto pelos Deputados Estaduais de Santa Catarina](./image159.jpg)
 - ![Momento de gratidão e reconhecimento institucional pelos deputados estaduais](./image160.jpg)
 <!-- /gallery -->
 
 <!-- tags -->
+
 - Maurício Peixer
 - Fernando Krellig
 - deputados estaduais

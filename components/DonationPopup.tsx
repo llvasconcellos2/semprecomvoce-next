@@ -8,7 +8,9 @@ const COOKIE_NAME = "donation_popup_dismissed";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 7; // 7 days in seconds
 
 function isDismissed(): boolean {
-  return document.cookie.split("; ").some((c) => c.startsWith(`${COOKIE_NAME}=`));
+  return document.cookie
+    .split("; ")
+    .some((c) => c.startsWith(`${COOKIE_NAME}=`));
 }
 
 function dismiss(): void {
@@ -30,7 +32,9 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
 
     const t = setTimeout(() => {
       setVisible(true);
-      requestAnimationFrame(() => requestAnimationFrame(() => setAnimating(true)));
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => setAnimating(true)),
+      );
     }, delay);
 
     return () => clearTimeout(t);
@@ -89,7 +93,9 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
           style={{
             pointerEvents: "auto",
             opacity: animating ? 1 : 0,
-            transform: animating ? "translateY(0) scale(1)" : "translateY(32px) scale(0.97)",
+            transform: animating
+              ? "translateY(0) scale(1)"
+              : "translateY(32px) scale(0.97)",
             transition: [
               "opacity 400ms cubic-bezier(0.34,1.56,0.64,1)",
               "transform 400ms cubic-bezier(0.34,1.56,0.64,1)",
@@ -110,7 +116,8 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
               right: 0,
               height: "6px",
               borderRadius: "1.5rem 1.5rem 0 0",
-              background: "linear-gradient(90deg, #e8178a 0%, #29abe2 50%, #e8178a 100%)",
+              background:
+                "linear-gradient(90deg, #e8178a 0%, #29abe2 50%, #e8178a 100%)",
               backgroundSize: "200% 100%",
               animation: "gradientSlide 3s linear infinite",
             }}
@@ -141,7 +148,7 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
                   marginBottom: "0.35rem",
                 }}
               >
-                Instituto Sempre Com Você
+                Instituto do Câncer Sempre Com Você
               </p>
               <h2
                 style={{
@@ -190,12 +197,15 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
                 marginTop: "0.1rem",
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.background = "#e8178a";
+                (e.currentTarget as HTMLButtonElement).style.background =
+                  "#e8178a";
                 (e.currentTarget as HTMLButtonElement).style.color = "#ffffff";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.1)";
-                (e.currentTarget as HTMLButtonElement).style.color = "rgba(255,255,255,0.7)";
+                (e.currentTarget as HTMLButtonElement).style.background =
+                  "rgba(255,255,255,0.1)";
+                (e.currentTarget as HTMLButtonElement).style.color =
+                  "rgba(255,255,255,0.7)";
               }}
             >
               ✕
@@ -208,7 +218,8 @@ export function DonationPopup({ delay = 60_000 }: DonationPopupProps) {
               background: "#f8fafc",
               borderRadius: "0 0 1.5rem 1.5rem",
               padding: "1.25rem",
-              boxShadow: "0 32px 80px rgba(10,24,61,0.35), 0 8px 24px rgba(10,24,61,0.15)",
+              boxShadow:
+                "0 32px 80px rgba(10,24,61,0.35), 0 8px 24px rgba(10,24,61,0.15)",
             }}
           >
             <DonationWidget />

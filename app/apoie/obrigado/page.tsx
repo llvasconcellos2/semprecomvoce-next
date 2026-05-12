@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ThankYouClient from "./ThankYouClient";
 
 export const metadata: Metadata = {
-  title: "Obrigado pela sua doação | Instituto Sempre Com Você",
+  title: "Obrigado pela sua doação | Instituto do Câncer Sempre Com Você",
   description:
     "Sua generosidade faz a diferença na vida de pessoas com câncer e suas famílias.",
   robots: { index: false, follow: false },

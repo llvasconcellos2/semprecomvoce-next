@@ -251,7 +251,8 @@ export function Footer() {
 
         <div className="border-t border-white/[0.07] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/25 text-xs">
-            © 2026 Instituto Sempre Com Você. Todos os direitos reservados.
+            © 2026 Instituto do Câncer Sempre Com Você. Todos os direitos
+            reservados.
           </p>
           <p>
             <a

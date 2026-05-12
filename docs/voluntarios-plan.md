@@ -1,4 +1,4 @@
-# Página Voluntários — Instituto Sempre Com Você
+# Página Voluntários — Instituto do Câncer Sempre Com Você
 
 ## Context
 
@@ -24,7 +24,7 @@ Inspirado nos screenshots do Instituto Raízes:
 - Usar `Reveal` / `RevealGroup` com `blur` para entrada animada
 - O PNG do voluntário tem fundo transparente → funciona bem sobre o fundo claro azul
 
-**Copy headline:** *"Doe seu tempo. Transforme vidas."*
+**Copy headline:** _"Doe seu tempo. Transforme vidas."_
 
 ---
 
@@ -39,19 +39,20 @@ Inspirado nos screenshots do Instituto Raízes:
 ### 3 · "No que ajudar?" `<VoluntariosAreas>`
 
 Cards seguindo exatamente o padrão de `components/Programs.tsx`:
+
 - Grid: `md:grid-cols-2 xl:grid-cols-4`, gap 5
 - Sem abas — todo conteúdo visível em cards com hover lift + sombra colorida
 - `Reveal` com stagger de 100ms por card
 
-| # | Área | Ícone | Accent |
-|---|------|-------|--------|
-| 1 | Assistência Social | 🤝 | blue |
-| 2 | Apoio Familiar | 💛 | pink |
-| 3 | Trabalhadores da Saúde | 🩺 | green |
-| 4 | Transporte e Logística | 🚗 | orange |
-| 5 | Marketing | 📢 | purple |
-| 6 | Captação de Recursos | 💰 | blue |
-| 7 | Administrativo e Financeiro | 📊 | green |
+| #   | Área                        | Ícone | Accent |
+| --- | --------------------------- | ----- | ------ |
+| 1   | Assistência Social          | 🤝    | blue   |
+| 2   | Apoio Familiar              | 💛    | pink   |
+| 3   | Trabalhadores da Saúde      | 🩺    | green  |
+| 4   | Transporte e Logística      | 🚗    | orange |
+| 5   | Marketing                   | 📢    | purple |
+| 6   | Captação de Recursos        | 💰    | blue   |
+| 7   | Administrativo e Financeiro | 📊    | green  |
 
 ---
 
@@ -87,13 +88,13 @@ Cards seguindo exatamente o padrão de `components/Programs.tsx`:
 
 ## Components to Reuse
 
-| Import | Uso |
-|--------|-----|
-| `@/components/Reveal` | Animação de entrada por elemento |
-| `@/components/RevealGroup` | Animação de entrada em grupo com stagger |
-| `@/components/backgrounds/GradientBackground` | Background decorativo |
-| `@/components/ActionButton` | Botão primário rosa |
-| `next/image` | Todas as imagens |
+| Import                                        | Uso                                      |
+| --------------------------------------------- | ---------------------------------------- |
+| `@/components/Reveal`                         | Animação de entrada por elemento         |
+| `@/components/RevealGroup`                    | Animação de entrada em grupo com stagger |
+| `@/components/backgrounds/GradientBackground` | Background decorativo                    |
+| `@/components/ActionButton`                   | Botão primário rosa                      |
+| `next/image`                                  | Todas as imagens                         |
 
 **Tokens Tailwind existentes:** `bg-brand-navy`, `bg-brand-pink`, `bg-brand-pink-light`, `bg-brand-blue-light`, `text-brand-navy`, `font-display`, `grain`, etc.
 
@@ -102,9 +103,10 @@ Cards seguindo exatamente o padrão de `components/Programs.tsx`:
 ## Screenshot Workflow
 
 Após implementar (servidor já rodando em `https://localhost:3000`):
+
 1. Chrome DevTools MCP → `localhost:3000/voluntarios`
 2. Screenshot desktop (1280px) → comparar hero contra referência
-3. Screenshot mobile (375px) → comparar hero mobile contra referência  
+3. Screenshot mobile (375px) → comparar hero mobile contra referência
 4. 2+ rodadas de comparação e ajuste
 
 ---
@@ -113,4 +115,4 @@ Após implementar (servidor já rodando em `https://localhost:3000`):
 
 - Google Form URL: usar `href="#"` como placeholder; o usuário trocará quando tiver o link
 - A página usa o `layout.tsx` raiz (Navbar + Footer + DonationPopup já incluídos automaticamente)
-- Metadata: title `"Seja Voluntário — Instituto Sempre Com Você"`, description sobre voluntariado
+- Metadata: title `"Seja Voluntário — Instituto do Câncer Sempre Com Você"`, description sobre voluntariado

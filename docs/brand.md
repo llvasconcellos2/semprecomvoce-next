@@ -1,4 +1,4 @@
-# Brand Guidelines — Instituto Sempre Com Você
+# Brand Guidelines — Instituto do Câncer Sempre Com Você
 
 Extracted from `public/logo-semprecomvc.png`.
 

@@ -204,7 +204,7 @@ export default function ThankYouClient({ status }: { status: PaymentStatus }) {
   }, [cfg.showConfetti]);
 
   const shareText = encodeURIComponent(
-    "Acabei de fazer uma doação para o Instituto Sempre Com Você! Uma ONG incrível que apoia famílias de pacientes com câncer. Junte-se a mim! 💜",
+    "Acabei de fazer uma doação para o Instituto do Câncer Sempre Com Você! Uma ONG incrível que apoia famílias de pacientes com câncer. Junte-se a mim! 💜",
   );
   const shareUrl = encodeURIComponent(`${SITE_URL}/apoie`);
 
@@ -397,7 +397,7 @@ export default function ThankYouClient({ status }: { status: PaymentStatus }) {
           animation: "fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) 0.6s both",
         }}
       >
-        Instituto Sempre Com Você · todos os direitos reservados
+        Instituto do Câncer Sempre Com Você · todos os direitos reservados
       </p>
     </div>
   );

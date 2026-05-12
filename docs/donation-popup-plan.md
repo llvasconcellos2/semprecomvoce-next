@@ -2,16 +2,16 @@
 
 ## Contexto
 
-O site do Instituto Sempre Com Você precisa de um popup que aparece automaticamente após 60 segundos de navegação para incentivar doações. O popup exibe o `DonationWidget` já existente. Ao fechar, um cookie de 1 semana impede que o popup abra novamente até expirar.
+O site do Instituto do Câncer Sempre Com Você precisa de um popup que aparece automaticamente após 60 segundos de navegação para incentivar doações. O popup exibe o `DonationWidget` já existente. Ao fechar, um cookie de 1 semana impede que o popup abra novamente até expirar.
 
 ---
 
 ## Arquivos a criar / modificar
 
-| Arquivo | Ação |
-|---|---|
-| `components/DonationPopup.tsx` | **Criar** — componente client-side do popup |
-| `app/layout.tsx` | **Modificar** — importar e renderizar `<DonationPopup />` |
+| Arquivo                        | Ação                                                      |
+| ------------------------------ | --------------------------------------------------------- |
+| `components/DonationPopup.tsx` | **Criar** — componente client-side do popup               |
+| `app/layout.tsx`               | **Modificar** — importar e renderizar `<DonationPopup />` |
 
 ---
 
@@ -22,6 +22,7 @@ O site do Instituto Sempre Com Você precisa de um popup que aparece automaticam
 **`"use client"`** — component interativo que usa `useEffect`, `useState`, `createPortal`.
 
 **Lógica:**
+
 - Na montagem (`useEffect`), verificar se o cookie `donation_popup_dismissed` existe via `document.cookie`.
 - Se o cookie existir → não fazer nada.
 - Se não existir → agendar `setTimeout(delay)` (default `60_000 ms`) para mostrar o popup.
@@ -29,6 +30,7 @@ O site do Instituto Sempre Com Você precisa de um popup que aparece automaticam
 - Tecla **Escape** também fecha.
 
 **Renderização:**
+
 - Usa `createPortal(…, document.body)` — mesmo padrão do `DonationWidget` e `MobileNav`.
 - Backdrop semitransparente com blur (igual ao QR code modal já existente).
 - Card centralizado contendo:
@@ -38,6 +40,7 @@ O site do Instituto Sempre Com Você precisa de um popup que aparece automaticam
 - Animação: fade-in + slide-up na entrada (`opacity` + `transform: translateY`), invertida na saída — animando apenas `transform` e `opacity` (seguindo as regras do webdesign.md).
 
 **Props:**
+
 ```ts
 interface DonationPopupProps {
   delay?: number; // ms, default 60_000
@@ -66,10 +69,11 @@ Sem biblioteca externa — usar a API nativa `document.cookie`:
 // Leitura
 const dismissed = document.cookie
   .split("; ")
-  .some(c => c.startsWith("donation_popup_dismissed="));
+  .some((c) => c.startsWith("donation_popup_dismissed="));
 
 // Escrita (7 dias)
-document.cookie = "donation_popup_dismissed=1; max-age=604800; path=/; SameSite=Lax";
+document.cookie =
+  "donation_popup_dismissed=1; max-age=604800; path=/; SameSite=Lax";
 ```
 
 ---

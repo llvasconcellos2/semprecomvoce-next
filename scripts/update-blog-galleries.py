@@ -1,6 +1,6 @@
 """
 Adiciona seções <!-- gallery --> e <!-- tags --> nos arquivos blog-post.md
-de cada evento do Instituto Sempre Com Você.
+de cada evento do Instituto do Câncer Sempre Com Você.
 
 Uso: python scripts/update-blog-galleries.py
 """
@@ -21,13 +21,13 @@ updates = {
         ],
         "tags": ["apoio emocional", "direitos dos pacientes", "2019", "Joinville", "acompanhamento", "saúde mental"],
     },
-    "2023/2023.06.02 - Visita ao Universo Down para parceria com o Instituto Sempre com Você": {
+    "2023/2023.06.02 - Visita ao Universo Down para parceria com o Instituto do Câncer Sempre Com Você": {
         "gallery": [
-            ("01.jpg", "Equipe do Instituto Sempre Com Você junto à equipe do Universo Down em visita institucional"),
+            ("01.jpg", "Equipe do Instituto do Câncer Sempre Com Você junto à equipe do Universo Down em visita institucional"),
         ],
         "tags": ["parceria", "Universo Down", "2023", "Joinville", "inclusão", "colaboração"],
     },
-    "2023/2023.06.10 - Assistidas do Instituto Sempre com Você": {
+    "2023/2023.06.10 - Assistidas do Instituto do Câncer Sempre Com Você": {
         "gallery": [
             ("01.jpg", "Andrea com uma das pacientes assistidas pelo Instituto em momento de acolhimento"),
             ("02.jpg", "Momento de carinho e presença com as assistidas do Instituto"),
@@ -100,7 +100,7 @@ updates = {
     "2023/2023.08.20 - Ação de angariar fundos para a instituição": {
         "gallery": [
             ("jose jovelino.jpg", "José Jovelino, paciente que superou o câncer com suporte do Instituto, em depoimento no evento"),
-            ("image23.jpg", "Ação de angariamento de fundos para o Instituto Sempre Com Você"),
+            ("image23.jpg", "Ação de angariamento de fundos para o Instituto do Câncer Sempre Com Você"),
             ("image24.jpg", "Participantes do evento beneficente em apoio ao Instituto"),
             ("image28.jpg", "Momento de celebração e solidariedade durante a ação de arrecadação"),
             ("image29.jpg", "Comunidade reunida para apoiar o Instituto na ação de fundos"),
@@ -111,10 +111,10 @@ updates = {
         ],
         "tags": ["arrecadação de fundos", "2023", "José Jovelino", "evento beneficente", "superação", "solidariedade"],
     },
-    "2023/2023.09.05 - Apresentação do trabalho do Instituto Sempre Com Você na ALESC - Assembléia Legislativa do Estado de Santa Catarina": {
+    "2023/2023.09.05 - Apresentação do trabalho do Instituto do Câncer Sempre Com Você na ALESC - Assembléia Legislativa do Estado de Santa Catarina": {
         "gallery": [
             ("01.jpg", "Equipe do Instituto na Assembleia Legislativa do Estado de Santa Catarina (ALESC)"),
-            ("image5.jpg", "Apresentação do trabalho do Instituto Sempre Com Você na ALESC em Florianópolis"),
+            ("image5.jpg", "Apresentação do trabalho do Instituto do Câncer Sempre Com Você na ALESC em Florianópolis"),
         ],
         "tags": ["ALESC", "Assembleia Legislativa", "Santa Catarina", "2023", "Florianópolis", "legislativo", "reconhecimento"],
     },
@@ -129,7 +129,7 @@ updates = {
     },
     "2023/2023.10.20 - Acompanhamento do caso da Paciente Sônia - Mais um caso de sucesso": {
         "gallery": [
-            ("image9.jpg", "Paciente Sônia em acompanhamento pelo Instituto Sempre Com Você"),
+            ("image9.jpg", "Paciente Sônia em acompanhamento pelo Instituto do Câncer Sempre Com Você"),
             ("image12.jpg", "Ação de venda de bonecos de pano para arrecadar fundos para os remédios da Sônia"),
             ("image13.jpg", "Registro das atividades de arrecadação em prol da paciente Sônia"),
             ("image64.jpg", "Comemoração do caso de sucesso da paciente Sônia"),
@@ -175,7 +175,7 @@ updates = {
             ("image42.jpg", "Momentos de alegria e emoção na festa de encerramento de 2023"),
             ("image44.jpg", "Confraternização de final de ano com os pacientes e voluntários da terceira idade"),
             ("image46.jpg", "Abraços e sorrisos no encerramento do ano com o grupo da terceira idade"),
-            ("image49.jpg", "Registro da celebração de encerramento de ano do Instituto Sempre Com Você"),
+            ("image49.jpg", "Registro da celebração de encerramento de ano do Instituto do Câncer Sempre Com Você"),
             ("image61.jpg", "Momentos de partilha e emoção na comemoração de fim de ano"),
             ("image81.jpg", "Encerramento da celebração de 2023 com esperança para o novo ano"),
         ],
@@ -183,9 +183,9 @@ updates = {
     },
     "2024/2024.01.15 - Início das atividades do Ano de 2024": {
         "gallery": [
-            ("image51.jpg", "Equipe do Instituto Sempre Com Você no início das atividades de 2024"),
+            ("image51.jpg", "Equipe do Instituto do Câncer Sempre Com Você no início das atividades de 2024"),
         ],
-        "tags": ["início de ano", "2024", "atividades", "Instituto Sempre Com Você", "Joinville"],
+        "tags": ["início de ano", "2024", "atividades", "Instituto do Câncer Sempre Com Você", "Joinville"],
     },
     "2024/2024.01.20 - Ação de arrecadação de fundos para o tratamento do paciente Mario Junior": {
         "gallery": [
@@ -203,7 +203,7 @@ updates = {
     },
     "2024/2024.02.15 - Campanha de arrecadação de recursos em conjunto com a TV da Cidade": {
         "gallery": [
-            ("image38.jpg", "Pacientes do Instituto Sempre Com Você na campanha da TV da Cidade de Joinville"),
+            ("image38.jpg", "Pacientes do Instituto do Câncer Sempre Com Você na campanha da TV da Cidade de Joinville"),
             ("image119.jpg", "Equipe do Instituto durante a campanha de arrecadação na TV da Cidade"),
         ],
         "tags": ["TV da Cidade", "Joinville", "2024", "mídia", "arrecadação", "campanha", "pacientes"],
@@ -240,13 +240,13 @@ updates = {
     "2024/2024.04.20 - Acompanhamento do paciente Adair": {
         "gallery": [
             ("image152.jpg", "Acompanhamento do paciente Adair, em recuperação após três cirurgias na coluna"),
-            ("image154.jpg", "Adair em momento de apoio emocional pelo Instituto Sempre Com Você"),
+            ("image154.jpg", "Adair em momento de apoio emocional pelo Instituto do Câncer Sempre Com Você"),
         ],
         "tags": ["Adair", "2024", "depressão", "coluna", "superação", "cirurgia", "acompanhamento"],
     },
-    "2024/2024.04.28 - Apresentação do Instituto Sempre Com Você na Câmara de Vereadores de Joinville": {
+    "2024/2024.04.28 - Apresentação do Instituto do Câncer Sempre Com Você na Câmara de Vereadores de Joinville": {
         "gallery": [
-            ("image156.jpg", "Apresentação do Instituto Sempre Com Você na Câmara de Vereadores de Joinville"),
+            ("image156.jpg", "Apresentação do Instituto do Câncer Sempre Com Você na Câmara de Vereadores de Joinville"),
             ("image157.jpg", "Equipe do Instituto com vereadores de Joinville discutindo a nova sede"),
         ],
         "tags": ["Câmara de Vereadores", "Joinville", "2024", "nova sede", "legislativo", "vereadores", "Bairro Glória"],
@@ -269,7 +269,7 @@ updates = {
     },
     "2024/2024.06.05 - Reunimos cinco pacientes de uma única vez": {
         "gallery": [
-            ("image173.jpg", "Ana, Francisco, Arthur, Lucas e Cirilo reunidos no Instituto Sempre Com Você"),
+            ("image173.jpg", "Ana, Francisco, Arthur, Lucas e Cirilo reunidos no Instituto do Câncer Sempre Com Você"),
             ("image175.jpg", "Cinco pacientes trocando experiências em encontro especial"),
             ("image176.jpg", "Momento de alegria e fortalecimento mútuo entre os cinco pacientes"),
         ],
@@ -328,7 +328,7 @@ updates = {
     },
     "2024/2024.10.10 - Paciente Priscila": {
         "gallery": [
-            ("image153.jpg", "A nova paciente Priscila iniciando seu acompanhamento no Instituto Sempre Com Você"),
+            ("image153.jpg", "A nova paciente Priscila iniciando seu acompanhamento no Instituto do Câncer Sempre Com Você"),
             ("image155.jpg", "Priscila em seu primeiro atendimento, inspirada no exemplo da paciente Ana"),
         ],
         "tags": ["Priscila", "2024", "nova paciente", "câncer", "início de tratamento", "esperança"],
@@ -343,7 +343,7 @@ updates = {
         "gallery": [
             ("image145.jpg", "Rubens, já recuperado, de volta ao Instituto como parceiro e apoiador"),
             ("image147.jpg", "Rubens ajudando o projeto do Instituto após sua superação do câncer"),
-            ("image148.jpg", "Registro da parceria do ex-paciente Rubens com o Instituto Sempre Com Você"),
+            ("image148.jpg", "Registro da parceria do ex-paciente Rubens com o Instituto do Câncer Sempre Com Você"),
         ],
         "tags": ["Rubens", "2024", "ex-paciente", "voluntário", "superação", "parceria", "câncer"],
     },
@@ -364,7 +364,7 @@ updates = {
     },
     "2024/2024.11.20 - Pacientes Lady e Paulo em tratamento conosco": {
         "gallery": [
-            ("image102.jpg", "Pacientes Lady e Paulo em atendimento e acompanhamento pelo Instituto Sempre Com Você"),
+            ("image102.jpg", "Pacientes Lady e Paulo em atendimento e acompanhamento pelo Instituto do Câncer Sempre Com Você"),
         ],
         "tags": ["Lady", "Paulo", "2024", "pacientes", "tratamento", "acompanhamento", "câncer"],
     },
@@ -384,7 +384,7 @@ updates = {
     "2025/2025.01.10 - Familiares transformam luto em voluntariado": {
         "gallery": [
             ("image92.jpg", "Samuel e Juvelino, viúvos que perderam esposas para o câncer, hoje voluntários do Instituto"),
-            ("image124.jpg", "Encontro de Samuel e Juvelino no Instituto Sempre Com Você como voluntários"),
+            ("image124.jpg", "Encontro de Samuel e Juvelino no Instituto do Câncer Sempre Com Você como voluntários"),
         ],
         "tags": ["Samuel", "Juvelino", "2025", "voluntários", "luto", "familiares", "viuvez", "câncer"],
     },
@@ -398,7 +398,7 @@ updates = {
     },
     "2025/2025.02.10 - Pacientes Milton e Vinícios com esposas acompanhando o tratamento": {
         "gallery": [
-            ("image118.jpg", "Milton e Vinícios com suas esposas em atendimento no Instituto Sempre Com Você"),
+            ("image118.jpg", "Milton e Vinícios com suas esposas em atendimento no Instituto do Câncer Sempre Com Você"),
             ("image120.jpg", "As esposas dos pacientes Milton e Vinícios como parte fundamental do processo de cura"),
         ],
         "tags": ["Milton", "Vinícios", "2025", "pacientes", "esposas", "família", "acompanhamento", "apoio"],
@@ -413,14 +413,14 @@ updates = {
     },
     "2025/2025.03.10 - Paciente Margarete": {
         "gallery": [
-            ("image58.jpg", "Paciente Margarete em acompanhamento pelo Instituto Sempre Com Você"),
+            ("image58.jpg", "Paciente Margarete em acompanhamento pelo Instituto do Câncer Sempre Com Você"),
             ("image112.jpg", "Momento de cuidado e apoio à paciente Margarete"),
         ],
         "tags": ["Margarete", "2025", "paciente", "câncer", "acompanhamento", "apoio emocional"],
     },
     "2025/2025.03.20 - Antes pacientes, agora voluntários": {
         "gallery": [
-            ("image50.jpg", "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto Sempre Com Você"),
+            ("image50.jpg", "Alceu e Eloi, antes pacientes e hoje voluntários do Instituto do Câncer Sempre Com Você"),
         ],
         "tags": ["Alceu", "Eloi", "2025", "voluntários", "ex-pacientes", "superação", "gratidão"],
     },

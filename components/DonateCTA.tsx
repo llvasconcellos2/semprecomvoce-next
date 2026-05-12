@@ -103,8 +103,8 @@ export function DonateCTA() {
         </GlowCardWrapper>
 
         <p className="text-white/25 text-xs tracking-wide">
-          Instituto Sempre Com Você · ONG registrada · Todas as doações são
-          revertidas integralmente para nossos programas.
+          Instituto do Câncer Sempre Com Você · ONG registrada · Todas as
+          doações são revertidas integralmente para nossos programas.
         </p>
       </RevealGroup>
     </section>

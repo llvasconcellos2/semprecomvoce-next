@@ -1,7 +1,9 @@
 # Evento Beneficente com a Terceira Idade: A Solidariedade que Festeja!
 
 <!-- intro -->
-Em abril de 2025, realizamos um evento beneficente que contou com a participação especial do nosso grupo da terceira idade — e foi um sucesso! Uma noite de celebração, solidariedade e muita energia para ajudar a manter o Instituto Sempre Com Você em funcionamento.
+
+Em abril de 2025, realizamos um evento beneficente que contou com a participação especial do nosso grupo da terceira idade — e foi um sucesso! Uma noite de celebração, solidariedade e muita energia para ajudar a manter o Instituto do Câncer Sempre Com Você em funcionamento.
+
 <!-- /intro -->
 
 Não há nada mais bonito do que ver nossos amigos da terceira idade com aquela disposição de fazer o bem! Eles chegaram com entusiasmo, com sorriso no rosto, prontos para contribuir — e a noite foi exatamente isso: uma festa da solidariedade, onde cada presença fez diferença.
@@ -21,6 +23,7 @@ Cada real arrecadado nessa noite vai direto para o cuidado dos nossos pacientes.
 Obrigada a todos que participaram e tornaram esse evento possível! 🎉💕
 
 <!-- gallery -->
+
 - ![Mesa com alimentos e itens do evento beneficente de abril de 2025](./image39.jpg)
 - ![Participantes da terceira idade animando o evento beneficente](./image41.jpg)
 - ![Momentos de alegria e solidariedade no evento beneficente de abril](./image43.jpg)
@@ -31,6 +34,7 @@ Obrigada a todos que participaram e tornaram esse evento possível! 🎉💕
 <!-- /gallery -->
 
 <!-- tags -->
+
 - evento beneficente
 - 2025
 - terceira idade

@@ -1,7 +1,9 @@
 # Palavras Amigas das Freiras: Fé e Esperança que Chegam de Mãos Dadas
 
 <!-- intro -->
-Em abril de 2025, o Instituto Sempre Com Você recebeu uma visita muito especial: duas freiras vieram trazer palavras de fé, esperança e carinho para o nosso paciente Alceu e para a nossa presidente Andrea. Uma conversa amiga que aqueceu todos os corações presentes!
+
+Em abril de 2025, o Instituto do Câncer Sempre Com Você recebeu uma visita muito especial: duas freiras vieram trazer palavras de fé, esperança e carinho para o nosso paciente Alceu e para a nossa presidente Andrea. Uma conversa amiga que aqueceu todos os corações presentes!
+
 <!-- /intro -->
 
 Há um tipo especial de paz que vem quando pessoas de fé genuína chegam com palavras simples e verdadeiras. As freiras que nos visitaram trouxeram exatamente isso: a presença serena, o olhar acolhedor, as palavras que encontram o caminho direto ao coração.
@@ -15,10 +17,12 @@ Somos gratas pela visita e pelas palavras de esperança que ficaram gravadas em 
 Obrigada, irmãs! 🙏💙
 
 <!-- gallery -->
+
 - ![Alceu, Andrea e duas freiras em conversa amiga de fé e esperança](./image36.jpg)
 <!-- /gallery -->
 
 <!-- tags -->
+
 - freiras
 - 2025
 - fé

@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-`semprecomvoce-next` — The website for the Cancer Care NGO "Instituto Sempre Com Você" - Our mission is to improve the lives of people with cancer and their families.
+`semprecomvoce-next` — The website for the Cancer Care NGO "Instituto do Câncer Sempre Com Você" - Our mission is to improve the lives of people with cancer and their families.
 
 ## Commands
 

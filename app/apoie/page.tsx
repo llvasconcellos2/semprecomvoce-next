@@ -11,25 +11,24 @@ import Image from "next/image";
 import { RevealGroup } from "@/components/RevealGroup";
 
 export const metadata: Metadata = {
-  title: "Apoie o Instituto Sempre Com Você",
+  title: "Apoie o Instituto do Câncer Sempre Com Você",
   description:
     "Faça sua doação e ajude pessoas com câncer e suas famílias. Pix, cartão e boleto — rápido, seguro e transparente.",
   alternates: { canonical: "/apoie" },
   openGraph: {
-    title: "Instituto Sempre Com Você",
-    description:
-      "Faça sua doação e ajude pacientes de câncer e suas famílias.",
+    title: "Instituto do Câncer Sempre Com Você",
+    description: "Faça sua doação e ajude pacientes de câncer e suas famílias.",
     url: "/apoie",
     images: [
       {
         url: "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-001.jpg",
-        alt: "Instituto Sempre Com Você — faça sua doação",
+        alt: "Instituto do Câncer Sempre Com Você — faça sua doação",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Instituto Sempre Com Você",
+    title: "Instituto do Câncer Sempre Com Você",
     description: "Faça sua doação e ajude pacientes de câncer e suas famílias.",
   },
 };
@@ -154,9 +153,9 @@ export default function ApoiePage() {
               </h1>
 
               <p className="max-w-lg text-lg leading-relaxed text-white xl:text-xl">
-                O Instituto Sempre Com Você apoia pacientes com câncer e suas
-                famílias com suporte emocional, transporte e cuidado. Tudo
-                gratuito — graças a pessoas como você.
+                O Instituto do Câncer Sempre Com Você apoia pacientes com câncer
+                e suas famílias com suporte emocional, transporte e cuidado.
+                Tudo gratuito — graças a pessoas como você.
               </p>
 
               <ul className="flex flex-col gap-3">

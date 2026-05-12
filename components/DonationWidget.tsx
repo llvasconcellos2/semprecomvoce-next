@@ -161,7 +161,7 @@ export function DonationWidget() {
             >
               <Image
                 src={PIX[amount].qrcode}
-                alt="QR Code Pix Instituto Sempre Com Você"
+                alt="QR Code Pix Instituto do Câncer Sempre Com Você"
                 width={711}
                 height={1280}
                 className="rounded-xl w-40 max-w-40 h-74 -top-18 -left-8 absolute"
@@ -277,7 +277,7 @@ export function DonationWidget() {
             >
               <Image
                 src={PIX[amount].qrcode}
-                alt="QR Code Pix Instituto Sempre Com Você"
+                alt="QR Code Pix Instituto do Câncer Sempre Com Você"
                 fill
                 style={{ objectFit: "cover" }}
                 sizes="280px"

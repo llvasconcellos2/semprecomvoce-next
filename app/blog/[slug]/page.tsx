@@ -40,7 +40,7 @@ export async function generateMetadata({
   if (!post) return {};
   const cover = post.gallery[0];
   return {
-    title: `${post.title} — Instituto Sempre Com Você`,
+    title: `${post.title} — Instituto do Câncer Sempre Com Você`,
     description: post.intro,
     alternates: { canonical: `/blog/${slug}` },
     openGraph: {
@@ -49,7 +49,14 @@ export async function generateMetadata({
       url: `/blog/${slug}`,
       type: "article",
       images: cover
-        ? [{ url: cover.path, width: cover.width, height: cover.height, alt: cover.alt }]
+        ? [
+            {
+              url: cover.path,
+              width: cover.width,
+              height: cover.height,
+              alt: cover.alt,
+            },
+          ]
         : undefined,
     },
     twitter: {

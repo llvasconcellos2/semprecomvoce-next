@@ -1,10 +1,12 @@
 # Paciente Sônia: Mais Um Caso de Sucesso que nos Enche de Alegria!
 
 <!-- intro -->
+
 Tem dias em que a gente percebe que nenhum esforço é em vão. O acompanhamento da Sônia é um desses casos — uma história de superação que começou com muito desafio e que, em outubro de 2023, nos trouxe a melhor das notícias: mais um caso de sucesso!
+
 <!-- /intro -->
 
-Para garantir que a Sônia tivesse acesso aos medicamentos de que precisava, o Instituto Sempre Com Você foi às ruas — literalmente. Saímos para vender bonecos de pano e arrecadar fundos. Simples assim, sem glamour, com as mãos na massa e o coração cheio de propósito.
+Para garantir que a Sônia tivesse acesso aos medicamentos de que precisava, o Instituto do Câncer Sempre Com Você foi às ruas — literalmente. Saímos para vender bonecos de pano e arrecadar fundos. Simples assim, sem glamour, com as mãos na massa e o coração cheio de propósito.
 
 ![Acompanhamento da paciente Sônia](./image12.jpg)
 
@@ -17,13 +19,15 @@ Ver a Sônia bem, com saúde renovada, é a prova de que cada boneco vendido, ca
 Sônia, você é incrível! 🌸
 
 <!-- gallery -->
-- ![Paciente Sônia em acompanhamento pelo Instituto Sempre Com Você](./image9.jpg)
+
+- ![Paciente Sônia em acompanhamento pelo Instituto do Câncer Sempre Com Você](./image9.jpg)
 - ![Ação de venda de bonecos de pano para arrecadar fundos para os remédios da Sônia](./image12.jpg)
 - ![Registro das atividades de arrecadação em prol da paciente Sônia](./image13.jpg)
 - ![Comemoração do caso de sucesso da paciente Sônia](./image64.jpg)
 <!-- /gallery -->
 
 <!-- tags -->
+
 - Sônia
 - 2023
 - bonecos de pano
