@@ -13,7 +13,7 @@
 ## Local Server
 
 - **Always serve on localhost** — never screenshot a `file:///` URL.
-- Start the dev server: `pnpm dev` (serves the project root at `https://localhost:3000`)
+- Check if the dev server is running on `https://localhost:3000`. If not, start the dev server: `pnpm dev` (serves the project root at `https://localhost:3000`)
 - Start the dev server in the background before taking any screenshots.
 - If the server is already running, do not start a second instance.
 
@@ -26,6 +26,7 @@
 - After screenshotting, read the PNG from `./screenshots/` with the Read tool — Claude can see and analyze the image directly.
 - When comparing, be specific: "heading is 32px but reference shows ~24px", "card gap is 16px but should be 24px"
 - Check: spacing/padding, font size/weight/line-height, colors (exact hex), alignment, border-radius, shadows, image sizing
+- After done with screenshots remember to close the browser (kill the process so you can run it again without problems)
 
 ## Output Defaults
 
