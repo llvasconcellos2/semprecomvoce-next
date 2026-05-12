@@ -111,7 +111,10 @@ export function Hero() {
           className="relative flex items-center justify-center order-2 md:min-h-110 -m-10 pt-10 scale-70 md:scale-100"
         >
           {/* Spinning ring */}
-          <div className="absolute w-130 h-130 rounded-full border border-dashed border-brand-pink/20 animate-spin-slow" />
+          <div id="spinning-ring" className="absolute animate-spin-slow">
+            <div className="w-3 h-3 rounded-full bg-brand-blue/50 absolute left-44 bottom-4"></div>
+            <div className="w-3 h-3 rounded-full bg-brand-pink/50 absolute right-44 top-4"></div>
+          </div>
 
           {/* Logo drawing — floating */}
           <div className="flex flex-col items-center">
@@ -120,7 +123,7 @@ export function Hero() {
               imgWidth={463}
               imgHeight={602}
               imgAlt="Andrea"
-              className="relative z-10 drop-shadow-2xl animate-float bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-75"
+              className="relative z-10 drop-shadow-2xl animate-float bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-100"
             />
           </div>
           {/* Floating card — top right */}
