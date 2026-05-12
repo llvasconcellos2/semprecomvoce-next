@@ -1,16 +1,17 @@
 # Plan: YoutubeCarrousel + Nossos Apoiadores
 
 ## Context
+
 Add a new "Nossos Apoiadores" section to the homepage showcasing celebrity supporters of the Instituto do Câncer Sempre Com Você via a Featured Hero Carousel of YouTube videos. The carousel plays the first video automatically (muted) when scrolled into view, lets users unmute, and auto-advances when a video ends.
 
 ---
 
 ## Files to create / modify
 
-| Action | Path |
-|--------|------|
-| Create | `components/YoutubeCarrousel.tsx` |
-| Create | `components/NossosApoiadores.tsx` |
+| Action | Path                                                                                       |
+| ------ | ------------------------------------------------------------------------------------------ |
+| Create | `components/YoutubeCarrousel.tsx`                                                          |
+| Create | `components/NossosApoiadores.tsx`                                                          |
 | Modify | `app/page.tsx` — add `<NossosApoiadores />` between `<Parceiros />` and `<Testimonials />` |
 
 ---
@@ -20,19 +21,40 @@ Add a new "Nossos Apoiadores" section to the homepage showcasing celebrity suppo
 **`"use client"`** — uses `useEffect`, `useState`, `useRef`, browser APIs.
 
 ### Type declarations (top of file)
+
 ```ts
 declare global {
   interface Window {
-    YT: { Player: new (el: HTMLElement, opts: YTPlayerOpts) => YTPlayer; PlayerState: { ENDED: number } };
+    YT: {
+      Player: new (el: HTMLElement, opts: YTPlayerOpts) => YTPlayer;
+      PlayerState: { ENDED: number };
+    };
     onYouTubeIframeAPIReady: () => void;
   }
 }
-interface YTPlayer { loadVideoById(id: string): void; playVideo(): void; mute(): void; unMute(): void; destroy(): void; }
-interface YTPlayerOpts { videoId: string; playerVars?: Record<string, number|string>; events?: { onReady?: (e: { target: YTPlayer }) => void; onStateChange?: (e: { data: number }) => void } }
-export interface VideoItem { id: string; title: string; }
+interface YTPlayer {
+  loadVideoById(id: string): void;
+  playVideo(): void;
+  mute(): void;
+  unMute(): void;
+  destroy(): void;
+}
+interface YTPlayerOpts {
+  videoId: string;
+  playerVars?: Record<string, number | string>;
+  events?: {
+    onReady?: (e: { target: YTPlayer }) => void;
+    onStateChange?: (e: { data: number }) => void;
+  };
+}
+export interface VideoItem {
+  id: string;
+  title: string;
+}
 ```
 
 ### State & Refs
+
 ```ts
 const [activeIndex, setActiveIndex] = useState(0);
 const [isMuted, setIsMuted] = useState(true);
@@ -45,11 +67,18 @@ const hasAutoPlayed = useRef(false); // guard: only trigger once on scroll
 ```
 
 ### Effect 1 — load YT IFrame API (runs once, idempotent)
+
 ```ts
 useEffect(() => {
-  if (window.YT?.Player) { setIsApiReady(true); return; }
+  if (window.YT?.Player) {
+    setIsApiReady(true);
+    return;
+  }
   const prev = window.onYouTubeIframeAPIReady;
-  window.onYouTubeIframeAPIReady = () => { prev?.(); setIsApiReady(true); };
+  window.onYouTubeIframeAPIReady = () => {
+    prev?.();
+    setIsApiReady(true);
+  };
   if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
     const s = document.createElement("script");
     s.src = "https://www.youtube.com/iframe_api";
@@ -59,28 +88,34 @@ useEffect(() => {
 ```
 
 ### Effect 2 — create player once when API ready (deps: `[isApiReady]`)
+
 - `new window.YT.Player(playerDivRef.current, { videoId: videos[0].id, playerVars: { autoplay: 0, mute: 1, controls: 1, rel: 0, modestbranding: 1 }, events: { onReady: e => { playerRef.current = e.target; e.target.mute(); }, onStateChange: e => { if (e.data === 0) setActiveIndex(p => (p + 1) % videos.length); } } })`
 - Cleanup: `player.destroy(); playerRef.current = null;`
 
 ### Effect 3 — switch video on `activeIndex` change (deps: `[activeIndex]`)
+
 - Call `playerRef.current.loadVideoById(videos[activeIndex].id)`
 - Re-apply current mute state via `isMuted ? player.mute() : player.unMute()`
 - Scroll active thumbnail into view: `thumbnailStripRef.current?.children[activeIndex]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" })`
 - `// eslint-disable-next-line react-hooks/exhaustive-deps` to suppress `isMuted` missing dep (intentional: mute toggle owns mute state, this effect owns video switching)
 
 ### Effect 4 — auto-play on scroll (deps: `[]`)
+
 - `IntersectionObserver` on `sectionRef`, threshold `0.4`
 - On intersection: if `!hasAutoPlayed.current && playerRef.current` → `player.mute(); player.playVideo(); hasAutoPlayed.current = true; setIsMuted(true);`
 
 ### Mute toggle handler
+
 ```ts
 const handleMuteToggle = useCallback(() => {
-  const p = playerRef.current; if (!p) return;
+  const p = playerRef.current;
+  if (!p) return;
   isMuted ? (p.unMute(), setIsMuted(false)) : (p.mute(), setIsMuted(true));
 }, [isMuted]);
 ```
 
 ### JSX structure
+
 ```
 <div ref={sectionRef}>
   <div className="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
@@ -111,6 +146,7 @@ const handleMuteToggle = useCallback(() => {
 ```
 
 ### Speaker icons (private, bottom of file)
+
 Inline SVG `SpeakerOffIcon` and `SpeakerOnIcon` components — no new icon files needed.
 
 ---
@@ -120,10 +156,11 @@ Inline SVG `SpeakerOffIcon` and `SpeakerOnIcon` components — no new icon files
 **No `"use client"`** — static JSX wrapping `YoutubeCarrousel` (which is already a client component).
 
 ### Video data (module-level constant) — 6 videos (duplicate removed)
+
 ```ts
 const videos: VideoItem[] = [
   { id: "sHIgkn2PXGA", title: "Mensagem de Cid Moreira" },
-  { id: "bAHntgjy7pY",  title: "Apoio de David Brazil" },
+  { id: "bAHntgjy7pY", title: "Apoio de David Brazil" },
   { id: "wt7wsHyF74U", title: "Mensagem de Sérgio Malandro" },
   { id: "scpeoXJXbAQ", title: "Mensagem de Sula Miranda" },
   { id: "yGGfj1PhzYU", title: "Apoio de Marcelo Serrado" },
@@ -132,8 +169,12 @@ const videos: VideoItem[] = [
 ```
 
 ### Section structure (mirrors `Parceiros.tsx` pattern)
+
 ```tsx
-<section id="apoiadores" className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden grain">
+<section
+  id="apoiadores"
+  className="py-20 lg:py-28 bg-brand-navy relative overflow-hidden grain"
+>
   {/* Decorative blobs */}
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
     <div className="absolute -top-40 left-0 w-[500px] h-[500px] rounded-full bg-brand-pink/10 blur-[120px]" />
@@ -148,12 +189,14 @@ const videos: VideoItem[] = [
       </div>
       {/* Heading */}
       <h2 className="font-display font-extrabold text-3xl lg:text-[2.5rem] text-white! leading-tight tracking-tight mb-3">
-        Celebridades que apoiam <span className="text-brand-pink">nossa causa</span>
+        Celebridades que apoiam{" "}
+        <span className="text-brand-pink">nossa causa</span>
       </h2>
       {/* Subtitle */}
       <p className="text-white/50 text-base max-w-2xl mx-auto leading-relaxed">
-        Nomes como Cid Moreira, David Brazil, Sérgio Malandro, Sula Miranda, Marcelo Serrado e
-        Ezequiel Jr emprestam sua voz para ampliar nossa missão de acolher quem enfrenta o câncer.
+        Nomes como Cid Moreira, David Brazil, Sérgio Malandro, Sula Miranda,
+        Marcelo Serrado e Ezequiel Jr emprestam sua voz para ampliar nossa
+        missão de acolher quem enfrenta o câncer.
       </p>
     </RevealGroup>
 
@@ -164,12 +207,18 @@ const videos: VideoItem[] = [
 
     {/* Footer CTA */}
     <Reveal className="mt-10 flex flex-col items-center gap-4 text-center">
-      <p className="text-white/50 text-sm font-sans">Assista e se inscreva no nosso canal</p>
-      <a href="https://www.youtube.com/@programasemprecomvocecoman5847" target="_blank" rel="noopener noreferrer"
+      <p className="text-white/50 text-sm font-sans">
+        Assista e se inscreva no nosso canal
+      </p>
+      <a
+        href="https://www.youtube.com/@programasemprecomvocecoman5847"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center gap-3 bg-brand-pink hover:bg-brand-pink/90 text-white font-semibold font-display text-sm px-7 py-3.5 rounded-full
                    transition-[transform,background-color,box-shadow] duration-200
                    hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-pink/30
-                   active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy">
+                   active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy"
+      >
         <YoutubeIcon width={24} height={24} />
         Acessar o Canal
       </a>
@@ -193,7 +242,7 @@ export default function Home() {
       <Mission />
       <Programs />
       <Parceiros />
-      <NossosApoiadores />   {/* ← new */}
+      <NossosApoiadores /> {/* ← new */}
       <Testimonials />
       <DonateCTA />
     </>
@@ -209,7 +258,23 @@ export default function Home() {
 - **Plain `<img>` for thumbnails**: `next.config.ts` only allows `placehold.co` as a remote image host; adding `img.youtube.com` would require a config change. Plain `<img>` with explicit dimensions is sufficient.
 - **`hasAutoPlayed` ref (not state)**: Guards the auto-play trigger without scheduling a re-render.
 - **Mobile caveat**: iOS Safari blocks `playVideo()` from IntersectionObserver (not a user gesture). Users tap play manually — standard YouTube embed behavior.
-- **Duplicate video ID** (`bAHntgjy7pY` appears twice): React keys use `id + index` to avoid collision warnings. Clicking either thumbnail loads the same video, which is per spec.
+
+---
+
+## Additional features (v2)
+
+### Desktop prev/next buttons on player
+
+Two `hidden md:flex` buttons overlaid on the left (`left-4 top-1/2 -translate-y-1/2`) and right (`right-4 top-1/2 -translate-y-1/2`) sides of the player. Same frosted-glass style as the mute button. Call `handlePrev` / `handleNext` which use modular arithmetic to wrap around.
+
+### Mobile swipe gesture
+
+A `md:hidden` transparent overlay div covers the player on mobile only. Uses `setPointerCapture` + `onPointerDown`/`onPointerUp` to detect horizontal swipes. `touchAction: "pan-y"` lets the browser handle vertical scrolling while we capture horizontal. Swipe threshold: `Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5`. Trade-off: YouTube native controls are blocked on mobile; mute button still works.
+
+### Thumbnail strip scrollbar + scroll buttons
+
+- **Mobile**: scrollbar hidden via `max-md:[&::-webkit-scrollbar]:hidden`
+- **Desktop scroll buttons**: `hidden md:flex` chevron buttons on each side of the strip, calling `scrollStrip('left'|'right')` which uses `scrollBy({ left: ±340 })` for smooth strip scrolling without changing the active video
 
 ---
 

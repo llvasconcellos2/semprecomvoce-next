@@ -220,6 +220,26 @@ li.bounce:hover .animate-float-sm {
   z-index: 1;
 }
 
+/* Thumbnail strip scrollbar — hidden on mobile, custom pink on desktop */
+.thumbnail-strip::-webkit-scrollbar {
+  display: none;
+  height: 4px;
+}
+@media (min-width: 768px) {
+  .thumbnail-strip::-webkit-scrollbar {
+    display: block;
+    height: 4px;
+  }
+  .thumbnail-strip::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background-color: rgba(232, 23, 138, 0.5);
+  }
+  .thumbnail-strip::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
 #spinning-ring {
   position: absolute;
   background-image: url("data:image/svg+xml,%3csvg width='520px' height='520px' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle r='250' fill='none' cx='260' cy='260' stroke='%23e8178a50' stroke-width='1' stroke-dasharray='5%2c 10' stroke-dashoffset='10' stroke-linecap='butt'/%3e%3c/svg%3e");
