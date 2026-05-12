@@ -146,6 +146,9 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
           playerRef.current.mute();
           playerRef.current.playVideo();
           setIsMuted(true);
+        } else if (hasAutoPlayed.current && playerRef.current?.isMuted()) {
+          hasAutoPlayed.current = false;
+          playerRef.current.pauseVideo();
         }
       },
       { threshold: 0.4 },
@@ -237,9 +240,15 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
             dx < 0 ? handleNext() : handlePrev();
           }
         }}
-        onPointerCancel={() => { isSwipingRef.current = false; }}
+        onPointerCancel={() => {
+          isSwipingRef.current = false;
+        }}
       >
-        <button onClick={handlePrev} aria-label="Vídeo anterior" className="text-white/40 active:text-white/80 p-1">
+        <button
+          onClick={handlePrev}
+          aria-label="Vídeo anterior"
+          className="text-white/40 active:text-white/80 p-1"
+        >
           <ChevronLeftIcon />
         </button>
         <div className="flex gap-1.5 items-center">
@@ -253,7 +262,11 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
             />
           ))}
         </div>
-        <button onClick={handleNext} aria-label="Próximo vídeo" className="text-white/40 active:text-white/80 p-1">
+        <button
+          onClick={handleNext}
+          aria-label="Próximo vídeo"
+          className="text-white/40 active:text-white/80 p-1"
+        >
           <ChevronRightIcon />
         </button>
       </div>
@@ -271,8 +284,7 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
 
         <div
           ref={thumbnailStripRef}
-          className="thumbnail-strip flex-1 flex gap-3 overflow-x-auto pb-2 pt-1 snap-x snap-mandatory"
-          style={{ scrollbarWidth: "thin", scrollbarColor: "rgba(232,23,138,0.5) rgba(255,255,255,0.05)" }}
+          className="[&::-webkit-scrollbar]:hidden flex-1 flex gap-3 overflow-x-auto pb-2 pt-1 snap-x snap-mandatory"
         >
           {videos.map((video, index) => (
             <button
@@ -281,7 +293,7 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
               aria-label={`Assistir: ${video.title}`}
               aria-pressed={index === activeIndex}
               className="shrink-0 flex flex-col gap-2 group snap-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy rounded-2xl"
-              style={{ width: 160 }}
+              style={{ width: 150, paddingLeft: index === 0 ? 3 : 0 }}
             >
               <div
                 className={cn(
@@ -290,7 +302,7 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
                     ? "border-brand-pink scale-[1.04] shadow-[0_4px_24px_rgba(232,23,138,0.4)]"
                     : "border-transparent group-hover:border-brand-pink/40 group-hover:scale-[1.02]",
                 )}
-                style={{ width: 160, height: 90 }}
+                style={{ width: 150, height: 90 }}
               >
                 {/* Playing indicator */}
                 {index === activeIndex && (
