@@ -62,7 +62,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
-        <div id="viewport" className="viewport">
+        <div id="viewport" className="viewport max-w-dvw">
           <Navbar />
           <main className="flex-1 bg-white">{children}</main>
           <Footer />

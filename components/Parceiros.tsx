@@ -134,7 +134,7 @@ export function Parceiros() {
 
       {/* Scrolling strip with edge fades */}
       <div
-        className="marquee-wrapper relative z-10 overflow-hidden space-y-4"
+        className="marquee-wrapper relative z-10 overflow-hidden space-y-4 max-w-dvw"
         style={{
           maskImage:
             "linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)",
