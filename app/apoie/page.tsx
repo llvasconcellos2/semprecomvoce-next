@@ -328,9 +328,6 @@ export default function ApoiePage() {
                       featured ? "border-white/10" : "border-brand-pink/15"
                     }`}
                   >
-                    {/* <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-pink/20 text-base font-bold font-display text-brand-pink">
-                      {name[0]}
-                    </div> */}
                     <img
                       src={avatar}
                       alt={name}
