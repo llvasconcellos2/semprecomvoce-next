@@ -9,6 +9,7 @@ import {
 import { DonationWidget } from "@/components/DonationWidget";
 import Image from "next/image";
 import { RevealGroup } from "@/components/RevealGroup";
+import { NossosApoiadores } from "@/components/NossosApoiadores";
 
 export const metadata: Metadata = {
   title: "Apoie o Instituto do Câncer Sempre Com Você",
@@ -63,10 +64,11 @@ const impactCards = [
 const testimonials = [
   {
     quote:
-      "Quando meu marido foi diagnosticado, achei que ia desabar. O instituto foi o chão que minha família precisava — cuidaram de nós com tanto amor e dedicação.",
-    name: "Fernanda R.",
+      "Quando minha esposa foi diagnosticada, achei que ia desabar. O instituto foi o chão que minha família precisava — cuidaram de nós com tanto amor e dedicação.",
+    name: "Fernando R.",
     role: "Familiar de paciente",
     featured: true,
+    avatar: "/testimonials/01.jpg",
   },
   {
     quote:
@@ -74,6 +76,7 @@ const testimonials = [
     name: "Carlos M.",
     role: "Paciente",
     featured: false,
+    avatar: "/testimonials/02.jpg",
   },
   {
     quote:
@@ -81,6 +84,7 @@ const testimonials = [
     name: "Ana Paula S.",
     role: "Paciente e voluntária",
     featured: false,
+    avatar: "/testimonials/03.jpg",
   },
 ];
 
@@ -220,31 +224,34 @@ export default function ApoiePage() {
           <div className="absolute -right-20 top-0 h-125 w-125 rounded-full bg-brand-blue/8 blur-[130px]" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <Reveal direction="up" duration={700} blur blurAmount={10}>
-            <div className="mb-14 text-center">
-              <p className="mb-3 text-xs font-bold font-display uppercase tracking-widest text-brand-pink">
-                Transparência total
-              </p>
-              <h2 className="font-display font-extrabold leading-tight text-[2rem] text-white lg:text-[2.75rem]">
-                Para onde vai{" "}
-                <span className="text-brand-blue">sua doação</span>
-              </h2>
-              <p className="mx-auto mt-4 max-w-xl text-white/50">
-                Cada real arrecadado é aplicado diretamente em nossos programas
-                de apoio — sem intermediários.
-              </p>
-            </div>
-          </Reveal>
+        <RevealGroup
+          direction="up"
+          duration={700}
+          blur
+          blurAmount={10}
+          className="relative mx-auto max-w-7xl px-6 lg:px-8"
+        >
+          <div className="mb-14 text-center">
+            <p className="mb-3 text-xs font-bold font-display uppercase tracking-widest text-brand-pink">
+              Transparência total
+            </p>
+            <h2 className="font-display font-extrabold leading-tight text-[2rem] text-white! lg:text-[2.75rem]">
+              Para onde vai <span className="text-brand-blue">sua doação</span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-white/50">
+              Cada real arrecadado é aplicado diretamente em nossos programas de
+              apoio — sem intermediários.
+            </p>
+          </div>
 
-          <GlowCardWrapper className="grid gap-5 md:grid-cols-3">
+          <GlowCardWrapper className="w-full grid md:grid-cols-3 gap-5">
             {impactCards.map(({ icon, title, desc }) => (
-              <GlowCard key={title}>
-                <GlowCardContent className="flex h-full min-h-55 flex-col gap-4 p-7">
+              <GlowCard key={title} className="rounded-3xl">
+                <GlowCardContent className="p-8 flex flex-col items-center gap-4 text-center bg-[#2f3b5c] min-h-56">
                   <span className="text-4xl" aria-hidden="true">
                     {icon}
                   </span>
-                  <h3 className="font-display font-bold text-lg text-white">
+                  <h3 className="font-display font-bold text-lg text-white!">
                     {title}
                   </h3>
                   <p className="flex-1 text-sm leading-relaxed text-white/55">
@@ -254,7 +261,7 @@ export default function ApoiePage() {
               </GlowCard>
             ))}
           </GlowCardWrapper>
-        </div>
+        </RevealGroup>
       </section>
 
       {/* ─── Testimonials ──────────────────────────────────────────── */}
@@ -273,7 +280,7 @@ export default function ApoiePage() {
           </Reveal>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map(({ quote, name, role, featured }, i) => (
+            {testimonials.map(({ quote, name, role, featured, avatar }, i) => (
               <Reveal
                 key={name}
                 delay={i * 150}
@@ -321,9 +328,16 @@ export default function ApoiePage() {
                       featured ? "border-white/10" : "border-brand-pink/15"
                     }`}
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-pink/20 text-base font-bold font-display text-brand-pink">
+                    {/* <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-pink/20 text-base font-bold font-display text-brand-pink">
                       {name[0]}
-                    </div>
+                    </div> */}
+                    <img
+                      src={avatar}
+                      alt={name}
+                      width={48}
+                      height={48}
+                      className="w-12 h-12 rounded-full object-cover shrink-0"
+                    />
                     <div>
                       <p
                         className={`text-sm font-display font-semibold ${
@@ -347,6 +361,8 @@ export default function ApoiePage() {
           </div>
         </div>
       </section>
+
+      <NossosApoiadores />
 
       {/* ─── Final CTA ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-brand-pink grain py-24 lg:py-32">
