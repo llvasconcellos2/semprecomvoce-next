@@ -1,6 +1,4 @@
 import { stats, anoInicio } from "@/data/data";
-import { LogoDrawing } from "./logo/LogoDrawing";
-import { LogoText } from "./logo/LogoText";
 import ActionButton from "./ActionButton";
 import { RevealGroup } from "./RevealGroup";
 import { Reveal } from "./Reveal";
@@ -133,10 +131,10 @@ export function Hero() {
             </div>
             <div>
               <div className="font-display font-bold text-brand-navy text-sm leading-tight">
-                {stats[1].number}
+                Andrea Nunes
               </div>
               <div className="text-[11px] text-brand-navy/50 mt-0.5">
-                {stats[1].label}
+                Diretora
               </div>
             </div>
           </div>
