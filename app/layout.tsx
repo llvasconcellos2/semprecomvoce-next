@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { DonationPopup } from "@/components/DonationPopup";
+import { CookieBanner } from "@/components/CookieBanner";
 import { SITE_URL } from "@/lib/constants";
 
 const geistSans = Geist({
@@ -68,6 +69,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <DonationPopup delay={60_000} />
+        <CookieBanner />
       </body>
     </html>
   );
