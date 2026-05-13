@@ -40,9 +40,13 @@ export interface VideoItem {
 
 interface YoutubeCarrouselProps {
   videos: VideoItem[];
+  displayChevrons?: boolean;
 }
 
-export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
+export function YoutubeCarrousel({
+  videos,
+  displayChevrons = false,
+}: YoutubeCarrouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
   const [isApiReady, setIsApiReady] = useState(false);
@@ -278,6 +282,7 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
           onClick={() => scrollStrip("left")}
           aria-label="Rolar miniaturas para esquerda"
           className="hidden md:flex shrink-0 bg-white/8 hover:bg-white/15 text-white rounded-full p-2 transition-[transform,background-color] duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink"
+          style={{ display: displayChevrons ? "" : "none" }}
         >
           <ChevronLeftIcon />
         </button>
@@ -348,6 +353,7 @@ export function YoutubeCarrousel({ videos }: YoutubeCarrouselProps) {
           onClick={() => scrollStrip("right")}
           aria-label="Rolar miniaturas para direita"
           className="hidden md:flex shrink-0 bg-white/8 hover:bg-white/15 text-white rounded-full p-2 transition-[transform,background-color] duration-200 hover:scale-110 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-pink"
+          style={{ display: displayChevrons ? "" : "none" }}
         >
           <ChevronRightIcon />
         </button>
