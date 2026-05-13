@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { PixCopyButton } from "./PixCopyButton";
-import Checkbox from "./checkbox/Checkbox";
 
 // CONFIGURE: Replace with payment links from your MercadoPago dashboard
 const MP_LINKS: Record<string, string> = {
@@ -38,11 +37,11 @@ const PIX: Record<string, { text: string; qrcode: string }> = {
   },
 };
 
-type Tab = "pix" | "cartao";
+type Tab = "pix" | "cartao" | "mensal";
 const AMOUNTS = ["25", "50", "100", "200"] as const;
 
-export function DonationWidget() {
-  const [tab, setTab] = useState<Tab>("pix");
+export function DonationWidget3Options() {
+  const [tab, setTab] = useState<Tab>("mensal");
   const [amount, setAmount] = useState("50");
   type Rect = { top: number; left: number; width: number; height: number };
   const [animRect, setAnimRect] = useState<Rect | null>(null);
@@ -102,6 +101,16 @@ export function DonationWidget() {
         {/* Tab switcher */}
         <div className="flex rounded-2xl bg-gray-100 p-1 mb-6 gap-1">
           <button
+            onClick={() => setTab("mensal")}
+            className={`flex-1 py-2.5 px-4 rounded-xl text-sm font-bold font-display transition-all duration-200 ${
+              tab === "mensal"
+                ? "bg-brand-pink text-white shadow-sm shadow-brand-pink/30"
+                : "text-brand-navy/50 hover:text-brand-navy"
+            }`}
+          >
+            Mensal
+          </button>
+          <button
             onClick={() => setTab("pix")}
             className={`flex-1 py-2.5 px-4 rounded-xl text-sm font-bold font-display transition-all duration-200 ${
               tab === "pix"
@@ -115,13 +124,67 @@ export function DonationWidget() {
             onClick={() => setTab("cartao")}
             className={`flex-1 py-2.5 px-4 rounded-xl text-sm font-bold font-display transition-all duration-200 ${
               tab === "cartao"
-                ? "bg-brand-pink text-white shadow-sm shadow-brand-pink/30"
+                ? "bg-[#ffc800] text-white shadow-sm shadow-brand-pink/30"
                 : "text-brand-navy/50 hover:text-brand-navy"
             }`}
           >
-            Cartão / Boleto
+            Cartão
           </button>
         </div>
+
+        {tab === "mensal" && (
+          <div className="flex flex-col gap-4 min-h-111">
+            <p className="text-brand-navy/65 text-sm font-display font-semibold">
+              Escolha um valor para sua doação:
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              {AMOUNTS.map((v) => (
+                <button
+                  key={v}
+                  onClick={() => setAmount(v)}
+                  className={`py-3 rounded-xl text-sm font-bold font-display transition-all duration-200 ${
+                    amount === v
+                      ? "bg-brand-pink text-white shadow-md shadow-brand-pink/25 scale-[1.03]"
+                      : "bg-brand-pink-light text-brand-pink hover:bg-brand-pink/10 active:scale-95"
+                  }`}
+                >
+                  R$&nbsp;{v}
+                </button>
+              ))}
+            </div>
+            <div className="flex-1 flex flex-col justify-center items-center gap-3">
+              <a
+                href="https://mpago.la/17gjCoA"
+                className="flex flex-col items-center"
+              >
+                Continuar no MercadoPago →
+                <Image
+                  className="w-80 h-14 overflow-hidden border-2 border-[#ffc800]/40 rounded-xl hover:bg-[#ffc800] hover:shadow-lg hover:shadow-[#ffc800]/60 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+                  width={320}
+                  height={56}
+                  src="/mercado-pago.png"
+                  alt="Botão do Mercado Pago"
+                />
+              </a>
+              <a
+                href={MP_LINKS.outro}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-brand-navy/40 text-xs hover:text-brand-pink transition-colors"
+              >
+                Quero escolher outro valor
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-1.5 pt-1">
+              <span className="text-xs" aria-hidden="true">
+                🔒
+              </span>
+              <span className="text-xs text-brand-navy/35">
+                Pagamento seguro via MercadoPago
+              </span>
+            </div>
+          </div>
+        )}
 
         {tab === "pix" && (
           <div className="flex flex-col items-center gap-4 min-h-111">
@@ -188,16 +251,13 @@ export function DonationWidget() {
                   onClick={() => setAmount(v)}
                   className={`py-3 rounded-xl text-sm font-bold font-display transition-all duration-200 ${
                     amount === v
-                      ? "bg-brand-pink text-white shadow-md shadow-brand-pink/25 scale-[1.03]"
-                      : "bg-brand-pink-light text-brand-pink hover:bg-brand-pink/10 active:scale-95"
+                      ? "bg-[#ffc800] text-white shadow-md shadow-brand-pink/25 scale-[1.03]"
+                      : "bg-[#ffc800]/30 text-[#dba102] hover:bg-[#ffc800]/20 active:scale-95"
                   }`}
                 >
                   R$&nbsp;{v}
                 </button>
               ))}
-            </div>
-            <div className="flex gap-3 items-center pl-2">
-              <Checkbox id="checkbox-mensal">Desejo doar mensalmente</Checkbox>
             </div>
             <div className="flex-1 flex flex-col justify-center items-center gap-3">
               <a
@@ -217,7 +277,7 @@ export function DonationWidget() {
                 href={MP_LINKS.outro}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center text-brand-navy/40 text-xs hover:text-brand-pink transition-colors"
+                className="text-center text-brand-navy/40 text-xs hover:text-[#dba102] transition-colors"
               >
                 Quero escolher outro valor
               </a>
