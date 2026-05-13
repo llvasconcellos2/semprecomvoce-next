@@ -1,9 +1,15 @@
 import { stats } from "@/data/data";
 import { StatNumber } from "./StatNumber";
 
-export function StatsBar() {
+export function StatsBar({
+  bg = "bg-brand-navy",
+  color = "text-white/50",
+}: {
+  bg?: string;
+  color?: string;
+}) {
   return (
-    <section className="bg-brand-navy py-14">
+    <section className={`${bg} py-14`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 lg:divide-x lg:divide-white/8">
           {stats.map((stat) => (
@@ -17,7 +23,7 @@ export function StatsBar() {
                 value={stat.number}
                 className="font-display font-extrabold text-[2.25rem] text-brand-pink leading-none"
               ></StatNumber>
-              <span className="text-white/50 text-sm font-medium">
+              <span className={`${color} text-sm font-medium`}>
                 {stat.label}
               </span>
             </div>

@@ -10,6 +10,7 @@ import { DonationWidget } from "@/components/DonationWidget";
 import Image from "next/image";
 import { RevealGroup } from "@/components/RevealGroup";
 import { NossosApoiadores } from "@/components/NossosApoiadores";
+import { StatsBar } from "@/components/StatsBar";
 
 export const metadata: Metadata = {
   title: "Apoie o Instituto do Câncer Sempre Com Você",
@@ -33,14 +34,6 @@ export const metadata: Metadata = {
     description: "Faça sua doação e ajude pacientes de câncer e suas famílias.",
   },
 };
-
-// CONFIGURE: Replace with real data from the institute
-const stats = [
-  { icon: "❤️", value: "1.500+", label: "Pacientes atendidos" },
-  { icon: "🏠", value: "400+", label: "Famílias apoiadas" },
-  { icon: "📅", value: "14+", label: "Anos de atuação" },
-  { icon: "🤝", value: "50+", label: "Voluntários ativos" },
-];
 
 const impactCards = [
   {
@@ -193,27 +186,7 @@ export default function ApoiePage() {
       </section>
 
       {/* ─── Stats ─────────────────────────────────────────────────── */}
-      <section className="bg-brand-pink-light py-16 lg:py-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-y-10 lg:grid-cols-4 lg:divide-x lg:divide-brand-pink/20">
-            {stats.map(({ icon, value, label }, i) => (
-              <Reveal key={label} delay={i * 100} direction="up" duration={700}>
-                <div className="flex flex-col items-center gap-2 px-6 text-center">
-                  <span className="text-3xl" aria-hidden="true">
-                    {icon}
-                  </span>
-                  <span className="font-display font-extrabold leading-none text-[2.25rem] text-brand-pink">
-                    <StatNumber value={value} duration={1800} />
-                  </span>
-                  <span className="text-sm font-display font-medium text-brand-navy/60">
-                    {label}
-                  </span>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar bg="bg-brand-pink-light" color="text-brand-navy/60" />
 
       {/* ─── Impact Cards ──────────────────────────────────────────── */}
       <section className="relative bg-brand-navy grain overflow-hidden py-24 lg:py-32">
