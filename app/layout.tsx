@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
+import { AnimatedNav } from "@/components/AnimatedNav";
 import { Footer } from "@/components/Footer";
 import { DonationPopup } from "@/components/DonationPopup";
 import { CookieBanner } from "@/components/CookieBanner";
@@ -64,7 +64,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <div id="viewport" className="viewport max-w-dvw">
-          <Navbar />
+          <AnimatedNav />
           <main className="flex-1 bg-white">{children}</main>
           <Footer />
         </div>
