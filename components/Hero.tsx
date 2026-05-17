@@ -116,16 +116,21 @@ export function Hero() {
 
           {/* Logo drawing — floating */}
           <div className="flex flex-col items-center">
-            <ImpossibleAvatar
-              imgSrc="/andrea.png"
-              imgWidth={463}
-              imgHeight={602}
-              imgAlt="Andrea"
-              className="relative z-10 drop-shadow-2xl animate-float bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-100"
-            />
+            <Link href="/andrea-nunes">
+              <ImpossibleAvatar
+                imgSrc="/andrea.png"
+                imgWidth={463}
+                imgHeight={602}
+                imgAlt="Andrea"
+                className="relative z-10 drop-shadow-2xl animate-float bg-linear-to-br from-brand-pink-light to-brand-blue-light opacity-100"
+              />
+            </Link>
           </div>
           {/* Floating card — top right */}
-          <div className="absolute top-6 -right-2 xl:right-4 bg-white rounded-2xl shadow-xl shadow-brand-navy/10 px-4 py-3 flex items-center gap-3 z-20">
+          <Link
+            href="/andrea-nunes"
+            className="absolute top-6 -right-2 xl:right-4 bg-white rounded-2xl shadow-xl shadow-brand-navy/10 px-4 py-3 flex items-center gap-3 z-20"
+          >
             <div className="w-10 h-10 rounded-xl bg-brand-pink-light flex items-center justify-center text-xl shrink-0">
               ❤️
             </div>
@@ -137,22 +142,25 @@ export function Hero() {
                 Diretora
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Floating card — bottom left */}
-          <div className="absolute bottom-6 -left-2 xl:left-4 bg-white rounded-2xl shadow-xl shadow-brand-navy/10 px-4 py-3 flex items-center gap-3 z-20">
+          <Link
+            href="/andrea-nunes"
+            className="absolute bottom-6 -left-2 xl:left-4 bg-white rounded-2xl shadow-xl shadow-brand-navy/10 px-4 py-3 flex items-center gap-3 z-20"
+          >
             <div className="w-10 h-10 rounded-xl bg-brand-blue-light flex items-center justify-center text-xl shrink-0">
-              🤝
+              🔗
             </div>
             <div>
               <div className="font-display font-bold text-brand-navy text-sm leading-tight">
-                {stats[3].number}
+                Clique Aqui
               </div>
               <div className="text-[11px] text-brand-navy/50 mt-0.5">
-                {stats[3].label}
+                Para conhecer minha história
               </div>
             </div>
-          </div>
+          </Link>
         </Reveal>
       </div>
 
