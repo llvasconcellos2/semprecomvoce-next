@@ -23,8 +23,7 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const DEFAULT_OG_IMAGE =
-  "/blog/assistidas-do-instituto-sempre-com-voce-sorrisos-que-contam-historias/img-001.jpg";
+const DEFAULT_OG_IMAGE = "/screenshot.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
