@@ -6,13 +6,13 @@ import { MobileNav } from "./MobileNav";
 import { Reveal } from "./Reveal";
 
 const navLinks = [
-  { label: "Inicial", href: "/" },
-  { label: "Sobre", href: "/#sobre" },
-  { label: "Programas", href: "/#programas" },
-  { label: "Depoimentos", href: "/#depoimentos" },
-  { label: "Ajudar", href: "/#ajudar" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contato", href: "/#contato" },
+  { id: "inicio", label: "Inicial", href: "/", mobile: true },
+  { id: "sobre", label: "Sobre", href: "/#sobre", mobile: true },
+  { id: "programas", label: "Programas", href: "/#programas", mobile: true },
+  { id: "depoimentos", label: "Depoimentos", href: "/#depoimentos", mobile: true },
+  { id: "ajudar", label: "Ajudar", href: "/#ajudar", mobile: true },
+  { id: "blog", label: "Blog", href: "/blog", mobile: true },
+  { id: "contato", label: "Contato", href: "/#contato", mobile: true },
 ];
 
 export function Navbar() {
@@ -25,7 +25,7 @@ export function Navbar() {
     >
       <nav>
         <div className="flex max-w-7xl mx-auto px-6 lg:px-8 h-20 items-center justify-between gap-4">
-          <MobileNav navLinks={navLinks} />
+          <MobileNav navItems={navLinks} />
 
           <Link href="/" className="shrink-0 flex gap-6 items-center">
             <LogoDrawing className="h-12 w-auto" />
@@ -33,10 +33,10 @@ export function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map(({ label, href }) => (
+            {navLinks.map(({ id, label, href }) => (
               <Link
-                key={label}
-                href={href}
+                key={id}
+                href={href!}
                 className="text-sm font-medium font-display text-brand-navy/55 hover:text-brand-navy transition-colors duration-200 tracking-wide"
               >
                 {label}

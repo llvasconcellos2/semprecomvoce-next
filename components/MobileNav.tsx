@@ -6,17 +6,54 @@ import Link from "next/link";
 import ActionButton from "./ActionButton";
 import "./MobileNav.css";
 
-interface NavLink {
+type IconComponent = React.FC<{ className?: string }>;
+
+interface MobileDropdownItem {
   label: string;
+  description: string;
   href: string;
+  Icon: IconComponent;
+  mobile?: boolean;
 }
 
-export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
+interface MobileNavItem {
+  id: string;
+  label: string;
+  href?: string;
+  mobile?: boolean;
+  dropdown?: MobileDropdownItem[];
+}
+
+function ChevronDown({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}
+
+export function MobileNav({ navItems }: { navItems: MobileNavItem[] }) {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [scrollOffset, setScrollOffset] = useState(0);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const close = useCallback(() => setIsOpen(false), []);
+  const visibleItems = navItems.filter((item) => item.mobile !== false);
+
+  const close = useCallback(() => {
+    setIsOpen(false);
+    setExpandedId(null);
+  }, []);
   const toggle = useCallback(() => setIsOpen((v) => !v), []);
 
   useEffect(() => setMounted(true), []);
@@ -74,7 +111,7 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
             aria-label="Menu de navegação"
           >
             {/* Drawer header */}
-            <div className="relative flex items-center  gap-4 px-5 h-20 border-b border-white/10">
+            <div className="relative flex items-center gap-4 px-5 h-20 border-b border-white/10">
               <button
                 onClick={close}
                 aria-label="Fechar menu"
@@ -102,41 +139,97 @@ export function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
 
             {/* Nav links */}
             <nav className="relative flex-1 flex flex-col px-3 py-6 gap-0.5">
-              {navLinks.map(({ label, href }, i) => (
-                <Link
-                  key={label}
-                  href={href}
-                  onClick={close}
-                  style={{
-                    transitionDelay: isOpen ? `${55 + i * 50}ms` : "0ms",
-                  }}
-                  className="group font-semibold font-display text-lg hover:text-white/20 hover:bg-white/8 transition-colors duration-200 mobile-nav-link"
-                >
-                  {label}
-                  <svg
-                    className="w-4 h-4 text-white/20 group-hover:text-white/50 transition-colors duration-200"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    aria-hidden="true"
+              {visibleItems.map(({ id, label, href, dropdown }, i) => {
+                const isExpanded = expandedId === id;
+                const delay = isOpen ? `${55 + i * 50}ms` : "0ms";
+
+                if (dropdown) {
+                  const visibleSubs = dropdown.filter(
+                    (sub) => sub.mobile !== false,
+                  );
+                  return (
+                    <div key={id}>
+                      <button
+                        onClick={() => setExpandedId(isExpanded ? null : id)}
+                        style={{ transitionDelay: delay }}
+                        className="group w-full font-semibold font-display text-lg hover:text-white/20 hover:bg-white/8 transition-colors duration-200 mobile-nav-link"
+                        aria-expanded={isExpanded}
+                      >
+                        {label}
+                        <ChevronDown
+                          className={`w-4 h-4 text-white/20 group-hover:text-white/50 transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                      <ul
+                        className="overflow-hidden list-none m-0 p-0"
+                        style={{
+                          maxHeight: isExpanded
+                            ? `${visibleSubs.length * 64}px`
+                            : "0px",
+                          transition:
+                            "max-height 300ms cubic-bezier(0.32,0.08,0.24,1)",
+                        }}
+                      >
+                        {visibleSubs.map((sub) => (
+                          <li key={sub.label}>
+                            <Link
+                              href={sub.href}
+                              onClick={close}
+                              className="mobile-nav-sublink"
+                            >
+                              <span className="shrink-0 w-7 h-7 rounded-md bg-white/10 flex items-center justify-center text-white/60">
+                                <sub.Icon className="w-3.5 h-3.5" />
+                              </span>
+                              <span className="flex flex-col min-w-0">
+                                <span className="text-sm font-semibold text-white/80 leading-tight">
+                                  {sub.label}
+                                </span>
+                                <span className="text-xs text-white/40 leading-relaxed truncate">
+                                  {sub.description}
+                                </span>
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={id}
+                    href={href!}
+                    onClick={close}
+                    style={{ transitionDelay: delay }}
+                    className="group font-semibold font-display text-lg hover:text-white/20 hover:bg-white/8 transition-colors duration-200 mobile-nav-link"
                   >
-                    <path
-                      d="M6 3l5 5-5 5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </Link>
-              ))}
+                    {label}
+                    <svg
+                      className="w-4 h-4 text-white/20 group-hover:text-white/50 transition-colors duration-200"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 3l5 5-5 5"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* CTA button */}
             <div
-              className="relative flex-1 px-6 pt-30 [&_.shimmer-ring]:block [&_.shimmer-ring]:w-full text-center mobile-nav-cta"
+              className="relative flex flex-1 px-6 pb-10 [&_.shimmer-ring]:block [&_.shimmer-ring]:w-full text-center mobile-nav-cta justify-end items-end"
               style={{
                 transitionDelay: isOpen
-                  ? `${55 + navLinks.length * 40}ms`
+                  ? `${55 + visibleItems.length * 40}ms`
                   : "0ms",
               }}
             >

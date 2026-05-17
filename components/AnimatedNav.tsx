@@ -159,90 +159,98 @@ interface DropdownItem {
   description: string;
   href: string;
   Icon: React.FC<{ className?: string }>;
+  mobile?: boolean;
 }
 
 interface NavItemDef {
   id: string;
   label: string;
   href?: string;
+  mobile?: boolean;
   dropdown?: DropdownItem[];
 }
 
 // ─── Nav data ────────────────────────────────────────────────────────────────
 
 const navItems: NavItemDef[] = [
-  { id: "inicio", label: "Início", href: "/" },
-  { id: "sobre", label: "Sobre", href: "/#sobre" },
+  { id: "inicio", label: "Início", href: "/", mobile: true },
+  { id: "sobre", label: "Sobre", href: "/#sobre", mobile: true },
   {
     id: "programas",
     label: "Programas",
+    mobile: true,
     dropdown: [
       {
         label: "Apoio Psicológico",
         description: "Suporte emocional para pacientes e famílias",
         href: "/#programas",
         Icon: HeartIcon,
+        mobile: true,
       },
       {
         label: "Assistência Social",
         description: "Auxílio em necessidades do dia a dia",
         href: "/#programas",
         Icon: UsersIcon,
+        mobile: true,
       },
       {
         label: "Transporte Solidário",
         description: "Deslocamento para tratamentos médicos",
         href: "/#programas",
         Icon: CarIcon,
+        mobile: true,
       },
       {
         label: "Atividades Terapêuticas",
         description: "Bem-estar e qualidade de vida",
         href: "/#programas",
         Icon: SparklesIcon,
+        mobile: true,
       },
     ],
   },
   {
     id: "ajudar",
     label: "Ajudar",
+    mobile: true,
     dropdown: [
       {
         label: "Doe Agora",
         description: "Faça uma doação e transforme vidas",
         href: "/apoie",
         Icon: HeartIcon,
+        mobile: true,
       },
       {
         label: "Seja Voluntário",
         description: "Contribua com seu tempo e talento",
         href: "/#ajudar",
         Icon: UsersIcon,
+        mobile: true,
       },
       {
         label: "Empresas Parceiras",
         description: "Junte sua empresa à nossa causa",
         href: "/#ajudar",
         Icon: BuildingIcon,
+        mobile: true,
       },
       {
         label: "Indique um Paciente",
         description: "Ajude quem precisa de cuidado",
         href: "/#ajudar",
         Icon: UserPlusIcon,
+        mobile: true,
       },
     ],
   },
-  { id: "depoimentos", label: "Depoimentos", href: "/#depoimentos" },
-  { id: "blog", label: "Blog", href: "/blog" },
-  { id: "contato", label: "Contato", href: "/#contato" },
+  { id: "depoimentos", label: "Depoimentos", href: "/#depoimentos", mobile: true },
+  { id: "blog", label: "Blog", href: "/blog", mobile: true },
+  { id: "contato", label: "Contato", href: "/#contato", mobile: true },
 ];
 
 const DROPDOWN_ITEMS = navItems.filter((i) => i.dropdown);
-const flatNavLinks = navItems.map(({ label, href }) => ({
-  label,
-  href: href ?? "#",
-}));
 
 const SLIDE_MS = 210;
 const CLOSE_MS = 160;
@@ -388,7 +396,7 @@ export function AnimatedNav() {
       className="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur-md border-b border-brand-navy/6 drop-shadow-lg"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-        <MobileNav navLinks={flatNavLinks} />
+        <MobileNav navItems={navItems} />
 
         <Link href="/" className="shrink-0 flex gap-6 items-center">
           <LogoDrawing className="h-12 w-auto" />
