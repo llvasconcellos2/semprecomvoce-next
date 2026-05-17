@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { cn } from "@/lib/utils";
 import "./ImpossibleAvatar.css";
 
 interface ImpossibleAvatarProps {
@@ -19,7 +19,12 @@ export default function ImpossibleAvatar({
   imgClassName = "",
 }: ImpossibleAvatarProps) {
   return (
-    <div className={`impossible-avatar ${className}`}>
+    <div
+      className={cn(
+        "impossible-avatar", // Base classes
+        className, // External overrides passed via props
+      )}
+    >
       <img
         src={imgSrc}
         // width={imgWidth}

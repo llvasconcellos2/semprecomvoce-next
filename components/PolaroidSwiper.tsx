@@ -238,7 +238,10 @@ export const PolaroidSwiper: React.FC<PolaroidSwiperProps> = ({
 
   return (
     <section
-      className={`relative grid place-content-center select-none ${className} max-w-133 min-w-95 md:min-w-125 max-h-130 min-h-125`}
+      className={cn(
+        "relative grid place-content-center select-none max-w-133 min-w-95 md:min-w-125 max-h-130 min-h-125", // Base classes
+        className, // External overrides passed via props
+      )}
       ref={cardStackRef}
       style={
         {
