@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "/apoie",
     images: [
       {
-        url: "/blog/acao-entre-amigos-a-solidariedade-que-aquece-o-coracao/img-001.jpg",
+        url: "/apoie-screenshot.png",
         alt: "Instituto do Câncer Sempre Com Você — faça sua doação",
       },
     ],
@@ -32,6 +32,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Instituto do Câncer Sempre Com Você",
     description: "Faça sua doação e ajude pacientes de câncer e suas famílias.",
+    images: [
+      {
+        url: "/apoie-screenshot.png",
+        alt: "Instituto do Câncer Sempre Com Você — faça sua doação",
+      },
+    ],
   },
 };
 
