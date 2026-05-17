@@ -4,251 +4,14 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { LogoDrawing } from "@/components/logo/LogoDrawing";
 import { LogoText } from "@/components/logo/LogoText";
-import ActionButton from "./ActionButton";
+import ActionButton from "../ActionButton";
 import { MobileNav } from "./MobileNav";
 import "./AnimatedNav.css";
-
-// ─── Icons ───────────────────────────────────────────────────────────────────
-
-function HeartIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-    </svg>
-  );
-}
-
-function UsersIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-    </svg>
-  );
-}
-
-function CarIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2z" />
-      <path d="M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2" />
-      <circle cx="7" cy="17" r="2" />
-      <circle cx="17" cy="17" r="2" />
-    </svg>
-  );
-}
-
-function SparklesIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
-      <path d="M20 3v4" />
-      <path d="M22 5h-4" />
-      <path d="M4 17v2" />
-      <path d="M5 18H3" />
-    </svg>
-  );
-}
-
-function BuildingIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="16" height="20" x="4" y="2" rx="2" />
-      <path d="M9 22v-4h6v4" />
-      <path d="M8 6h.01" />
-      <path d="M16 6h.01" />
-      <path d="M12 6h.01" />
-      <path d="M12 10h.01" />
-      <path d="M12 14h.01" />
-      <path d="M16 10h.01" />
-      <path d="M16 14h.01" />
-      <path d="M8 10h.01" />
-      <path d="M8 14h.01" />
-    </svg>
-  );
-}
-
-function UserPlusIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <line x1="19" x2="19" y1="8" y2="14" />
-      <line x1="22" x2="16" y1="11" y2="11" />
-    </svg>
-  );
-}
-
-function ChevronDown({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m6 9 6 6 6-6" />
-    </svg>
-  );
-}
-
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-interface DropdownItem {
-  label: string;
-  description: string;
-  href: string;
-  Icon: React.FC<{ className?: string }>;
-  mobile?: boolean;
-}
-
-interface NavItemDef {
-  id: string;
-  label: string;
-  href?: string;
-  mobile?: boolean;
-  dropdown?: DropdownItem[];
-}
+import { navItems } from "@/data/navigation";
+import ChevronDown from "@/components/icons/ChevronDown";
+import { HeartIcon } from "../icons/HeartIcon";
 
 // ─── Nav data ────────────────────────────────────────────────────────────────
-
-const navItems: NavItemDef[] = [
-  { id: "inicio", label: "Início", href: "/", mobile: true },
-  { id: "sobre", label: "Sobre", href: "/#sobre", mobile: true },
-  {
-    id: "programas",
-    label: "Programas",
-    mobile: true,
-    dropdown: [
-      {
-        label: "Apoio Psicológico",
-        description: "Suporte emocional para pacientes e famílias",
-        href: "/#programas",
-        Icon: HeartIcon,
-        mobile: true,
-      },
-      {
-        label: "Assistência Social",
-        description: "Auxílio em necessidades do dia a dia",
-        href: "/#programas",
-        Icon: UsersIcon,
-        mobile: true,
-      },
-      {
-        label: "Transporte Solidário",
-        description: "Deslocamento para tratamentos médicos",
-        href: "/#programas",
-        Icon: CarIcon,
-        mobile: true,
-      },
-      {
-        label: "Atividades Terapêuticas",
-        description: "Bem-estar e qualidade de vida",
-        href: "/#programas",
-        Icon: SparklesIcon,
-        mobile: true,
-      },
-    ],
-  },
-  {
-    id: "ajudar",
-    label: "Ajudar",
-    mobile: true,
-    dropdown: [
-      {
-        label: "Doe Agora",
-        description: "Faça uma doação e transforme vidas",
-        href: "/apoie",
-        Icon: HeartIcon,
-        mobile: true,
-      },
-      {
-        label: "Seja Voluntário",
-        description: "Contribua com seu tempo e talento",
-        href: "/#ajudar",
-        Icon: UsersIcon,
-        mobile: true,
-      },
-      {
-        label: "Empresas Parceiras",
-        description: "Junte sua empresa à nossa causa",
-        href: "/#ajudar",
-        Icon: BuildingIcon,
-        mobile: true,
-      },
-      {
-        label: "Indique um Paciente",
-        description: "Ajude quem precisa de cuidado",
-        href: "/#ajudar",
-        Icon: UserPlusIcon,
-        mobile: true,
-      },
-    ],
-  },
-  { id: "depoimentos", label: "Depoimentos", href: "/#depoimentos", mobile: true },
-  { id: "blog", label: "Blog", href: "/blog", mobile: true },
-  { id: "contato", label: "Contato", href: "/#contato", mobile: true },
-];
 
 const DROPDOWN_ITEMS = navItems.filter((i) => i.dropdown);
 
@@ -471,8 +234,11 @@ export function AnimatedNav() {
           </ul>
         </nav>
 
-        <ActionButton href="/apoie" className="whitespace-nowrap">
-          Doe Agora
+        <ActionButton
+          href="/apoie"
+          className="whitespace-nowrap flex gap-3 items-center justify-center"
+        >
+          <HeartIcon /> Doe Agora
         </ActionButton>
       </div>
 

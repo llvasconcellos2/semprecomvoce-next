@@ -3,8 +3,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-import ActionButton from "./ActionButton";
+import ActionButton from "../ActionButton";
 import "./MobileNav.css";
+import { HeartIcon } from "../icons/HeartIcon";
 
 type IconComponent = React.FC<{ className?: string }>;
 
@@ -233,8 +234,12 @@ export function MobileNav({ navItems }: { navItems: MobileNavItem[] }) {
                   : "0ms",
               }}
             >
-              <ActionButton href="/#doe" onClick={close}>
-                Doe Agora
+              <ActionButton
+                href="/#doe"
+                onClick={close}
+                className="flex gap-3 items-center justify-center"
+              >
+                <HeartIcon /> Doe Agora
               </ActionButton>
             </div>
           </div>

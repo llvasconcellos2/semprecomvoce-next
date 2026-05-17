@@ -11,7 +11,7 @@ const programs = [
     accent: "orange" as const,
   },
   {
-    icon: "🤝",
+    icon: "👨‍👦‍👦",
     title: "Assistência Social",
     description:
       "Orientação e suporte para acesso a benefícios sociais, transporte para consultas, medicamentos e outros recursos essenciais para quem mais precisa.",

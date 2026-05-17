@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
-import { AnimatedNav } from "@/components/AnimatedNav";
+import { AnimatedNav } from "@/components/navigation/AnimatedNav";
 import { Footer } from "@/components/Footer";
 import { DonationPopup } from "@/components/DonationPopup";
 import { CookieBanner } from "@/components/CookieBanner";

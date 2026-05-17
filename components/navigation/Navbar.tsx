@@ -1,15 +1,20 @@
 import Link from "next/link";
 import { LogoDrawing } from "@/components/logo/LogoDrawing";
 import { LogoText } from "@/components/logo/LogoText";
-import ActionButton from "./ActionButton";
+import ActionButton from "../ActionButton";
 import { MobileNav } from "./MobileNav";
-import { Reveal } from "./Reveal";
+import { Reveal } from "../Reveal";
 
 const navLinks = [
   { id: "inicio", label: "Inicial", href: "/", mobile: true },
   { id: "sobre", label: "Sobre", href: "/#sobre", mobile: true },
   { id: "programas", label: "Programas", href: "/#programas", mobile: true },
-  { id: "depoimentos", label: "Depoimentos", href: "/#depoimentos", mobile: true },
+  {
+    id: "depoimentos",
+    label: "Depoimentos",
+    href: "/#depoimentos",
+    mobile: true,
+  },
   { id: "ajudar", label: "Ajudar", href: "/#ajudar", mobile: true },
   { id: "blog", label: "Blog", href: "/blog", mobile: true },
   { id: "contato", label: "Contato", href: "/#contato", mobile: true },

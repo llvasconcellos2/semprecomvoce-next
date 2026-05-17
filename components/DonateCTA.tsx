@@ -17,7 +17,7 @@ const helpOptions = [
     share: false,
   },
   {
-    icon: "🙌",
+    icon: "🙋‍♀️",
     title: "Voluntarie-se",
     description:
       "Dedique seu tempo e talento. Temos espaço para psicólogos, assistentes sociais, motoristas, comunicadores e muito mais.",
