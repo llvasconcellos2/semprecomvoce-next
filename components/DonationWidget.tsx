@@ -43,7 +43,7 @@ const AMOUNTS = ["25", "50", "100", "200"] as const;
 
 export function DonationWidget() {
   const [tab, setTab] = useState<Tab>("pix");
-  const [amount, setAmount] = useState("50");
+  const [amount, setAmount] = useState("100");
   type Rect = { top: number; left: number; width: number; height: number };
   const [animRect, setAnimRect] = useState<Rect | null>(null);
   const [targetRect, setTargetRect] = useState<Rect | null>(null);

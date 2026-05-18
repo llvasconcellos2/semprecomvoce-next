@@ -55,7 +55,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9751 .1209 .0577 -.4746 -118.518 166.78)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".728" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".728" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -71,7 +71,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".663" stopColor="#454140" />
-        <stop offset="1" stopColor="#454140" stop-opacity="0" />
+        <stop offset="1" stopColor="#454140" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGn9cr4bbU)"
@@ -85,7 +85,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.0444 -.9725 -.8177 -.0404 164.73 239.039)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".725" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".725" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -100,7 +100,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.1899 -.9545 .8031 .1606 -107.483 63.864)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".725" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".725" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -115,7 +115,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.9751 -.1209 .0577 -.4746 16.198 183.482)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".728" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".728" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -131,7 +131,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".663" stopColor="#454140" />
-        <stop offset="1" stopColor="#454140" stop-opacity="0" />
+        <stop offset="1" stopColor="#454140" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGZr1HbbkL)"
@@ -205,7 +205,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.1804 .9797 -.7143 .144 142.877 30.558)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".699" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".699" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -221,7 +221,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".58" stopColor="#454140" />
-        <stop offset="1" stopColor="#454140" stop-opacity="0" />
+        <stop offset="1" stopColor="#454140" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGfglZgbZU)"
@@ -235,7 +235,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.8621 -.5006 .2778 -.4987 268.177 239.534)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".699" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".699" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -250,7 +250,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9715 .1166 -.1522 1.2134 40.638 -95.81)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".702" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".702" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -265,7 +265,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.9058 -.3704 .3487 -.868 -28.775 178.153)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".66" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".66" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -280,7 +280,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9455 .2507 -.3593 1.3585 70.96 -120.92)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".598" stopColor="#454140" stop-opacity="0" />
+        <stop offset=".598" stopColor="#454140" stopOpacity="0" />
         <stop offset="1" stopColor="#454140" />
       </radialGradient>
       <path
@@ -308,7 +308,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9754 -.1186 -.0588 -.4745 63.003 123.07)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".728" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".728" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -324,7 +324,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".663" stopColor="#6D4C41" />
-        <stop offset="1" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset="1" stopColor="#6D4C41" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGy61FFcSz)"
@@ -338,7 +338,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.1922 -.9544 -.8032 .1586 131.815 124.942)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".725" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".725" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -353,7 +353,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.0466 -.9721 .8181 -.0385 72.967 193.666)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".725" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".725" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -368,7 +368,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.9754 .1186 -.0588 -.4745 197.759 106.683)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".728" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".728" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -384,7 +384,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".663" stopColor="#6D4C41" />
-        <stop offset="1" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset="1" stopColor="#6D4C41" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGi3Cvzauz)"
@@ -435,7 +435,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.4121 .9069 -.6582 .3126 59.969 -47.15)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".699" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".699" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -451,7 +451,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientUnits="userSpaceOnUse"
       >
         <stop offset=".58" stopColor="#6D4C41" />
-        <stop offset="1" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset="1" stopColor="#6D4C41" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#SVGz4N1QYQN)"
@@ -465,7 +465,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.9575 -.2772 .1489 -.5511 195.744 106.228)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".699" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".699" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -480,7 +480,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9709 -.1219 .1458 1.2142 -20.456 81.964)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".702" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".702" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -495,7 +495,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(-.9685 -.1402 .1284 -.9266 177.246 80.815)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".66" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".66" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
@@ -510,7 +510,7 @@ export default function UserPlusIcon({ className }: { className?: string }) {
         gradientTransform="matrix(.9781 .0146 -.02 1.4051 -19.984 61.594)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".598" stopColor="#6D4C41" stop-opacity="0" />
+        <stop offset=".598" stopColor="#6D4C41" stopOpacity="0" />
         <stop offset="1" stopColor="#6D4C41" />
       </radialGradient>
       <path
