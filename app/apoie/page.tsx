@@ -11,6 +11,7 @@ import Image from "next/image";
 import { RevealGroup } from "@/components/RevealGroup";
 import { NossosApoiadores } from "@/components/NossosApoiadores";
 import { StatsBar } from "@/components/StatsBar";
+import { MonthlyDonationSection } from "@/components/MonthlyDonationSection";
 
 export const metadata: Metadata = {
   title: "Apoie o Instituto do Câncer Sempre Com Você",
@@ -193,6 +194,9 @@ export default function ApoiePage() {
 
       {/* ─── Stats ─────────────────────────────────────────────────── */}
       <StatsBar bg="bg-brand-pink-light" color="text-brand-navy/60" />
+
+      {/* ─── Monthly Donation ──────────────────────────────────────── */}
+      <MonthlyDonationSection />
 
       {/* ─── Impact Cards ──────────────────────────────────────────── */}
       <section className="relative bg-brand-navy grain overflow-hidden py-24 lg:py-32">

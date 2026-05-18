@@ -89,7 +89,7 @@ export function DonationWidget() {
 
   return (
     <>
-      <div className="bg-white rounded-3xl shadow-2xl shadow-brand-navy/15 border border-white/50 p-7 w-full max-w-[390px] mx-auto lg:mx-0 min-h-152">
+      <div className="bg-white rounded-3xl shadow-2xl shadow-brand-navy/15 border border-white/50 p-7 w-full max-w-97.5 mx-auto lg:mx-0 min-h-152">
         <div className="mb-5">
           <p className="text-brand-navy/45 text-xs font-display font-bold uppercase tracking-widest mb-1">
             Faça sua doação

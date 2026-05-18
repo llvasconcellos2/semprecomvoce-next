@@ -22,9 +22,11 @@ O site do Instituto do Câncer Sempre Com Você precisa estar em conformidade co
 ## Arquivos a criar
 
 ### `app/politica-de-privacidade/page.tsx`
+
 Página estática (Server Component). Conteúdo em português, LGPD-compliant.
 
 **Seções obrigatórias:**
+
 1. **Identificação do Controlador** — Instituto do Câncer Sempre Com Você, CNPJ 35.710.626/0001-76, Rua Karl Kumlehn, 185 – Joinville/SC, `contato@institutosemprecomvoce.com.br`
 2. **Encarregado de Proteção de Dados** — `contato@institutosemprecomvoce.com.br`
 3. **Dados coletados e finalidades** (com base legal LGPD art. 7 para cada um):
@@ -41,9 +43,11 @@ Página estática (Server Component). Conteúdo em português, LGPD-compliant.
 10. **Lei aplicável** — LGPD (Lei 13.709/2018), foro Joinville/SC
 
 ### `app/termos-de-uso/page.tsx`
+
 Página estática (Server Component). Conteúdo em português.
 
 **Seções:**
+
 1. Aceitação dos Termos
 2. Sobre o Instituto (descrição, fins não lucrativos)
 3. Uso permitido do site
@@ -55,9 +59,11 @@ Página estática (Server Component). Conteúdo em português.
 9. Lei aplicável — Brasil, foro Joinville/SC
 
 ### `components/CookieBanner.tsx`
+
 Client Component. Aparece na primeira visita e sempre que o consentimento não estiver registrado.
 
 **Comportamento:**
+
 - Lê o cookie `analytics_consent` ao montar
 - Se ausente → exibe o banner
 - Se `"granted"` → carrega GA
@@ -72,6 +78,7 @@ Client Component. Aparece na primeira visita e sempre que o consentimento não e
 ## Arquivos a modificar
 
 ### `app/layout.tsx`
+
 - Importar `CookieBanner`
 - Adicionar `<CookieBanner />` ao layout (antes do `</body>`)
 - O GA script (`@next/third-parties/google` ou `next/script`) só é renderizado quando `analytics_consent === "granted"` (gerenciado dentro do `CookieBanner` via estado ou evento customizado)
@@ -81,7 +88,9 @@ A abordagem mais simples: `CookieBanner` é um Client Component que gerencia o e
 **GA Measurement ID:** usar placeholder `G-XXXXXXXXXX` — preencher com o ID real do GA4 antes de ativar.
 
 ### `components/Footer.tsx`
+
 Atualizar os dois links placeholder:
+
 ```tsx
 // Antes
 <a href="#">Política de Privacidade</a>
@@ -102,7 +111,7 @@ Atualizar os dois links placeholder:
 
 ## Verificação
 
-1. `pnpm dev` → acessar `http://localhost:3000`
+1. `pnpm dev` → acessar `https://localhost:3000`
 2. Verificar que o banner de cookies aparece na primeira visita
 3. Clicar "Recusar" → GA não deve carregar (verificar via DevTools > Network, sem requests para `google-analytics.com`)
 4. Recarregar página → banner não deve aparecer novamente (cookie salvo)

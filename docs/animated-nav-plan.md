@@ -5,6 +5,7 @@
 Implement a new `AnimatedNav` header component inspired by the reference at cdn.21st.dev/sshahaider/header-3. The reference uses Radix UI NavigationMenu, but the project doesn't have that package installed. We'll build the same visual behavior from scratch with pure React + CSS transitions.
 
 Two core animated behaviors to replicate:
+
 1. **Sliding pill indicator** — an absolutely-positioned background div that glides horizontally under whichever nav item is hovered, tracking its `offsetLeft`/`offsetWidth` via CSS `transform: translateX` + `width` transition.
 2. **Dropdown viewport** — a single floating panel below the nav that animates `height` and `width` as you move between items with dropdowns. When switching from one dropdown to another, the content slides in from the correct direction (left/right) based on the index order of the nav items.
 
@@ -14,13 +15,14 @@ The new component is a drop-in replacement for `Navbar` in `app/layout.tsx` — 
 
 ## Critical files
 
-| File | Action |
-|------|--------|
-| `components/AnimatedNav.tsx` | **Create** — main component |
+| File                         | Action                                                                             |
+| ---------------------------- | ---------------------------------------------------------------------------------- |
+| `components/AnimatedNav.tsx` | **Create** — main component                                                        |
 | `components/AnimatedNav.css` | **Create** — 6 CSS keyframes for slide/zoom animations (imported by the component) |
-| `app/layout.tsx` | **Edit** — swap `Navbar` import → `AnimatedNav` to test |
+| `app/layout.tsx`             | **Edit** — swap `Navbar` import → `AnimatedNav` to test                            |
 
 ### Reused components
+
 - `components/logo/LogoDrawing.tsx`
 - `components/logo/LogoText.tsx`
 - `components/ActionButton.tsx`
@@ -41,12 +43,14 @@ Contato      → href="/#contato"     (no dropdown)
 ```
 
 **Programas dropdown items** (icon + title + description + href):
+
 - Apoio Psicológico — suporte emocional para pacientes e famílias — `/#programas`
 - Assistência Social — auxílio em necessidades do dia a dia — `/#programas`
 - Transporte Solidário — deslocamento para tratamentos médicos — `/#programas`
 - Atividades Terapêuticas — bem-estar e qualidade de vida — `/#programas`
 
 **Ajudar dropdown items**:
+
 - Doe Agora — faça uma doação e transforme vidas — `/apoie`
 - Seja Voluntário — contribua com seu tempo e talento — `/#ajudar`
 - Empresas Parceiras — junte sua empresa à nossa causa — `/#ajudar`
@@ -61,12 +65,66 @@ Icons: use inline SVG paths (lucide-style) directly in the component — no icon
 ### CSS keyframes (in `components/AnimatedNav.css` — imported by the component)
 
 ```css
-@keyframes nav-slide-from-right { from { opacity: 0; transform: translateX(36px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes nav-slide-from-left  { from { opacity: 0; transform: translateX(-36px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes nav-slide-to-right   { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(36px); } }
-@keyframes nav-slide-to-left    { from { opacity: 1; transform: translateX(0); } to { opacity: 0; transform: translateX(-36px); } }
-@keyframes nav-zoom-in  { from { opacity: 0; transform: scale(0.96) translateY(-6px); } to { opacity: 1; transform: scale(1) translateY(0); } }
-@keyframes nav-zoom-out { from { opacity: 1; transform: scale(1) translateY(0); } to { opacity: 0; transform: scale(0.96) translateY(-6px); } }
+@keyframes nav-slide-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes nav-slide-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes nav-slide-to-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+}
+@keyframes nav-slide-to-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+}
+@keyframes nav-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes nav-zoom-out {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.96) translateY(-6px);
+  }
+}
 ```
 
 ### Indicator pill state
@@ -76,6 +134,7 @@ const [indicator, setIndicator] = useState({ tx: 0, width: 0, visible: false });
 ```
 
 CSS on the pill div:
+
 ```css
 position: absolute; top: 0; left: 0; height: 100%;
 background: rgba(29,43,79,0.07); border-radius: 9999px;
@@ -114,7 +173,7 @@ const leaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 const scheduleClose = useCallback(() => {
   leaveTimerRef.current = setTimeout(() => {
-    setIndicator(prev => ({ ...prev, visible: false }));
+    setIndicator((prev) => ({ ...prev, visible: false }));
     setVpOpen(false);
     setActiveId(null);
     setPrevId(null);
@@ -127,6 +186,7 @@ const cancelClose = useCallback(() => {
 ```
 
 Wire up:
+
 - Nav items wrapper: `onMouseLeave={scheduleClose}` + `onMouseEnter={cancelClose}`
 - Each nav item `onMouseEnter`: call `cancelClose()` before `handleItemEnter()`
 - Dropdown panel: `onMouseEnter={cancelClose}` + `onMouseLeave={scheduleClose}`
@@ -203,7 +263,7 @@ export function AnimatedNav() {
 
 1. Start dev server: `pnpm dev`
 2. Edit `app/layout.tsx` to import `AnimatedNav` instead of `Navbar`
-3. Open `http://localhost:3000` in browser
+3. Open `https://localhost:3000` in browser
 4. Screenshot with chrome-devtools MCP
 5. Hover over each plain nav link — pill should slide smoothly
 6. Hover over `Programas` — dropdown opens with zoom-in animation
