@@ -13,9 +13,10 @@
 ## Local Server
 
 - **Always serve on localhost** — never screenshot a `file:///` URL.
-- Check if the dev server is running on `https://localhost:3000`. If not, start the dev server: `pnpm dev` (serves the project root at `https://localhost:3000`)
-- Start the dev server in the background before taking any screenshots.
-- If the server is already running, do not start a second instance.
+- **ALWAYS use `https://` — NEVER `http://`.** The dev server requires HTTPS. Using `http://localhost:3000` will fail or return wrong results.
+- **ALWAYS check if the server is already running BEFORE calling `pnpm dev`.** Run `curl -sk https://localhost:3000/ -o /dev/null -w "%{http_code}"`. If the response is not empty/connection-refused, the server is up — do NOT start another instance.
+- Only if the server is NOT running: start it in the background with `pnpm dev`.
+- Never run `pnpm dev` without doing the curl check first.
 
 ## Screenshot Workflow
 
@@ -26,7 +27,7 @@
 - After screenshotting, read the PNG from `./screenshots/` with the Read tool — Claude can see and analyze the image directly.
 - When comparing, be specific: "heading is 32px but reference shows ~24px", "card gap is 16px but should be 24px"
 - Check: spacing/padding, font size/weight/line-height, colors (exact hex), alignment, border-radius, shadows, image sizing
-- After done with screenshots remember to close the browser (kill the process so you can run it again without problems)
+- **MANDATORY LAST STEP — no exceptions: call `mcp__chrome-devtools__close_page` for every open page when done.** Skipping this causes "browser is already running" errors on the next session and breaks all subsequent screenshot attempts.
 
 ## Output Defaults
 
@@ -58,3 +59,4 @@
 - Do not stop after one screenshot pass
 - Do not use `transition-all`
 - Do not use default Tailwind blue/indigo as primary color
+- **ALWAYS close the browser with `mcp__chrome-devtools__close_page` after every screenshot session — no exceptions**
