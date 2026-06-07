@@ -37,8 +37,6 @@ pnpm lint       # ESLint
 
 Brand guidelines (colors, typography, tone) are in `docs/brand.md`. All color and font tokens are defined in `app/globals.css` and available as Tailwind utilities (e.g., `bg-brand-pink`, `text-brand-navy`, `font-display`).
 
-## Key conventions
+## Verification
 
-- All routes live under `app/` using the App Router file conventions (`layout.tsx`, `page.tsx`, `loading.tsx`, etc.)
-- `app/layout.tsx` is the root layout — it sets the `<html>` and `<body>` tags and applies global fonts/styles
-- `app/globals.css` is the global stylesheet imported once from the root layout
+Run `pnpm lint` before declaring any task complete.
