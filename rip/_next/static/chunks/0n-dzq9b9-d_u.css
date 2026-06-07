@@ -1,0 +1,1 @@
+.gradient-background{background:linear-gradient(300deg,#29abe270,#fee9f4,#e8178a70) 0 0/180% 180%;animation:18s infinite gradient-animation}@keyframes gradient-animation{0%{background-position:0%}50%{background-position:100%}to{background-position:0%}}
