@@ -14,7 +14,7 @@
 
   <br />
 
-<a href="https://leonardo-vasconcellos.vercel.app/portfolio/semprecomvoce-next"><strong>View it live »</strong></a>
+<a href="https://semprecomvoce-novo.vercel.app/"><strong>View it live »</strong></a>
 
 </div>
 
