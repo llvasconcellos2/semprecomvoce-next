@@ -51,6 +51,8 @@ const AMOUNTS = ["25", "50", "100", "200"] as const;
 export function DonationWidget() {
   const [tab, setTab] = useState<Tab>("pix");
   const [amount, setAmount] = useState("100");
+  const [isMonthly, setIsMonthly] = useState(false);
+  const activeLinks = isMonthly ? MP_LINKS_MENSAIS : MP_LINKS;
   type Rect = { top: number; left: number; width: number; height: number };
   const [animRect, setAnimRect] = useState<Rect | null>(null);
   const [targetRect, setTargetRect] = useState<Rect | null>(null);
@@ -203,14 +205,16 @@ export function DonationWidget() {
               ))}
             </div>
             <div className="flex gap-3 items-center pl-2">
-              <Checkbox id="checkbox-mensal">Desejo doar mensalmente</Checkbox>
+              <Checkbox id="checkbox-mensal" onChange={setIsMonthly}>
+                Desejo doar mensalmente
+              </Checkbox>
             </div>
             <div className="flex-1 flex flex-col justify-center items-center gap-3">
               <a
-                href="https://mpago.la/17gjCoA"
+                href={activeLinks[amount]}
                 className="flex flex-col items-center"
               >
-                Continuar no MercadoPago →
+                Continuar no Mercado Pago →
                 <Image
                   className="w-80 h-14 overflow-hidden border-2 border-[#ffc800]/40 rounded-xl hover:bg-[#ffc800] hover:shadow-lg hover:shadow-[#ffc800]/60 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
                   width={320}
@@ -220,7 +224,7 @@ export function DonationWidget() {
                 />
               </a>
               <a
-                href={MP_LINKS.outro}
+                href={activeLinks.outro}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center text-brand-navy/40 text-xs hover:text-brand-pink transition-colors"

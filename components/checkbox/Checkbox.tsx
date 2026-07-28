@@ -4,6 +4,7 @@ import "./Checkbox.css";
 export interface CheckboxProps {
   disabled?: boolean;
   defaultChecked?: boolean;
+  onChange?: (checked: boolean) => void;
   id: string;
   children: ReactNode;
 }
@@ -12,6 +13,7 @@ export default function Checkbox({
   id,
   disabled,
   defaultChecked,
+  onChange,
   children,
 }: CheckboxProps) {
   return (
@@ -23,6 +25,7 @@ export default function Checkbox({
         aria-hidden="true"
         disabled={disabled}
         defaultChecked={defaultChecked}
+        onChange={(e) => onChange?.(e.target.checked)}
       />
       <label className="cursor-pointer" htmlFor={id}>
         {children}
