@@ -6,13 +6,20 @@ import Image from "next/image";
 import { PixCopyButton } from "./PixCopyButton";
 import Checkbox from "./checkbox/Checkbox";
 
-// CONFIGURE: Replace with payment links from your MercadoPago dashboard
 const MP_LINKS: Record<string, string> = {
-  outro: "https://mpago.la/17gjCoA",
-  "25": "https://mpago.la/17gjCoA",
-  "50": "https://mpago.la/17gjCoA",
-  "100": "https://mpago.la/17gjCoA",
-  "200": "https://mpago.la/17gjCoA",
+  outro: "https://link.mercadopago.com.br/institutosemprecomvc",
+  "25": "https://mpago.la/1iQXnva",
+  "50": "https://mpago.la/28YzUu1",
+  "100": "https://mpago.la/1He1ocf",
+  "200": "https://mpago.la/16fuUKo",
+};
+
+const MP_LINKS_MENSAIS: Record<string, string> = {
+  outro: "https://mpago.la/2mi9rtw",
+  "25": "https://mpago.la/1FNTfH2",
+  "50": "https://mpago.la/1gXzb5p",
+  "100": "https://mpago.la/24vSTnx",
+  "200": "https://mpago.la/2Rum95b",
 };
 
 const PIX: Record<string, { text: string; qrcode: string }> = {

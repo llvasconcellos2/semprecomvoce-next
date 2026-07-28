@@ -151,7 +151,7 @@ export default function ApoiePage() {
                 Faça a diferença hoje
               </span>
 
-              <h1 className="font-display font-extrabold leading-[1.05] text-[2.75rem] lg:text-[3.5rem] xl:text-[4rem]">
+              <h1 className="font-display font-extrabold leading-[1.05] text-[2.75rem] lg:text-[3.5rem] xl:text-[4rem] text-white!">
                 Uma doação. <span className="text-brand-pink">Uma vida</span>{" "}
                 transformada.
               </h1>
