@@ -14,7 +14,7 @@
 
   <br />
 
-<a href="https://leonardo-vasconcellos.vercel.app/portfolio/semprecomvoce-next"><strong>View it live »</strong></a>
+<a href="https://semprecomvoce-novo.vercel.app/"><strong>View it live »</strong></a>
 
 </div>
 
@@ -57,6 +57,8 @@ The official website for Instituto do Câncer Sempre Com Você, a cancer care NG
 <!-- END INTRO -->
 
 Instituto do Câncer Sempre Com Você is a nonprofit organization dedicated to improving the lives of cancer patients and their families across Santa Catarina, Brazil. This Next.js website serves as the NGO's complete digital presence — from a blog filled with real patient journeys, to a full donation flow that supports ongoing care.
+
+### Key Features
 
 - **Blog with real patient stories** — A content-rich blog system showcasing the NGO's mission through personal testimonials, photos, and updates from the field.
 - **Monthly donation flow** — A complete donation experience with one-time and recurring options, confirmation screens, and structured payment flow.
