@@ -17,23 +17,23 @@ const MP_LINKS: Record<string, string> = {
 
 const PIX: Record<string, { text: string; qrcode: string }> = {
   outro: {
-    text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406200.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe20063041315",
+    text: "",
     qrcode: "/pix/Pix.jpeg",
   },
   "25": {
-    text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br520400005303986540525.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62090505Doe2563047754",
+    text: "00020126360014br.gov.bcb.pix0114+5547999229343520400005303986540525.005802BR5925INSTITUTO_SEMPRE_COM_VOCE6009Joinville610989204-63862090505doe25630499AF",
     qrcode: "/pix/Pix25.jpeg",
   },
   "50": {
-    text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br520400005303986540550.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62090505Doe5063047754",
+    text: "00020126360014br.gov.bcb.pix0114+5547999229343520400005303986540550.005802BR5925INSTITUTO_SEMPRE_COM_VOCE6009Joinville610989204-63862090505doe506304F2C8",
     qrcode: "/pix/Pix50.jpeg",
   },
   "100": {
-    text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406100.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe100630443E0",
+    text: "00020126360014br.gov.bcb.pix0114+55479992293435204000053039865406100.005802BR5925INSTITUTO_SEMPRE_COM_VOCE6009Joinville610989204-63862100506doe1006304E204",
     qrcode: "/pix/Pix100.jpeg",
   },
   "200": {
-    text: "00020126470014br.gov.bcb.pix0125leonardo@imovelkit.com.br5204000053039865406200.005802BR5925LEONARDO LIMA DE VASCONCE6008CURITIBA62100506Doe20063041315",
+    text: "00020126360014br.gov.bcb.pix0114+55479992293435204000053039865406200.005802BR5925INSTITUTO_SEMPRE_COM_VOCE6009Joinville610989204-63862100506doe20063042D97",
     qrcode: "/pix/Pix200.jpeg",
   },
 };
@@ -53,10 +53,9 @@ export function DonationWidget() {
     const r = e.currentTarget.getBoundingClientRect();
     const pw = Math.min(480, window.innerWidth * 0.85);
     const ph = Math.min(
-      Math.round((pw * 1280) / 711),
+      Math.round((pw * 4160) / 2987),
       window.innerHeight * 0.82,
     );
-    console.log({ ph });
     setAnimRect({ top: r.top, left: r.left, width: r.width, height: r.height });
     setTargetRect({
       top: (window.innerHeight - ph) / 2,
@@ -165,7 +164,7 @@ export function DonationWidget() {
                 alt="QR Code Pix Instituto do Câncer Sempre Com Você"
                 width={711}
                 height={1280}
-                className="rounded-xl w-40 max-w-40 h-74 -top-18 -left-8 absolute"
+                className="rounded-xl w-95 max-w-95 h-126.5 -top-39.5 -left-34.5 absolute"
               />
             </button>
             <PixCopyButton chavePix={PIX[amount].text} />
