@@ -9,9 +9,9 @@ import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { GoogleMapsIcon } from "@/components/icons/GoogleMapsIcon";
 import { SITE_URL } from "@/lib/constants";
 
-const TITLE = "Hope Hair — Salão solidário em Joinville | Em breve";
+const TITLE = "Hope Hair — Salão de beleza solidário em Joinville";
 const DESCRIPTION =
-  "Hope Hair by Andrea Nunes: um salão de beleza que nasce para apoiar o Instituto do Câncer Sempre Com Você. Cada atendimento ajuda a manter o cuidado com pacientes e famílias. Abertura em breve.";
+  "Hope Hair by Andrea Nunes: um salão de beleza que existe para apoiar o Instituto do Câncer Sempre Com Você. Cada atendimento ajuda a manter o cuidado com pacientes e famílias. Agende seu horário.";
 const LOGO = "/hope-hair/logo-hope-hair.jpg";
 const WHATSAPP_URL =
   "https://wa.me/5547999717565?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Hope%20Hair.";
@@ -65,7 +65,7 @@ const pillars = [
   },
   {
     title: "Assinado por Andrea Nunes",
-    text: "Quem fundou o Instituto agora abre um salão para que o cuidado com pacientes e famílias continue.",
+    text: "Quem fundou o Instituto abriu um salão para que o cuidado com pacientes e famílias continue.",
   },
   {
     title: "Renda que vira cuidado",
@@ -109,11 +109,11 @@ export default function HopeHairPage() {
                 className="animate-pulse-dot h-2 w-2 rounded-full bg-brand-pink"
                 aria-hidden="true"
               />
-              Página em construção
+              Salão solidário em Joinville
             </div>
 
             <h1 className="text-balance font-display text-[2.5rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-brand-navy sm:text-[3.25rem] xl:text-[4.25rem]">
-              Hope Hair abre em breve
+              Hope Hair, beleza que ajuda a cuidar
             </h1>
 
             <p className="max-w-lg text-lg leading-[1.7] text-brand-navy/70">
@@ -223,10 +223,11 @@ export default function HopeHairPage() {
         >
           <div>
             <h2 className="font-display text-[2rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-white! lg:text-[2.75rem]">
-              Quer saber quando abrimos?
+              Quer agendar um horário?
             </h2>
             <p className="mt-5 max-w-md text-lg leading-[1.7] text-white/60">
-              Fale com a nossa equipe. Assim que o salão abrir, avisamos você.
+              Fale com a nossa equipe pelo WhatsApp e escolha o melhor dia para
+              você.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <ActionButton
