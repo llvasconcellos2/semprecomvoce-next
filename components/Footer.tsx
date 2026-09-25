@@ -18,6 +18,7 @@ const footerLinks = [
   { label: "Nossos Programas", href: "/#programas" },
   { label: "Como Ajudar", href: "/#doe" },
   { label: "Transparência", href: "/#transparencia" },
+  { label: "Hope Hair", href: "/hope-hair" },
   { label: "Blog", href: "/blog" },
 ];
 

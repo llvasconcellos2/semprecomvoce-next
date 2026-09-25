@@ -174,6 +174,7 @@ export const navItems: NavItemDef[] = [
       },
     ],
   },
+  { id: "hope-hair", label: "Hope Hair", href: "/hope-hair", mobile: true },
   { id: "blog", label: "Blog", href: "/blog", mobile: true },
   { id: "contato", label: "Contato", href: "/#contato", mobile: true },
 ];
